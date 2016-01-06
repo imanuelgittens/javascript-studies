@@ -1,6 +1,6 @@
 #Imanuel Gittens
-#gittensimanuel@gmail.com	
-#1 868 123-4567
+gittensimanuel@gmail.com	
+1 868 123-4567
 
 ####Profile:
 IT professional with a broad and expanding knowledge of programming and query languages. Self-motivated and hard-working with a willingness to share knowledge with others. Good communicator and team member possessing leadership and training skills.  Innovative, cooperative and results-oriented.
