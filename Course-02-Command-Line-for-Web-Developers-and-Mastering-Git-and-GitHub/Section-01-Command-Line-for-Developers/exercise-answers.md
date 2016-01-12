@@ -30,7 +30,7 @@
 
 7.
 
-	nano socks to buy.txt
+	nano "socks to buy.txt"
 
 
 8.
