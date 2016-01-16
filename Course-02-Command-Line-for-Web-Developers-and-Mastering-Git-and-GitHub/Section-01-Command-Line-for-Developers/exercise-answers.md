@@ -30,7 +30,7 @@
 
 7.
 
-	nano socks to buy.txt
+	pico socks to buy.txt
 
 
 8.
