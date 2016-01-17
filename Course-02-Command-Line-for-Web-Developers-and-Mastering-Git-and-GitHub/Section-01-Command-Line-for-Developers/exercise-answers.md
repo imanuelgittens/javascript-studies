@@ -80,7 +80,7 @@
 
 19.
 
-	find -name "*.md" -exec cat {} \;
+	cat *.md
 
 20.
 
