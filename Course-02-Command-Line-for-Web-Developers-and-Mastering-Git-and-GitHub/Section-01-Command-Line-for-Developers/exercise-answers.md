@@ -64,7 +64,7 @@
 
 15.
 
-	echo -e My name is "$(whoami)"
+	echo -e My name is Imanuel \n
 
 16.
 
