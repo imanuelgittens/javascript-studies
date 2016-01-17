@@ -52,7 +52,7 @@
 
 12.
 
-	cd "C:/Users/Default User/My Documents"
+	cd "/c/Users/Default User/My Documents"
 
 13.
 
