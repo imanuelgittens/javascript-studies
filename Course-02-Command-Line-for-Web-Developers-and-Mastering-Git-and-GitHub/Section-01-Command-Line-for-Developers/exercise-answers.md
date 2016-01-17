@@ -64,7 +64,7 @@
 
 15.
 
-	printf "My name is Imanuel\n"
+	echo -e My name is "$(whoami)"
 
 16.
 
