@@ -30,7 +30,7 @@
 
 7.
 
-	pico socks to buy.txt
+	pico "socks to buy.txt"
 
 
 8.
