@@ -101,7 +101,7 @@
 
 	touch dreamproject.md
 	pico dreamproject.md
-	My dream project is to create a logistics platform that connects online store owners to delivery companies in the Caribbean. 
+	My dream project is to create a logistics platform that connects online store owners to delivery companies in the Caribbean. This will give eCommerce in this region a massive boost since there is no system that does this right now. 
 	^X
 	Y
 
