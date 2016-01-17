@@ -101,7 +101,7 @@
 
 	touch dreamproject.md
 	pico dreamproject.md
-	(Write about project) 
+	My dream project is to create a logistics platform that connects online store owners to delivery companies in the Caribbean. 
 	^X
 	Y
 
