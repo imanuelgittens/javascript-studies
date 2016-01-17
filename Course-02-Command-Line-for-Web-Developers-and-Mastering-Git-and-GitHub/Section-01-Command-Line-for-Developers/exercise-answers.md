@@ -137,7 +137,7 @@
 
 8.
 
-	grep -c ".js" yahoo.html
+	grep -c ".js" > study.html
 
 9.
 
