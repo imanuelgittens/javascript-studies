@@ -10,7 +10,7 @@ Let's look at these advantages in detail:
 
 - It allows for more control over the core project. Distributed systems allow for many users to clone the project and make changes, without a central location for all these changes to be compiled, mulitple contributors to the project would not be fully aware of what everyone else is doing. 
 - It allows for easier project management as administrators can approve or deny changes and grant permissions to contributors all from one location. 
-- On top of the fact that a distributed VCS saves time and disk space, a centralized repository allows contributors to a project to save even more disk space as they only need to to the files they require on their local machine. 
+- On top of the fact that a distributed VCS saves time and disk space, a centralized repository allows contributors to a project to save even more disk space as they only need to store the files they **require** on their local machine. 
 
 Using a centralized repository in a distributed Version Control System allows contributors to a project to really enjoy the best of both worlds. CHanges are quick, disk space is saved and project management/administation is a breeze. 
 
