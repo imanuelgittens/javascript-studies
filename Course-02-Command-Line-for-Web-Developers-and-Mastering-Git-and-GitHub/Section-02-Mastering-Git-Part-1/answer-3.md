@@ -2,7 +2,7 @@
 
 #Advantages of using a centralized repository in a distributed VCS
 
-A huge part of the reason that git is so popular is because it is a distributed Version Control System. What this means is that there is no single location that all changes to a project **must** be uploaded to so that it can be tracked and managed. 
+A huge part of the reason that git is so popular is because it is a distributed Version Control System. This means that there is no single location that all changes to a project **must** be uploaded to so that it can be tracked and managed. 
 
 While it is not necessary to upload all changes to a single location, many users of git still appoint a remote server (usually called `origin`) that stores the project information and the various changes that are made to the project as it is being built and maintained. But why? Why do they do this even though they don't need to? As it turns out they are a few key advantages to having a centralized repository even though it is not needed. 
 
