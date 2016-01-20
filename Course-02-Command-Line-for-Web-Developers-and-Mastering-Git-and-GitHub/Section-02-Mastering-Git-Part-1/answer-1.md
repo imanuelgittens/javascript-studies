@@ -53,8 +53,7 @@ Example usage is `git push --mirror` and this flag specifies that all local refs
 11. `--sign=(true|false|if-asked)`
 Example usage is `git push --sign=false` and this flag adds a GPG-sign tot he push request to make updates to the receiving side, to allow it to be checked by the hooks and/or be logged. If false or `--no-signed`, no signing will be attempted. If true or `--signed`, the push will fail if the server does not support signed pushes.
 
-12. `--force-with-lease`
-
+12. `--force-with-lease` 
 Example usage is `git push --force-with-lease`. Usually, "git push" refuses to update a remote ref that is not an ancestor of the local ref used to overwrite it. This option overrides this restriction if the current value of the remote ref is the expected value. "git push" fails otherwise. 
 
 
