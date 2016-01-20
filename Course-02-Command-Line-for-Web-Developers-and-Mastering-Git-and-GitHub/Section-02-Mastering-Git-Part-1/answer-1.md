@@ -11,8 +11,7 @@ If we take a look at the man page for `git push` we see:
 
 This description will most likely be confusing to the beginner git user so let's dive into this `git push` command a little deeper and explain exactly what it does.
 
-To understand `git push`, we must first remind ourselves that even though git is a distributed Version Control System (Versions can be stored in many locations     
-intead of one centralized location), there is still one location that is deemed 'the server' and thus all changes are uploaded or 'pushed' to this centralized location so that 
+To understand `git push`, we must first remind ourselves that even though git is a distributed Version Control System (Versions can be stored in many locations intead of one centralized location), there is still one location that is deemed 'the server' and thus all changes are uploaded or 'pushed' to this centralized location so that 
 other team members can see and interact with these new updates. 
 
 We can understand this command a bit easier if we re-define `git push` as follows:
