@@ -30,10 +30,10 @@ Example usage is `git push --dry-run` and this flag does everything that `git pu
 Example usage is `git push <RemoteName> --tags` and this flag pushes all tags up to the server. 
 
 4. `--atomic`
-Example usgae is `git push --atomic`and this flag runs the `git push` command using an atomic transaction on the server side. Either all updates are pushed or non are pushed. If the server does not support atomic pushes then the command will fail. 
+Example usage is `git push --atomic`and this flag runs the `git push` command using an atomic transaction on the server side. This means that either all updates are pushed or non are pushed. If the server does not support atomic pushes then the command will fail. 
 
 5. `-f | --force`
-Example usage is `git push -f` and this flag runs the `git push` command without enforcing the checks that ensure the connection between local changes and those on the server. 
+Example usage is `git push -f` and this flag runs the `git push` command without enforcing the checks that ensure the connection between local files/folders and those on the server. 
 
 6. `--prune`
 Example usage is `git push --prune` and this flag will remove any branches on the server that are not on the user's local machine. 
@@ -45,10 +45,10 @@ Example usage is `git push -v` and this flag runs the `git push` command and giv
 Example usage is `git push -u` and this flag run the `git push` command but adds a tracking reference to every branch that is up to date or successfully pushed. 
 
 9. `--[no-]verify` 
-Example usage is `git push --no-verify` and this flag runs the `git push` command bypassing all pre push hooks or checks. 
+Example usage is `git push --no-verify` and this flag runs the `git push` command ignoring all pre push hooks or checks. 
 
 10. `--mirror`
-Example usage is `git push --mirror` and this flag specifies that all local refs be mirrored to the remote server. 
+Example usage is `git push --mirror` and this flag specifies that all local files/folders be mirrored to the remote server. 
 
 11. `--sign=(true|false|if-asked)`
 Example usage is `git push --sign=false` and this flag adds a GPG-sign to the push request to make updates to the receiving side, allowing it to be checked by the hooks and/or be logged. If false or `--no-signed`, no signing will be attempted. If true or `--signed`, the push will fail if the server does not support signed pushes.
