@@ -1,12 +1,12 @@
 ####Thoroughly explain `git diff`, and it's importance. Describe `git diff` in a thoughtful way, so that a teenager could understand it and provide examples of it's usage.
 
-#Comparing project versions with `git diff
+#Comparing project versions with `git diff`
 
 Imagine yourself as the lead developer of a team working on a big project at your company and you suddenly come across an error that you just can't figure out how to fix. You're smart, so you think that it would be best to retrace your steps because just last week, everything worked fine! However, the question remains - how do I see the differences in my project between this week and last week? 
 
-`git diff` to the rescue. This is an incredibly powerful command allows you to see the differences between any two points in your project history. You (our developer) can now see exactly what changed between this week and the last, allowing you to  fast-track the process of figuring out what change may have introduced the error.  
+`git diff` to the rescue. This is an incredibly powerful command that allows you to see the differences between any two points in your project history. You (our developer) can now see exactly what changed between this week and the last, allowing you to  fast-track the process of figuring out what change may have introduced the error.  
 
-While `git diff` has many different flags to change its behaviour, the easiest way to get started is to simply type the command in this format into the terminal after navigating to your project folder. 
+While `git diff` has many different flags and arguments to change its behaviour, the easiest way to get started is to simply type the command in this format into the terminal after navigating to your project folder. 
 
 	git diff <commit> <previous-commit>
 
