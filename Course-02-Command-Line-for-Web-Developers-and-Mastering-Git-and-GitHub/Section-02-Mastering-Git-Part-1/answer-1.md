@@ -56,7 +56,7 @@ Example usage is `git push --sign=false` and this flag adds a GPG-sign to the pu
 12. `--force-with-lease` 
 Example usage is `git push --force-with-lease`. Usually, "git push" refuses to update a file or folder on the server that is not an ancestor of the local file or folder used to overwrite it. This flag overrides this restriction if the current value of the file or folder on the server is the expected value. "git push" fails otherwise. 
 
-The `git push` command and its associated flags allow allow for a high level of control when uploading changes to the server. Teams should take advantage of this command which provides some powerful options for collaboration on various projects. 
+The `git push` command and its associated flags allow for a high level of control when uploading changes to the server. Teams should take advantage of this command which provides some powerful options for collaboration on various projects. 
 
 
 *Imanuel Gittens 1/19/2016 Career Path 3: Modern FrontEnd Developer*
