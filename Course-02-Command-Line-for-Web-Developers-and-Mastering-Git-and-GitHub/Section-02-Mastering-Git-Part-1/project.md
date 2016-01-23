@@ -10,7 +10,7 @@ Simple Code Example:
 
 	git config --global user.name "Imanuel Gittens"
 
-This command sets your gloabl git username.
+This command sets your global git username.
 
 Complex Code Example:
 
@@ -20,3 +20,22 @@ This command sets the meta information in the diff output to have a blue foregro
 
 ---
 
+###`git init`
+
+This command is used to create an empty git repository. 
+
+Simple Code Example:
+
+	git init
+
+The command creates a new git repository.
+
+Complex Code Example:
+
+	git init --template="/home/templates/git_template1"
+
+This command will initialize your git repository with the same files from the template directory.
+
+---
+
+ 
