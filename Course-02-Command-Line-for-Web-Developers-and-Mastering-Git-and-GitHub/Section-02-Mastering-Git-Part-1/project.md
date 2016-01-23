@@ -38,4 +38,22 @@ This command will initialize your git repository with the same files from the te
 
 ---
 
+###`git push`
+
+This command allows you to upload your changes to a centralized location or remote server. 
+
+Simple Code Example:
+
+	git push origin master
+
+The command uploads all changes on your master branch to the remote server location called origin.
+
+Complex Code Example:
+
+	git push origin v1.5
+
+Assuming you are maintaining a big project and you have just released version 1.5, you added a tag called v1.5. Git doesn't push tags to the remote server by default so you would need to use the above command to push this tag to the server. 
+
+---
+
  
