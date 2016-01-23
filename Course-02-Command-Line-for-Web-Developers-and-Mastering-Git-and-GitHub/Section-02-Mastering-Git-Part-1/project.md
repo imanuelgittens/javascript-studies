@@ -91,3 +91,21 @@ Complex Code Example:
 This command allows you to copy only the specified branch from the URL provided into your present working directory. 
 
 ---
+
+###`git status`
+
+This command allows you to see the status of changes in your project that have not been commited. 
+
+Simple Code Example:
+
+	git status
+
+This command shows you any changes that have not been staged or committed. 
+
+Complex Code Example:
+
+	git status --short
+
+This command allows you to see the status of changes in your project that have not been commited in short format.
+
+---
