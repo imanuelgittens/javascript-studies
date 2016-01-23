@@ -109,3 +109,21 @@ Complex Code Example:
 This command allows you to see the status of changes in your project that have not been commited in short format.
 
 ---
+
+###`git commit`
+
+This command saves a snapshot of your respository. 
+
+Simple Code Example:
+
+	git commit -m "First Commit"
+
+This command will save a snapshot of all the changes in your repository up to this point. 
+
+Complex Code Example:
+
+	git status -m "First Commit" --author="Sam Adams"
+
+This command saves a snapshot of the changes in your repository up to this point but it overwrites the default author. 
+
+---
