@@ -253,3 +253,21 @@ Complex Code Example:
 This command adds content from all *.txt files under Documentation directory and its subdirectories.
 
 ---
+
+###`git diff`
+
+This command allows you to see the changes that occured between commits or a commit and the working tree. 
+
+Simple Code Example:
+
+	git diff 
+
+This command shows all changes that occured between the index and the working tree. 
+
+Complex Code Example:
+
+	 git diff 6917bcb339e 711498b9e
+
+This command shows all changes that occured between the two commit IDs listed.
+
+---
