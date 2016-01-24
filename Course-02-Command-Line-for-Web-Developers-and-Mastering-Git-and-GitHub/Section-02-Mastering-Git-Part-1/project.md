@@ -163,3 +163,22 @@ Complex Code Example:
 This command creates a new branch (branch2) if it does not exist then checks out that branch. 
 
 ---
+
+###`git branch`
+
+This command allows you to list, create or delete branches.
+
+Simple Code Example:
+
+	git branch
+
+This command list all the branches in your repository. 
+
+Complex Code Example:
+
+	git branch -d reference-list-development
+
+This command deletes the branch named "reference-list-development"
+
+---
+
