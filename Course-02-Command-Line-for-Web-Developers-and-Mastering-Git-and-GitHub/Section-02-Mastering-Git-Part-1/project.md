@@ -146,3 +146,20 @@ This command undos the last commit made by move HEAD to its parent value.
 
 ---
 
+###`git checkout`
+
+This command allows you to switch between branches.
+
+Simple Code Example:
+
+	git checkout reference-list-development
+
+This command changes your current branch to another branch named "reference-list-development"
+
+Complex Code Example:
+
+	git checkout -b branch2
+
+This command creates a new branch (branch2) if it does not exist then checks out that branch. 
+
+---
