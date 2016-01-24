@@ -235,3 +235,21 @@ Complex Code Example:
 This command removes all *.txt files from the index that are under the Documentation directory and any of its subdirectories.
 
 ---
+
+###`git add`
+
+This command allows you to add file changes from the working tree to the index. 
+
+Simple Code Example:
+
+	git add --all
+
+This command adds all file changes from the working tree to the index. 
+
+Complex Code Example:
+
+	 git add Documentation/\*.txt
+
+This command adds content from all *.txt files under Documentation directory and its subdirectories.
+
+---
