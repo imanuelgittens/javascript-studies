@@ -202,7 +202,7 @@ This command displays an editory before the merge is complete so you can give a 
 
 ###`git mv`
 
-This command allows you to move or rename a file or directory. this command is similar to mv in bash however this change must still be commit afterward
+This command allows you to move or rename a file or directory. this command is similar to mv in bash however this change must still be commit afterward.
 
 Simple Code Example:
 
@@ -215,5 +215,23 @@ Complex Code Example:
 	git mv --force project.md git-project.md
 
 This command renames the file "project.md" to "git-project.md" even if another file named "git-project.md" already exists.
+
+---
+
+###`git rm`
+
+This command allows you to delete files from the index or from the working tree and the index. 
+
+Simple Code Example:
+
+	git rm file.txt
+
+This command removes the file named "file.txt"
+
+Complex Code Example:
+
+	 git rm Documentation/\*.txt
+
+This command removes all *.txt files from the index that are under the Documentation directory and any of its subdirectories.
 
 ---
