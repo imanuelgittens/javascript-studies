@@ -127,3 +127,22 @@ Complex Code Example:
 This command saves a snapshot of the changes in your repository up to this point but it overwrites the default author. 
 
 ---
+
+###`git reset`
+
+This command allows you to essentially undo commits. Similar to loading a game from an earlier state than you latest save. 
+
+Simple Code Example:
+
+	git reset 9e5e6a4
+
+This command undos all commits after the one specified. 
+
+Complex Code Example:
+
+	git reset --soft HEAD~
+
+This command undos the last commit made by move HEAD to its parent value. 
+
+---
+
