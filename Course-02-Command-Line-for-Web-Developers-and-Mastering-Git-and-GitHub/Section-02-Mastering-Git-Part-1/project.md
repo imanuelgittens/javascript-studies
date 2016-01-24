@@ -182,3 +182,20 @@ This command deletes the branch named "reference-list-development"
 
 ---
 
+###`git merge`
+
+This command allows you to join two or more branches together.
+
+Simple Code Example:
+
+	git merge reference-list-development
+
+This command joins your current branches with a branch named "reference-list-development"
+
+Complex Code Example:
+
+	git merge --edit reference-list-development
+
+This command displays an editory before the merge is complete so you can give a better description of the merge.
+
+---
