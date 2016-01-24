@@ -199,3 +199,21 @@ Complex Code Example:
 This command displays an editory before the merge is complete so you can give a better description of the merge.
 
 ---
+
+###`git mv`
+
+This command allows you to move or rename a file or directory. this command is similar to mv in bash however this change must still be commit afterward
+
+Simple Code Example:
+
+	git mv project.md git-project.md
+
+This command renames the file "project.md" to "git-project.md"
+
+Complex Code Example:
+
+	git mv --force project.md git-project.md
+
+This command renames the file "project.md" to "git-project.md" even if another file named "git-project.md" already exists.
+
+---
