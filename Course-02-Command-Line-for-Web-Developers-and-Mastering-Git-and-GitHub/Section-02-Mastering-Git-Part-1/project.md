@@ -271,3 +271,30 @@ Complex Code Example:
 This command shows all changes that occured between the two commit IDs listed.
 
 ---
+
+####Questions
+
+1. **Git stores an entire copy of your repository. Explain the benefits of storing an entire copy.**
+
+Storing an entire copy of your repository provides several key benefits - 
+- Git is able to operate really fast: since there is no need to pass data over a network, commands can be executed very quickly. 
+- It allows you to make changes without affecting others: All your changes are local so they don't affect other collaborators until you push those changes to another machine
+- It provides a fallback in case you mess up: If you manage to make changes that completely mess up your project, you can always delete and pull down a new copy from another machine. 
+
+2. **Explore how to create a wiki for a GitHub repository you own. Research and write about how a wiki may be used and provide a step-by-step tutorial instructing the reader on how to create their own wiki page for their GitHub repository.**
+
+Wikis on github help you to present information about your project in a useful way. They are a place in your repository where you can share important knowledge about your project such as how to use it and how it was designed. It can also be used to expand on your initial documentation presented in the project's README.md file. 
+
+It is well known that good documentation is essential for the success of any project. With this in mind, let us go through the process of creating our first github wiki -
+
+* After you have created your new repository, click the 'Wiki' tab. 
+2. You will then be presented with page that has a green button that reads 'Create the first page'.
+3. After clicking this button you will be presented with the following screen.
+![create_wiki] (http://i.imgur.com/n01vpk7.jpg)
+The first input box allows you to name your wiki page.
+The second, much larger input box allows you to begin writing your documentation, it also features some editing tools to help you with formatting.
+The third input box allows you to write a message before you safe your wiki page (Similar to a commit message).
+
+* After you have added all the information needed, click the button labelled 'Save Page' at the bottom right corner. 
+ 
+And that's it! You've just created your first wiki page and are ready to provide the users of your project with all the information they need to get up and running. 
