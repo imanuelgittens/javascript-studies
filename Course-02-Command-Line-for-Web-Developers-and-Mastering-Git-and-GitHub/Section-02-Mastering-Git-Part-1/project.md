@@ -274,14 +274,14 @@ This command shows all changes that occured between the two commit IDs listed.
 
 ####Questions
 
-1. **Git stores an entire copy of your repository. Explain the benefits of storing an entire copy.**
+**Git stores an entire copy of your repository. Explain the benefits of storing an entire copy.**
 
 Storing an entire copy of your repository provides several key benefits - 
 - Git is able to operate really fast: since there is no need to pass data over a network, commands can be executed very quickly. 
 - It allows you to make changes without affecting others: All your changes are local so they don't affect other collaborators until you push those changes to another machine
 - It provides a fallback in case you mess up: If you manage to make changes that completely mess up your project, you can always delete and pull down a new copy from another machine. 
 
-2. **Explore how to create a wiki for a GitHub repository you own. Research and write about how a wiki may be used and provide a step-by-step tutorial instructing the reader on how to create their own wiki page for their GitHub repository.**
+**Explore how to create a wiki for a GitHub repository you own. Research and write about how a wiki may be used and provide a step-by-step tutorial instructing the reader on how to create their own wiki page for their GitHub repository.**
 
 Wikis on github help you to present information about your project in a useful way. They are a place in your repository where you can share important knowledge about your project such as how to use it and how it was designed. It can also be used to expand on your initial documentation presented in the project's README.md file. 
 
@@ -298,3 +298,57 @@ The third input box allows you to write a message before you safe your wiki page
 * After you have added all the information needed, click the button labelled 'Save Page' at the bottom right corner. 
  
 And that's it! You've just created your first wiki page and are ready to provide the users of your project with all the information they need to get up and running. 
+
+**Research GitHub Pages. Follow the instructions on https://pages.GitHub.com/ and write a tutorial summarizing the process. Write a few scenarios for how GitHub Pages could be used and conclude with your opinion of the service.**
+
+
+**Research GitHub's recommended licenses at http://choosealicense.com. Write a description and a pro vs con list of each license and provide a recommendation of which license a Web Developer should use by default. Include scenarios where you may want to use other licenses.**
+
+*MIT License*
+
+The MIT License is a simple, permissive license that essentailly says - anyone can use and modify this software however
+they like as long as they put my name somewhere however I make no promises with regard to the software's quality. 
+
+Pros
+- This license gives a lot of permission and few restrictions. 
+- This license is very short and relatively easier to understand than other open sources licenses. 
+- Convenient for developers.
+
+Cons
+- The term 'software' may carry different meanings in different countries and this may cause some grey areas from a law standpoint. 
+- Derivative works can become proprietary and this affect the final user's freedom.
+
+*Apache License*
+
+The Apache License is a permissive license like the MIT license however it states that a person MUST give credit to the software's creator(s) 
+when redistributing. It also protects the original software author from patents. 
+
+Pros
+- It allows software creators to receive credit for their work.
+- Protect software authors from patents. 
+- Convenient for developers.
+
+Cons
+- Derivative works can become proprietary and this affect the final user's freedom. 
+
+
+*GPL License*
+
+The GPL License allows anyone to copy and redistribute my software however they want. It also requires that anyone who distributes my software or a derivative of my software to make it available under the same terms. There are two versions of this license (V2/V3) and V3 restricts anyone from altering my software.  
+
+Pros
+- GPL guarantees that innovations made with free software get contributed back to the community
+
+Cons
+- Prevents any kind of business from being built on GPL licensed software. 
+
+
+The best license to choose would be decided on a case by case basis however if I had to choose one as a default I would go the the Apache License. 
+It gives other developers the freedom to innovate however the original creator must always be credited. The creator can use this attribution to either build 
+a strong business and/or become the overall authority on the software. 
+
+If you are developing the software just fun and don't really care much about money or attribution you can go with the MIT License, this license will allow 
+anyone to take your software and build upon it however they wish and you are not liable for software quality. 
+
+If you are passionate about the concept of free software and you always want your software to be free and somewha controlled then GPL is the license for you. 
+Maybe you are building hte next wordpress 
