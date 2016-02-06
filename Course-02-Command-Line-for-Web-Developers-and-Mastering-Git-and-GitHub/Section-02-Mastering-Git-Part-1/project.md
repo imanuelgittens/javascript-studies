@@ -1,16 +1,16 @@
 ##Git Cheatsheet
 
-A quick reference for the important git commands.
+A quick reference for the important Git commands.
 
 ###`git config`
 
-This command is used to configure your git environment. It allows you tailor git's configuration files to your liking. 
+This command is used to configure your Git environment. It allows you tailor Git's configuration files to your liking. 
 
 Simple Code Example:
 
 	git config --global user.name "Imanuel Gittens"
 
-This command sets your global git username.
+This command sets your global Git username.
 
 Complex Code Example:
 
@@ -22,19 +22,19 @@ This command sets the meta information in the diff output to have a blue foregro
 
 ###`git init`
 
-This command is used to create an empty git repository. 
+This command is used to create an empty Git repository. 
 
 Simple Code Example:
 
 	git init
 
-The command creates a new git repository.
+The command creates a new Git repository.
 
 Complex Code Example:
 
 	git init --template="/home/templates/git_template1"
 
-This command will initialize your git repository with the same files from the template directory.
+This command will initialize your Git repository with the same files from the template directory.
 
 ---
 
@@ -68,9 +68,9 @@ The command downloads all files and changes from origin and updates the master b
 
 Complex Code Example:
 
-	git push origin v1.5
+	git pull --edit origin master
 
-Assuming you are maintaining a big project and you have just released version 1.5, you added a tag called v1.5. Git doesn't push tags to the remote server by default so you would need to use the above command to push this tag to the server. 
+This command opens up an editor before executing the pull so that a descriptive message can be written about it.  
 
 ---
 
@@ -130,7 +130,7 @@ This command saves a snapshot of the changes in your repository up to this point
 
 ###`git reset`
 
-This command allows you to essentially undo commits. Similar to loading a game from an earlier state than you latest save. 
+This command allows you to essentially undo commits. Similar to loading a game from an earlier state than your latest save. 
 
 Simple Code Example:
 
@@ -142,7 +142,7 @@ Complex Code Example:
 
 	git reset --soft HEAD~
 
-This command undos the last commit made by move HEAD to its parent value. 
+This command undos the last commit made by moving HEAD to its parent value. 
 
 ---
 
@@ -196,13 +196,13 @@ Complex Code Example:
 
 	git merge --edit reference-list-development
 
-This command displays an editory before the merge is complete so you can give a better description of the merge.
+This command displays an editor before the merge is complete so you can give a better description of the merge.
 
 ---
 
 ###`git mv`
 
-This command allows you to move or rename a file or directory. this command is similar to mv in bash however this change must still be commit afterward.
+This command allows you to move or rename a file or directory. this command is similar to mv in bash however this change must still be committed afterward.
 
 Simple Code Example:
 
@@ -285,7 +285,7 @@ Storing an entire copy of your repository provides several key benefits -
 
 **Explore how to create a wiki for a GitHub repository you own. Research and write about how a wiki may be used and provide a step-by-step tutorial instructing the reader on how to create their own wiki page for their GitHub repository.**
 
-Wikis on github help you to present information about your project in a useful way. They are a place in your repository where you can share important knowledge about your project such as how to use it and how it was designed. It can also be used to expand on your initial documentation presented in the project's README.md file. 
+Wikis on Github help you to present information about your project in a useful way. They are a place in your repository where you can share important knowledge about your project such as how to use it and how it was designed. It can also be used to expand on your initial documentation presented in the project's README.md file. 
 
 It is well known that good documentation is essential for the success of any project. With this in mind, let us go through the process of creating our first github wiki -
 
@@ -305,11 +305,11 @@ And that's it! You've just created your first wiki page and are ready to provide
 
 **Research GitHub Pages. Follow the instructions on https://pages.GitHub.com/ and write a tutorial summarizing the process. Write a few scenarios for how GitHub Pages could be used and conclude with your opinion of the service.**
 
-Github pages are public web pages that are hosted and published from the github website and they provide an awesome way to showcase your project to the rest of the world. 
+Github pages are public web pages that are hosted and published from the Github website and they provide an awesome way to showcase your project to the rest of the world. 
 
 Let's go through the process of creating a github page for your project.
 
-1) You need to first ensure that you have created a repository on github. If you want to create a page for an existing project, you can skip this step.
+1) You need to first ensure that you have created a repository on Github. If you want to create a page for an existing project, you can skip this step.
 
 2) Create a branch by clicking the branch dropdown in the repository overview. You MUST name this branch `gh-pages` or it will not work. Name your new branch then click enter. 
 
@@ -337,10 +337,10 @@ And that's it! you can now access your github hosted web page(s) at **`http://us
 
 Having recently discovered that this was possible, I think that github pages is a great service! Now you can showcase the main features of your project on a public facing website and this comes with several advantages -
 - hosting is FREE!
-- you can show person who don't know how to use github your project's features.
+- you can show persons who don't know how to use Github your project's features.
 - It gives your work a lot more exposure.
 
-Well done github. 
+Well done Github. 
 
 ---
 
@@ -371,12 +371,12 @@ Pros
 - Convenient for developers.
 
 Cons
-- Derivative works can become proprietary and this affect the final user's freedom. 
+- Derivative works can become proprietary and this can affect the final user's freedom. 
 
 
 *GPL License*
 
-The GPL License allows anyone to copy and redistribute my software however they want. It also requires that anyone who distributes my software or a derivative of my software to make it available under the same terms. There are two versions of this license (V2/V3) and V3 restricts anyone from altering my software.  
+The GPL License allows anyone to copy and redistribute my software however they want. It also requires that anyone who distributes my software or a derivative of my software to make it available under the same terms. There are two versions of this license (V2 and V3) and V3 restricts anyone from altering my software.  
 
 Pros
 - GPL guarantees that innovations made with free software get contributed back to the community.
@@ -385,9 +385,7 @@ Cons
 - Prevents any kind of direct business from being built on GPL licensed software. 
 
 
-The best license to choose would be decided on a case by case basis however if I had to choose one as a default I would go the the Apache License. 
-
-It gives other developers the freedom to innovate however the original creator must always be credited. The creator can use this attribution to either build a strong business and/or become the overall authority on the software. 
+The best license to choose would be decided on a case by case basis however if I had to choose one as a default I would go the the Apache License. It gives other developers the freedom to innovate however the original creator must always be credited. The creator can use this attribution to either build a strong business and/or become the overall authority on the software. 
 
 If you are developing the software just fun and don't really care much about money or attribution you can go with the MIT License, this license will allow  anyone to take your software and build upon it however they wish and you are not liable for software quality. 
 
