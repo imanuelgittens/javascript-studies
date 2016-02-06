@@ -9,7 +9,7 @@ If we take a look at the man page for `git push` we see:
 
 	git-push       Update remote refs along with associated objects. 
 
-This description will most likely be confusing to the beginner git user so let's dive into this `git push` command a little deeper and explain exactly what it does. To understand `git push`, we must first remind ourselves that even though git is a distributed Version Control System (Versions can be stored in many locations     intead of just one centralized location), there is still one location that is deemed 'the server' and thus all changes are uploaded or 'pushed' to this centralized location so that other team members can see and interact with these new updates. 
+This description will most likely be confusing to the beginner Git user so let's dive into this `git push` command a little deeper and explain exactly what it does. To understand `git push`, we must first remind ourselves that even though Git is a distributed Version Control System (Versions can be stored in many locations     intead of just one centralized location), there is still one location that is deemed 'the server' and thus all changes are uploaded or 'pushed' to this centralized location so that other team members can see and interact with these new updates. 
 
 We can understand this command a bit easier if we re-define `git push` as follows:
 
@@ -42,7 +42,7 @@ Example usage is `git push --prune` and this flag will remove any branches on th
 Example usage is `git push -v` and this flag runs the `git push` command and gives extra details on what is happening as the command runs. 
 
 8. `-u | -- upstream`
-Example usage is `git push -u` and this flag run the `git push` command but adds a tracking reference to every branch that is up to date or successfully pushed. 
+Example usage is `git push -u` and this flag runs the `git push` command but adds a tracking reference to every branch that is up to date or successfully pushed. 
 
 9. `--[no-]verify` 
 Example usage is `git push --no-verify` and this flag runs the `git push` command ignoring all pre push hooks or checks. 
