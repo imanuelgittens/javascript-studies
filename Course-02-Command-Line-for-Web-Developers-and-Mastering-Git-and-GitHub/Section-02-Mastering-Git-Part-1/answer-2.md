@@ -14,7 +14,25 @@ A real example of this would be:
 
 	git diff 6df0c9e667713a513449091df1ccd32f0c69df03 e731ea9e405a6a52cfef29c08b65c14ca0bea4ed
 
-This command will show (in great detail), all the changes that occured within your project between the first commit and the second commit you entered. As a developer you get an overview of everything that changed between the commits and this allows you to make informed decisions on which parts of your project needs to be changed or updated to move forward as quickly and efficiently as possible. 
+This command will show (in great detail), all the changes that occured within your project between the first commit and the second commit you entered. Let's take a look at the screenshot below. 
+
+![git_diff](http://i.imgur.com/zYWnDSK.png)
+
+
+The results from `git diff` is shown in the unified output format and it begins with two lines starting with `---`and `+++` respectively.
+
+The minus signs (-) shows which file the changes are coming from while the plus sign (+) shows which files the changes are going to. 
+In our case these two values are the same file. 
+
+The following line that starts with `@@` and shows hunks of changes that occurred at that point. 
+
+We see `-9,7` and this means that from line 9, we count seven lines forward and remove these lines.
+
+The second part reads `+9,7` and this means that we added seven lines from line 9.
+
+So overall this diff statement says that we changed lines 9 to 16 of our file when we made this commit.
+
+As a developer `git diff` gives you an overview of everything that changed between the commits and this allows you to make informed decisions on which parts of your project needs to be changed or updated to move forward as quickly and efficiently as possible. 
 
 
 
