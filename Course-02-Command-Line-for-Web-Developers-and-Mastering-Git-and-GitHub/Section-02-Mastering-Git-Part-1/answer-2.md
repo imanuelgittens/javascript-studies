@@ -30,7 +30,7 @@ We see `-9,7` and this means that from line 9, we count seven lines forward and 
 
 The second part reads `+9,7` and this means that we added seven lines from line 9.
 
-So overall this diff statement says that we changed lines 9 to 16 of our file when we made this commit.
+So overall this diff statement says that we changed lines 9 to 16 of our file when we made this commit. This process is repeated for all commits made between the ones specified in the `git diff` command.
 
 As a developer `git diff` gives you an overview of everything that changed between the commits and this allows you to make informed decisions on which parts of your project needs to be changed or updated to move forward as quickly and efficiently as possible. 
 
