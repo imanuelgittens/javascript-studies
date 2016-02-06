@@ -278,8 +278,10 @@ This command shows all changes that occured between the two commit IDs listed.
 
 Storing an entire copy of your repository provides several key benefits - 
 - Git is able to operate really fast: since there is no need to pass data over a network, commands can be executed very quickly. 
-- It allows you to make changes without affecting others: All your changes are local so they don't affect other collaborators until you push those changes to another machine
-- It provides a fallback in case you mess up: If you manage to make changes that completely mess up your project, you can always delete and pull down a new copy from another machine. 
+- It allows you to make changes without affecting others: All your changes are local so they don't affect other collaborators until you push those changes to another machine.
+- It provides a fallback in case you mess up. If you manage to make changes that completely mess up your project, you can always delete and pull down a new copy from another machine. 
+
+---
 
 **Explore how to create a wiki for a GitHub repository you own. Research and write about how a wiki may be used and provide a step-by-step tutorial instructing the reader on how to create their own wiki page for their GitHub repository.**
 
@@ -287,27 +289,68 @@ Wikis on github help you to present information about your project in a useful w
 
 It is well known that good documentation is essential for the success of any project. With this in mind, let us go through the process of creating our first github wiki -
 
-* After you have created your new repository, click the 'Wiki' tab. 
+* After you have created your new repository, go to the repository overview (eg. [Spoon-Knoife Repo](https://github.com/octocat/Spoon-Knife) and click the 'Wiki' tab. 
 2. You will then be presented with page that has a green button that reads 'Create the first page'.
 3. After clicking this button you will be presented with the following screen.
 ![create_wiki] (http://i.imgur.com/n01vpk7.jpg)
 The first input box allows you to name your wiki page.
 The second, much larger input box allows you to begin writing your documentation, it also features some editing tools to help you with formatting.
-The third input box allows you to write a message before you safe your wiki page (Similar to a commit message).
+The third input box allows you to write a message before you save your wiki page (Similar to a commit message).
 
 * After you have added all the information needed, click the button labelled 'Save Page' at the bottom right corner. 
  
 And that's it! You've just created your first wiki page and are ready to provide the users of your project with all the information they need to get up and running. 
 
+---
+
 **Research GitHub Pages. Follow the instructions on https://pages.GitHub.com/ and write a tutorial summarizing the process. Write a few scenarios for how GitHub Pages could be used and conclude with your opinion of the service.**
 
+Github pages are public web pages that are hosted and published from the github website and they provide an awesome way to showcase your project to the rest of the world. 
+
+Let's go through the process of creating a github page for your project.
+
+1) You need to first ensure that you have created a repository on github. If you want to create a page for an existing project, you can skip this step.
+
+2) Create a branch by clicking the branch dropdown in the repository overview. You MUST name this branch `gh-pages` or it will not work. Name your new branch then click enter. 
+
+![page_branch](https://pages.github.com/images/create-branch@2x.png)
+
+3) All that is left to do is add your website files to this branch. For this you can clone your repo and add them locally by using this command.
+
+	git clone <repo-url>
+
+4) You must then use this command to switch branches.
+
+	git checkout gh-page
+
+5) You can then add your website files. We will use a simple example here:
+
+	echo 'Hello World" > index.html
+
+6) After adding your HTML files you must commit then push your changes.
+
+	git add --all
+	git commit -m "Add website files."
+	git push origin gh-pages
+
+And that's it! you can now access your github hosted web page(s) at **`http://username.github.io/repository`**.
+
+Having recently discovered that this was possible, I think that github pages is a great service! Now you can showcase the main features of your project on a public facing website and this comes with several advantages -
+- hosting is FREE!
+- you can show person who don't know how to use github your project's features.
+- It gives your work a lot more exposure.
+
+Well done github. 
+
+---
 
 **Research GitHub's recommended licenses at http://choosealicense.com. Write a description and a pro vs con list of each license and provide a recommendation of which license a Web Developer should use by default. Include scenarios where you may want to use other licenses.**
 
+This website recommends three licenses to choose from when creating your open source software projects. These licenses were created to protect the software, the software's author and in some cases the cost of the software. In this section we will go through each of these licenses in detail and at the end we will be more knowledgeable about choosing the correct license for the next software project we undertake. 
+
 *MIT License*
 
-The MIT License is a simple, permissive license that essentailly says - anyone can use and modify this software however
-they like as long as they put my name somewhere however I make no promises with regard to the software's quality. 
+The MIT License is a simple, permissive license that essentailly says - anyone can use and modify this software however they like as long as they put my name somewhere however I make no promises with regard to the software's quality. 
 
 Pros
 - This license gives a lot of permission and few restrictions. 
@@ -316,12 +359,11 @@ Pros
 
 Cons
 - The term 'software' may carry different meanings in different countries and this may cause some grey areas from a law standpoint. 
-- Derivative works can become proprietary and this affect the final user's freedom.
+- Derivative works can become proprietary (means that a cost can be attached) and this affects the final user's freedom.
 
 *Apache License*
 
-The Apache License is a permissive license like the MIT license however it states that a person MUST give credit to the software's creator(s) 
-when redistributing. It also protects the original software author from patents. 
+The Apache License is a permissive license like the MIT license however it states that a person MUST give credit to the software's creator(s) when redistributing. It also protects the original software author from patents. 
 
 Pros
 - It allows software creators to receive credit for their work.
@@ -337,18 +379,19 @@ Cons
 The GPL License allows anyone to copy and redistribute my software however they want. It also requires that anyone who distributes my software or a derivative of my software to make it available under the same terms. There are two versions of this license (V2/V3) and V3 restricts anyone from altering my software.  
 
 Pros
-- GPL guarantees that innovations made with free software get contributed back to the community
+- GPL guarantees that innovations made with free software get contributed back to the community.
 
 Cons
-- Prevents any kind of business from being built on GPL licensed software. 
+- Prevents any kind of direct business from being built on GPL licensed software. 
 
 
 The best license to choose would be decided on a case by case basis however if I had to choose one as a default I would go the the Apache License. 
-It gives other developers the freedom to innovate however the original creator must always be credited. The creator can use this attribution to either build 
-a strong business and/or become the overall authority on the software. 
 
-If you are developing the software just fun and don't really care much about money or attribution you can go with the MIT License, this license will allow 
-anyone to take your software and build upon it however they wish and you are not liable for software quality. 
+It gives other developers the freedom to innovate however the original creator must always be credited. The creator can use this attribution to either build a strong business and/or become the overall authority on the software. 
 
-If you are passionate about the concept of free software and you always want your software to be free and somewha controlled then GPL is the license for you. 
-Maybe you are building hte next wordpress 
+If you are developing the software just fun and don't really care much about money or attribution you can go with the MIT License, this license will allow  anyone to take your software and build upon it however they wish and you are not liable for software quality. 
+
+Maybe you are building the next wordpress or open source operating system and you are passionate about the concept of free software and you always want your software to be free and somewhat controlled. If this is the case then GPL is the license for you. 
+
+Now that you have a bit more knowledge about the legal aspects of creating open source software, it's time to get back to coding! See you on the internet. 
+
