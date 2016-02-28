@@ -110,7 +110,16 @@ There is no x such that y = -2 therefore the function is not surjective
 
 Let's say y = 1, then for x = -1 and x = 1, we have y = f(x). There is more than one value of x for a given y so the function is not surjective. 
 
-Question 6.
+Question 6. ![Latex](http://quicklatex.com/cache3/e9/ql_d9eeac118c4faacbedf11683a3231ae9_l3.png)
+
+Domain - All real numbers
+Co-domain - All positive real numbers and the number zero
+Range - The constant e, squared. (e^2)
+
+Y is not defined in terms of x so there is no x such that y = e^2. This function is not surjective.
+
+Y is not defined in terms of x so there is no x such that y = e^2. This function is not injective.
+
 
 Question 7. ![Latex](http://quicklatex.com/cache3/cd/ql_0fe760a9baa4a1c111dc214d48dececd_l3.png)
 
