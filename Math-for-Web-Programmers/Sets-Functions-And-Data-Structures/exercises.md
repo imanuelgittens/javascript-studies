@@ -37,9 +37,13 @@ To prove the function is surjective, we need to find an x such that f(x) = y for
 We can derive injective nature by proving there is at most one such x such that y = e^2x. We first assume that 2 x's exist, then prove they are equal hence there is only one value of x. Let x1 and x2 be such that e^2x1 and e^2x2 = y
 
 e^2x1 = e^2x2
+
 lne^2x1 = lne^2x2
+
 2x1lne = 2x2lne
+
 2x1 = 2x2
+
 x1 = x2
 
 Question 2. ![Latex](http://quicklatex.com/cache3/80/ql_2824d7301ae620fb8d7742b0875da380_l3.png)
@@ -51,6 +55,7 @@ Range - All positive, real numbers
 Given any real number y, we need to find an x such that y = lnx
 
 y = lnx
+
 x = e^y
 
 Since x is always a real, positive number, given an arbitrary y, we can find an x such that x = e^y so this function is surjective.
@@ -69,8 +74,11 @@ To prove the function is surjective, we need to find an x such that f(x) = y for
 Sinx is not well defined or unique. Given any y, we should find an x such that y = sinx. If y = 2
 
 y = sinx
+
 2 = sinx
+
 x = sin^-1(2)
+
 Sin inverse 2 is not a number
 
 Function is not injective.
@@ -86,7 +94,9 @@ Functions whose co-domain is equal to their range is surjective
 sinx is well defined and unique. Given any y, we can  find a single x such that y = sinx. Lets say y = 0.75
 
 0.75 = sinx
+
 x = sin^-1 (0.75)
+
 x = 48.6
 
 Question 5. ![Latex](http://quicklatex.com/cache3/d0/ql_4c9aec85d1fadd19c546bc16da988bd0_l3.png)
@@ -111,6 +121,7 @@ Range - All range numbers
 Co-domain and range are equal so function is surjective.
 
 y = tanx
+
 x = tan^-1y
 
 f(x) is well defined and unique. Given any y, we can find a single x such that y = tanx. This function is injective. 
@@ -126,7 +137,9 @@ Range - All real numbers
 Co-domain is equal to range so the function is surjective.
 
 y = 3x + 4
+
 y-4 = 3x
+
 y-4/3 = x
 
 f(x) is well defined and unique. Given any y, we can find a single x such that y = 3x + 4. Function is injective. 
