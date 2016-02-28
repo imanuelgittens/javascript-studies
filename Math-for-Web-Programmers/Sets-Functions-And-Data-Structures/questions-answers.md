@@ -24,7 +24,7 @@ If the universal set was all prime numbers between 0 and 20 however {2,3,5,7,11,
 
 `A Venn diagram is a tool for representing sets visually. In the simplest Venn diagram, sets are represented by circles with two circles overlapping if the two sets contain common elements. Here are two examples of Venn diagrams.`
 
-It seems this question is incomplete as this is allI am seeing. Will complete this question when it is updated. 
+It seems this question is incomplete as this is all I am seeing. Will complete this question when it is updated. 
 
 **Qu. 4**
 
