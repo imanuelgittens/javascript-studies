@@ -1,0 +1,214 @@
+PWD
+
+Syntax
+To use this command, type the letters `pwd` into your command prompt and hit [Enter]. 
+
+
+Important Flags
+
+-L - example usage `pwd -L`
+This flag 
+
+
+-P - example usage `pwd -P`
+This flag displays ALL the links to the present directory location. For example if we have a directory 
+
+	/home/projects 
+
+but its full link is 
+
+	/var/www/root/projects
+
+then when we use the `-P` flag, the full link will be displayed to the screen. 
+
+--------------------------------------------------------------------------------
+
+cd
+
+Example usage
+
+The most common way to use the `cd` command is as follows
+
+	cd path/to/directory
+
+Example 1:
+
+Let us assume that we are in the root directory of our filesystem denoted by `/`. We want to navigate to the home directory where we saved our files. The home directory is one level down from our root directory so to get there we 
+need to type 
+
+	cd home
+
+If we now wished to access the `Pictures` directory (which is one level down from our `home` directory), we need to type
+
+	cd Pictures
+
+Examples 2:
+
+We can access any directory on the filesystem by typing the `cd` command, followed by the full path to the desired folder. We could also go straight to the `Pictures` directory from our root directory (`/`) by typing
+
+	cd home/Pictures
+
+------------------------------------------------------------------------------
+
+
+ls
+
+Description
+
+The `ls` command displays an alphabetically ordered list of the files and folders in the current directory and information about those files and folders. 
+
+When used with any of its many flags, the `ls` command can be made to filter and sort the results it displays based on a variety of criteria.                       
+
+
+-------------------------------------------------------------------------------------
+
+clear
+
+Syntax:
+
+clear
+
+This command has no additional flags. 
+
+----------------------------------------------------------------------------------
+
+more
+
+Example 1:
+
+more +5 story.txt
+
+Using more, followed by a plus sign (+) and a number instructs the command to begin at the line specified by that number. In this case, the more command will show the contents of the file (story.txt), beginning at line 5. 
+
+
+Example 2:
+
+more -d about_me.txt
+
+Using more with the -d flag shows additional information on how to navigate through the file contents being viewed. It instructs the user - [Press space to continue, 'q' to quit.]. This can be helpful for users who are unfamiliar with navigating through file content via the terminal. 
+
+----------------------------------------------------------------------------------
+
+mkdir
+
+Description:
+
+This command is short for "make directory" and is used to create new folders or directories via the command line, if they do not already exist. 
+
+
+
+-----------------------------------------------------------------------------
+
+touch 
+Syntax
+
+touch README.txt style.css main.js
+
+This command will create three new, empty files named README.txt, style.css and main.js if they do not already exist in the current directory.
+
+touch -d '1 May 2005 10:22' options.txt
+
+This command will create a new file called options.txt if it does not already exist in the current directory. It will also set its last accessed time as May 1st 2005 at 10:22. It also sets this date value as the last time the file was modified. 
+
+
+-----------------------------------------------------------------------------
+
+mv
+Example1
+
+mv about-us.txt /home/my-projects
+
+This command will move the file (about-us.txt) to the directory /home/my-projects.
+
+
+Example 2
+
+mv file.txt life.txt
+
+Using the mv command like this will rename a file called file.txt in the current directory to life.txt. 
+
+---------------------------------------------------------------------------------
+
+rm
+Description
+
+This command is used to remove a specified file or files. By default, it does not remove directories.
+
+It is important to note that the effects of the rm command cannot be reversed so one should be cautious when using it. 
+
+
+--------------------------------------------------------------------------------
+
+rmdir
+Syntax
+
+rmdir -p path/to/directory
+This syntax removes the 'directory' folder as well as its parent folders ('path' and 'to') once the 'directory folder is empty.'
+
+rmdir -v path/to/directory
+This syntax removes the 'directory' folder once it is empty and also shows a message while executing the command. The message looks something like this -
+
+removing directory, ‘/path/to/directory’ 
+
+
+--------------------------------------------------------------------------------
+
+man
+example
+
+man ls
+
+This command will show the manual page for the ls program, allowing us to see how the ls program works and how to use it.
+
+
+man 5 passwd
+
+The manual page for the passwd command has many sections. Our example here will begin the man page at section 5. This is useful if you know which section of the manual page contains the information you seek. 
+
+--------------------------------------------------------------------------------------
+find 
+description
+
+
+The find command is used to search for files and directories via the command line. It can be used to find files based on search criteria like name, ownership, date/time, size and much more. 
+
+------------------------------------------------------------------------------------
+
+grep 
+syntax
+
+grep 'word' filename
+
+The first argument ('word') is the string pattern that the user wishes to find, the second argument (filename) is the file from which the user would like to find this pattern.
+
+grep 'word' file1 file2 file3
+
+The first argument ('word') is the string pattern that the user wishes to find, the three other arguments are the files from which the user would like to find this pattern.
+
+
+-----------------------------------------------------------------------------------------
+
+echo
+Example
+
+echo Hello World
+This command will print the string 'Hello World' to the terminal. 
+
+echo -e "We'd love to \n run around the yard."
+This command will display the following to the terminal.
+
+We'd love to
+ run around the yard.
+
+Using -e allows us to interpret the \n and a new line. 
+
+
+-----------------------------------------------------------------------------------------
+
+exit
+Description
+
+The exit command causes the terminal of a process. If the exit command is used at the shell prompt, the shell will be closed. It can also be used in bash scripts to end the currently running process and show an error code. 
+
+
+

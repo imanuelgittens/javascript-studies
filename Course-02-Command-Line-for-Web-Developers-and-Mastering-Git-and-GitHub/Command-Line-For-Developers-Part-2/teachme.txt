@@ -1,0 +1,12 @@
+PWD
+
+Syntax
+To use this command, type the letters `pwd` into your command prompt and hit [Enter]. 
+
+
+Important Flags
+
+-L - example usage `pwd -L`
+
+-P - example usage `pwd -P`
+This flag displays all the links to the present directory location. For example
