@@ -210,5 +210,90 @@ Description
 
 The exit command causes the terminal of a process. If the exit command is used at the shell prompt, the shell will be closed. It can also be used in bash scripts to end the currently running process and show an error code. 
 
+------------------------------------------------------------------------------------------
+
+whoami
+syntax
+
+whoami [option]
+
+the whoami command has two options: --help and --version.
+whomai --help : displays the man page for the whoami command
+whwoami --version : displays the version number of the whoami command. 
+
+----------------------------------------------------------------------------------------------
+
+cp 
+example 1
 
 
+cp main.js main1.js
+
+In this example, we use the cp command to make a copy of the main.js file and store it as main1.js 
+
+cp ~/pictures/picture-*.jpg ~/picture-backup
+
+Here we use the cp command to copy multiple files and folders at once based on a pattern. We are copying all the .jpg files that start with the word 'picture' from the pictures directory into the picture-backup directory.
+
+-----------------------------------------------------------------
+
+wc 
+
+description
+
+This command prints the amount of new lines, words and bytes contained within a file. If more than one file is specified, it gives a total count for all the files. The output is similar to a table and counts are always in the following order: newline, word, character, byte, maximum line length. 
+
+
+
+--------------------------------------------------------------------
+
+tar
+syntax
+
+tar [-] A --catenate --concatenate | c --create | d --diff --compare | 
+    --delete | r --append | t --list | --test-label | u --update | 
+    x --extract --get [options] [pathname ...]
+
+    The first argument to the tar command is a function specification and is denoted by these letters (A, c, d, r, t, u, or x). This argument tells the tar command how to behave. For example, the c function specification will tell tar to create a new archive while the x function specification will tell the tar command to extract files from an archive.
+
+    Secondly you must pass one or more options to the tar command and this also affects how the command behaves. For example, if we use the -C path/to/directory option, the command will change to that directory before executing any other action.  
+
+    The final argument we enter is the pathname and as we saw above this is the path or directory that is specified to perform actions like archiving, extracting and other functionality provided by the tar command. q
+
+
+-----------------------------------------------------------------------------
+
+curl 
+example 1
+
+curl -o index.html study.moderndeveloper.com
+
+Using curl with the -o flag allows us to save the contents of the web page at study.moderndeveloper.com to the file named index.html.
+
+
+curl -L stusy.moderndeveloper.com
+
+By default, does n't process redirects. This means that if a page is moved, the curl command will not be able to access its new location. Using the -L flag, the curl command can follow the HTTP Location headers and redirect tot he new location where the web page is stored. 
+
+----------------------------------------------------------------------------
+
+pipe 
+description
+
+Pipe in linux is denoted by the symbol | and is used for communication between commands and processes. The pipe is similar to redirection and it allows the output of one program to be sent to another program for further processing. 
+
+This pipe, or chain of two or more commands allows for the computation of some highly specilzed tasks that none of the individual programs that are a part of pipe could perform themselves. 
+
+------------------------------------------------------------------------------------
+
+ping 
+syntax
+
+ping [ -LRUbdfnqrvVaAB] [ -c count] [ -i interval] [ -l preload] [ -p pattern] [ -s packetsize] [ -t ttl] [ -w deadline] [ -F flowlabel] [ -I interface] [ -M hint] [ -Q tos] [ -S sndbuf] [ -T timestamp option] [ -W timeout] [ hop ...] destination
+
+
+The ping command must be used by first specifying how you want the command to behave from a set of options that are highlighted above in square brackets. A destination address that you would like to ping must then be specified. 
+
+
+
+ping -i 5 google.com
