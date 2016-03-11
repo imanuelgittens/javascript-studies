@@ -371,7 +371,7 @@ Example
 
 git pull origin master
 
-This command will fetch all the changes from the master branch on your remote server and merge these changes with the origin branch of your local copy. 
+This command will fetch all the changes from the origin branch on your remote server and merge these changes with the master branch of your local copy. 
 
 git pull --edit origin master
 
@@ -379,6 +379,54 @@ This command opens up an editor before executing the pull so that a descriptive 
 
 
 --------------------------------------------------------------------------------------
+
+git push
+description
+
+This command allows you to upload your changes to a centralized location or remote server. 
+
+-------------------------------------------------------------------------------------------------------
+
+git add 
+syntax
+
+git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+    [--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]]
+    [--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing]
+    [--] [<pathspec>…​]
+
+This command is used by entering git add, followed by an option. 
+
+git add --all -v adds all changes and shows informational messages about the changes. 
+
+ git add Documentation/\*.txt (adds all files in the Documentation directory with the .txt extension)
+
+--------------------------------------------------------------------------------------------------
+
+git rm
+examples
+
+Simple Code Example:
+
+git rm file.txt
+This command removes the file named "file.txt"
+
+Complex Code Example:
+
+ git rm Documentation/\*.txt
+This command removes all *.txt files from the index that are under the Documentation directory and any of its subdirectories.
+
+-----------------------------------------------------------------------------------------
+
+git branch
+description
+
+This command allows you to create, list or delete branches in git. 
+
+
+
+
+
 
 
 
