@@ -421,7 +421,135 @@ This command removes all *.txt files from the index that are under the Documenta
 git branch
 description
 
-This command allows you to create, list or delete branches in git. 
+This command allows you to create, list or delete branches in git. Branching allows you manage many parts of your project in one repository and merge them together. When used correctly branching makes it easy for multiple developers to work on a project in a seamless and un-intrusive way. 
+
+
+----------------------------------------------------------------------------------
+
+git merge
+syntax
+
+git merge [-n] [--stat] [--no-commit] [--squash] [--[no-]edit]
+               [-s <strategy>] [-X <strategy-option>] [-S[<keyid>]]
+               [--[no-]rerere-autoupdate] [-m <msg>] [<commit>...]
+       git merge <msg> HEAD <commit>...
+       git merge --abort
+
+This command is used by typing git merge followed by one or more options. Additional arguments may be required that are specific to the option that is chosen. 
+
+git merge <branch1> <branch2>
+
+git merge --no-commit <branch3>
+
+
+---------------------------------------------------------------------------------
+
+git checkout 
+examples
+
+
+git checkout development
+
+this command will switch the current branch you are working on the a branch named development (if a branch named development exists). 
+
+git checkout -b dev
+
+This command will create a branch called dev and changes the current branch being worked on the the dev branch. 
+
+----------------------------------------------------------------------------------
+
+git diff
+
+description
+
+git diff shows the differences between versions files in a git repository. It can be used to show differences between a file in the working directory (unstaged), the index (staged) and the moost recent commmit. It can also be used to show the differences in files between any two points/commits in your project's history.
+
+-----------------------------------------------------------------------------------
+
+git log 
+
+syntax
+
+git log [<options>] [<revision range>] [[\--] <path>…​]
+
+To view your commit history, you must type git log followed by one or more of these parameters - an option, a revision range (a date range), a path (path to the files for which you want to view changes). The chosen arguments will change the output of the command.
+
+git log --no-merges
+git log -n <number>
+
+--------------------------------------------------------------------------------------
+
+git fetch 
+example
+
+git fetch origin
+
+This above example will copy all new branches and tags from the remote server (origin) and store them in your local repository.
+
+need to add....(Example 2)
+
+--------------------------------------------------------------------------------------
+
+git config
+description
+
+This command allows you to view and set options for a repository or the global git environment. 
+
+---------------------------------------------------------------------------------------
+
+git rebase
+
+syntax
+
+git rebase [-i | --interactive] [options] [--exec <cmd>] [--onto <newbase>]
+	[<upstream> [<branch>]]
+git rebase [-i | --interactive] [options] [--exec <cmd>] [--onto <newbase>]
+	--root [<branch>]
+git rebase --continue | --skip | --abort | --edit-todo
+
+to be completed...
+
+---------------------------------------------------------------------------------------
+
+alias
+
+example
+
+alias ll='ls -l'
+
+This alias would allow a user to type the characters ll and this would list all files in the directory in long format. 
+
+alias ..='cd ..'
+This alias would allow a user to type the character .. and this would change to one directory above the current one.
+
+-------------------------------------------------------------------------------------
+
+chmod
+
+description
+
+This command stands for "change mode" and changes the permissions on files and folder for various users of the system. This means that it allows you to set the rules for each file/folder and this determines who can access it and how it can be accessed.
+
+----------------------------------------
+
+sudo
+
+syntax
+
+sudo -h | -K | -k | -V
+     sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+     sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+          [command]
+     sudo [-AbEHnPS] [-C num] [-g group] [-h host] [-p prompt] [-r role]
+          [-t type] [-u user] [VAR=value] [-i | -s] [command]
+     sudoedit [-AknS] [-C num] [-g group] [-h host] [-p prompt] [-u user] file
+          ...
+
+          this command is exceuted by typing sudo followed by one or more options.
+
+
+
+
 
 
 
