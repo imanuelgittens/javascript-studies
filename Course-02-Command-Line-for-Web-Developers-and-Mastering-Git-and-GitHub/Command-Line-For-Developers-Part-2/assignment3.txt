@@ -95,7 +95,7 @@ mkdir
 
 Description:
 
-This command is short for "make directory" and is used to create new folders or directories via the command line, if they do not already exist. 
+This command is short for "make directory" and is used to create new folders or directories via the command line, if they do not already exist. If the directory already exists, an error message is shown. The mkdir command can also be used to create multiple directories at once.
 
 
 
@@ -103,6 +103,8 @@ This command is short for "make directory" and is used to create new folders or 
 
 touch 
 Syntax
+
+touch [-d] [-a] FILE...
 
 touch README.txt style.css main.js
 
@@ -135,9 +137,8 @@ rm
 Description
 
 This command is used to remove a specified file or files. By default, it does not remove directories.
-
 It is important to note that the effects of the rm command cannot be reversed so one should be cautious when using it. 
-
+This command usually deletes one file at a time however there is an option that allows this behaviour to change. It should also be noted that if the file to be deleted does not have write permissions, a prompt for confirmation is given before the command is executed.
 
 --------------------------------------------------------------------------------
 
@@ -172,7 +173,7 @@ find
 description
 
 
-The find command is used to search for files and directories via the command line. It can be used to find files based on search criteria like name, ownership, date/time, size and much more. 
+The find command is used to search for files and directories via the command line. It can be used to find files based on search criteria like name, ownership, date/time, size and much more. This command can also be used in conjunction with other commands to perform operations on the files that match the search results.
 
 ------------------------------------------------------------------------------------
 
@@ -210,7 +211,7 @@ Using -e allows us to interpret the \n and a new line.
 exit
 Description
 
-The exit command causes the terminal of a process. If the exit command is used at the shell prompt, the shell will be closed. It can also be used in bash scripts to end the currently running process and show an error code. 
+The exit command causes the termination of a process. If the exit command is used at the shell prompt, the shell will be closed. It can also be used in bash scripts to end the currently running process and show an error code. 
 
 ------------------------------------------------------------------------------------------
 
