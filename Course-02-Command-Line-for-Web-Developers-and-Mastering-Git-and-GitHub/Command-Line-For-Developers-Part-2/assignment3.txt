@@ -274,9 +274,9 @@ curl -o index.html study.moderndeveloper.com
 Using curl with the -o flag allows us to save the contents of the web page at study.moderndeveloper.com to the file named index.html.
 
 
-curl -L stusy.moderndeveloper.com
+curl -L study.moderndeveloper.com
 
-By default, does n't process redirects. This means that if a page is moved, the curl command will not be able to access its new location. Using the -L flag, the curl command can follow the HTTP Location headers and redirect tot he new location where the web page is stored. 
+By default, curl doesn't process redirects. This means that if a page is moved, the curl command will not be able to access its new location. Using the -L flag, the curl command can follow the HTTP Location headers and redirects to the new location where the web page is stored. 
 
 ----------------------------------------------------------------------------
 
@@ -494,7 +494,7 @@ need to add....(Example 2)
 git config
 description
 
-This command allows you to view and set options for a repository or the global git environment. 
+This command allows you to view and set options for a repository or the global git environment. The configuration options recognized by Git fall into two categories: client-side and server-side. The majority of the options are client-side – configuring your personal working preferences.
 
 ---------------------------------------------------------------------------------------
 
@@ -512,6 +512,29 @@ to be completed...
 
 ---------------------------------------------------------------------------------------
 
+git reset
+
+example
+
+git reset --soft HEAD^ 
+This example will undo the last commit made by a user. The --soft option here ensures that the files remain untouched, only the commit is undone. A good time to use this command would be when there is a spelling error in the commit message. 
+
+example 
+
+git reset HEAD test.md
+
+This example removes test.md from the staging area. 
+
+--------------------------------------------------------------------------------------
+
+alias 
+descriptioon
+
+The alias command instructs the shell to replace one string with another when executing instructions. It allows users to specify their preferred  term for executing a command and allows for advanced and commonly used instructions to be defined. Aliases only persist for the current session however they can be saved in the shell's .rc file for continuous use. 
+
+
+------------------------------------------------------------------------------------
+ x
 alias
 
 example
@@ -526,6 +549,24 @@ This alias would allow a user to type the character .. and this would change to 
 -------------------------------------------------------------------------------------
 
 chmod
+syntax
+
+chmod [OPTION]... MODE[,MODE]... FILE...
+       chmod [OPTION]... OCTAL-MODE FILE...
+       chmod [OPTION]... --reference=RFILE FILE...
+
+chmod <user/group>+<permission> <file>
+
+<user/group> : this option states which users or groups are receiving the permissions
+<permission>: these are the permissions themselves and they are represented by letters r,w,x (read, write, execute)
+<file>: this is the file that we are defining permissions on. 
+
+THe statement is saying - give this file these permissions, when this user/group is accessing it. 
+
+
+--------------------------------------------------------------------------------
+x
+chmod
 
 description
 
@@ -533,6 +574,20 @@ This command stands for "change mode" and changes the permissions on files and f
 
 ----------------------------------------
 
+sudo
+examples
+
+sudo -u imanuel ls /home/projects
+
+This example is saying to execute the ls command in the directory home/projects as the user imanuel.
+
+sudo -v
+
+This command extends the time that sudo is active allowing the user to perform sudo commands without entering a password every time. 
+
+-------------------------------------------------------------
+
+x
 sudo
 
 syntax
@@ -546,7 +601,65 @@ sudo -h | -K | -k | -V
      sudoedit [-AknS] [-C num] [-g group] [-h host] [-p prompt] [-u user] file
           ...
 
-          this command is exceuted by typing sudo followed by one or more options.
+          this command is exceuted by typing sudo followed by one or more option
+
+
+-----------------------------
+
+ssh
+description
+
+SSH stands for Secure Shell and is a protocol that is used to log onto remote systems and for executing commands on those systems. All the data passed back and forth using the SSH protocol is encrypted, so the user doesn't have to worry about others getting hold of their valuable information.
+
+
+-----------------------------------------
+x
+ssh example
+
+---------
+
+for syntax
+
+for [condition] do ... done
+[condition] - this is the condition that must be met for the loop to continue. An example of a condition will be to perform the loop until a varible equals 5 with the variable starting at 1 and being incremented by 1 with every loop.
+
+[...] - this is the action the user would like to perform with each loop.
+
+
+-----------------------------
+
+x
+for description
+
+----------------
+variables
+examples
+
+num=1
+
+The example defines a variable called num and sets its value to 1.
+
+fruits=("apples", "bananas")
+
+This example creates a variable name fruits and sets its value to be an array with two items - apples and bananas
+
+----------------------------------
+x
+variables
+syntax
+
+---------------
+while
+description
+
+The while loop is a construct that allows for repetitive execution of commands as long as the condition controlling the while loop is not met. An example of a condition may be to continue executing the instructions while a variable is less than 10. It is important that the condition controlling the while loop be met eventually, to avoid the situation where the while loop never stops until the machine runs out of memory.
+
+----------------------------
+x
+while
+examples
+
+
 
 
 
