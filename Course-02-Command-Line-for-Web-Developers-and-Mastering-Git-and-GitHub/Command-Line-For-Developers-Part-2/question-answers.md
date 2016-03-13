@@ -69,3 +69,47 @@ And here we also see other users commenting on the issue.
 
 Github's issues provides an incredibly powerful and robust way of bug tracking  within a project and helps us all to create the best software possible.
 
+---
+
+###Redirecting Command Output to Files
+
+The Linux operating system has a powerful feature called input/output redirection which allows a user to send the output of a command to files, devices and even as input to other commands. It also allows the user to accept input for a command from something other than the command line. We will explore this concept by studying how it is used to redirect command output to files. Let's look at a simple example.
+
+	echo Hello World! > hello.txt
+
+A few things are happenng here. First we know that the echo command usually prints anything that comes after it to the command line however this is not the case here. We have used the `>` sign to **redirect the output** to a file called hello.txt. 
+
+This `>` symbol creates a file (hello.txt) if it does not already exist and replaces any content inside this text file with "Hello World!"
+
+We can also used another command `>>` to redirect the output of a command to a file and this one behaves slightly differently. The `>>` symbol creates the file if it doesn't exist already and **appends** the output of the echo command to any content that is already in the file (it doesn't fully replace the content like the `>` command.)
+
+	echo "How are you today?" >> hello.txt
+
+After running the command above, the hello.txt file will contain the following -
+
+	Hello World! How are you today?
+
+When we start the bash program, it always opens up three files that are numbered -
+
+- stdin (0): abbreviated from the term "Standard Input" and represents keyboard input. 
+- stdout (1): abbreviated form of the term "Standard Ouput" and represents the screen.
+- stderr (2): abbraviated form of the term "Standard Error" and represents a special location for errors. 
+
+By default, whenever we use redirection, bash manipulate the stdout or (1). If we look at our example again we can demonstrate this. 
+
+	echo Hello World! > hello.txt
+
+This is the same as saying 
+
+	echo Hello World! 1> hello.txt
+
+Essentially, the command is saying - take the **output** of this echo command, which is supposed to be sent to the screen (stdout (1)) and instead, sent it to a file called hello.txt.
+
+We can now use this same concept and instead of sending the output of the command to a file, we send the error output of that command to a file. We simply need to change the number before the redirection sign to specify stderr.
+
+	mv file 2> error.txt
+
+In this example, the mv command will fail but instead of sending the error output to the special location for errors (stderr), we redirect it to a file called error.txt.
+
+In this article we talked about a concept called input/output redirection and demostrated it be sending the output of a few commands to a file. We also looked at the different locations that the unix environment accepts and outputs command information and we saw that we could redirect both correct output and errors from a command. This functionality can be used to build powerful programs that interact with the operating system and the user in interesting ways. 
+
