@@ -160,18 +160,17 @@ Question 1.
 	(call script) - ./execute.sh /home/imanuel/mani
 
 Question 2.
-if [[ -f $1 ]]
-	then echo "Not a directory."
-	exit 1
-elif [[ -f $2 ]]
-	then echo "Not a directory."
-	exit 1
-else
-	files1=(.$1/*)
-	files2=(.$2/*)
-	echo ${files1[@]}
+	if [[ -f $1 ]]
+		then echo "Not a directory."
+		exit 1
+	elif [[ -f $2 ]]
+		then echo "Not a directory."
+		exit 1
+	else
+		files1=($1/*)
+		files2=($2/*)
 	expr ${#files1[@]} + ${#files2[@]}
-fi
+	fi
 
 #Exercise 9
 
