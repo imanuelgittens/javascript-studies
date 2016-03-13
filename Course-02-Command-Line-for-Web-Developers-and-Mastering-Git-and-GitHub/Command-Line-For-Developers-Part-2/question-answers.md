@@ -113,3 +113,29 @@ In this example, the mv command will fail but instead of sending the error outpu
 
 In this article we talked about a concept called input/output redirection and demostrated it be sending the output of a few commands to a file. We also looked at the different locations that the unix environment accepts and outputs command information and we saw that we could redirect both correct output and errors from a command. This functionality can be used to build powerful programs that interact with the operating system and the user in interesting ways. 
 
+---
+
+###How The Operating System Sees Open Files
+
+Simply put, whenever a user opens a file, the operating system creates an integer entry to represent that file and also to store information about that opened file. These entries are called File Descriptors and  may be thought of like this - (...100,101,102...). They are stored in something called a File Descriptor Table which means that if a user has opened 100 files, there will be 100 corresponding integer entries in this File Descriptor Table. 
+
+An example of file descriptors in action occurs when we start the bash shell. When this happens, we immediately have access to three files -
+
+1. stdin
+2. stdout
+3. stderr
+
+But now that we have seen how file descriptors work, we know that upon start the bash shell, what really happened was -
+- The number 0 (while represents the file stdin) was added to the File Descriptor Table
+- The number 1 (while represents the file stdout) was added to the File Descriptor Table
+- The number 2 (while represents the file stderr) was added to the File Descriptor Table
+
+We can now manipulate the way in which our programs and users interact with these files by referencing the numbers in the File Descriptor table.
+
+Example
+
+	echo Hello World! 1> hello.txt 
+
+Here we manipulate what happens to the stdout file by using the number 1 in our command. We say - instead of sending the output of this echo command to the stdout file, send it to the hello.txt file instead.
+
+Just to recap, file descriptors are simply numbers used by the operating system to represent opened files. 
