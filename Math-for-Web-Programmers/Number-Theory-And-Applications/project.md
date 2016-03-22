@@ -2,53 +2,42 @@
 
 **Question 1**
 
-	function primeList(n) {
- 
-    // Sieve of Eratosthenes
-    var array = [];
-    var k = Math.sqrt(n);
-    var output = [];
- 
-    // Initial array
-    for (var i = 0; i < n; i++) {
-        array.push(0);
-    }
- 
-    // Remove multiples of primes starting from 2, 3, 5,...
-    for (var i = 2; i <= k; i++) {
-        if (array[i] === 0) {
-            var multiple = i;
-            var counter = 2;
-            while(multiple < n){
-                multiple = i*counter;
-                array[multiple] = 1;
-                counter++;
-            }
-        }
-    }
- 
-    //Now store the variables such that array[]
-    for (var i = 2; i < n; i++) {
-        if(array[i] === 0) {
-            output.push(i);
-        }
-    }
- 
-    return output;
+	function primeFactorList(n) {
+	if (n < 1){
+	    console.log("You need to enter a value great than 1!");
+	    return;
 	}
- 
-	function primeFactors(n){
-    var primes = primeList(n);
-    var result = [];
-    for (var i = 0; i < primes.length; i++){
-        if(n % primes[i] === 0){
-            result.push(primes[i]);
-        }
-    }
-    return result; 
+	
+	var result = [];
+	while (n != 1) {
+		var factor = smallestFactor(n);
+		result.push(factor);
+		n /= factor;
+	}
+	return result;
 	}
 
-primeFactors(100);
+
+	/* 
+ 	* Returns the smallest prime factor of the given integer.
+ 	*/
+	function smallestFactor(n) {
+	if (n < 2){
+	    console.log("You need to enter a value great than 2!");
+	    return;
+	}
+	
+	if (n % 2 == 0)
+		return 2;
+	var end = Math.floor(Math.sqrt(n));
+	for (var i = 3; i <= end; i += 2) {
+		if (n % i == 0)
+			return i;
+	}
+	return n;
+	}
+
+	primeFactorList(3);
 
 ---
 
