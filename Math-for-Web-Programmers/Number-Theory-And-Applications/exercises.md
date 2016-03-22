@@ -23,6 +23,8 @@ So this means that 91 is divisible by 7.
 
 Since negative numbers are also integers, -1331 is divisible by 11.
 
+---
+
 ####Exercise 2
 
 **Question 1**
@@ -60,4 +62,42 @@ GCD = 12
 Prime factors of 48 are 2 x 2 x 3 x 2 x 2
 Prime factors of 72 are 2 x 2 x 3 x 2 x 3
 
+
 The common factors are 2 and 3 so the GCD is 2 * 3 = 6
+
+---
+
+####Exercise 3
+
+**First Run**
+
+Keygen
+#![Imgur](http://i.imgur.com/JJtDDI0.png)
+
+Encrypt
+#![Imgur](http://i.imgur.com/lcsLgWb.png)
+
+Decrypt
+#![Imgur](http://i.imgur.com/mHDLmtM.png)
+
+**Second Run**
+
+Keygen
+#![Imgur](http://i.imgur.com/bfVJkId.png)
+
+Encrypt
+#![Imgur](http://i.imgur.com/fOOqHL6.png)
+
+Decrypt
+#![Imgur](http://i.imgur.com/6ofAUNg.png)
+
+
+**Third Run**
+Keygen
+#![Imgur](http://i.imgur.com/DV7EiIk.png)
+
+Encrypt
+#![Imgur](http://i.imgur.com/WaqbPTX.png)
+
+Decrypt
+#![Imgur](http://i.imgur.com/WginQSG.png)

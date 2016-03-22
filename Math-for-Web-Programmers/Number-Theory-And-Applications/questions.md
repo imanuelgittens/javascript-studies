@@ -9,7 +9,23 @@ The properties of a hash functions include -
 
 **Question 2**
 
-to be completed...
+	function toBinary(num){
+    	if (num >= 0){
+        	var bin = (parseInt(num, 10).toString(2))
+        	if (bin.length < 5){
+            	for(var i = bin.length; i < 5; i++){
+                	bin = bin+'0';
+            	}
+        	}
+        	console.log(bin);
+        	return toBinary(num - 1);
+    	}else{
+        	return 'Done!'
+    	}
+	}
+
+	toBinary(31);
+
 
 **Question 3**
 
@@ -24,9 +40,11 @@ Using the above values we can see that
 a x (-3) = -15
 
 **Question 4**
+
 If $a$ divides $b$ and $b$ divides $a$ then $a$ and $b$ are equal. 
 
 **Question 5**
+
 If the game only involved Rock-Paper-Scissors the modular arithmetic would change to (b-a) mod 3.
 
 **Question 6**
