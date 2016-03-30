@@ -160,6 +160,7 @@ Question 1.
 	(call script) - ./execute.sh /home/imanuel/mani
 
 Question 2.
+
 	if [[ -f $1 ]]
 		then echo "Not a directory."
 		exit 1
