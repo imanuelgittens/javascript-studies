@@ -8,7 +8,7 @@
 
 ####Exercise 2
 
-TODO
+![Imgur](http://i.imgur.com/xCsC62z.jpg)
 
 ---
 
