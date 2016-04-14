@@ -9,11 +9,12 @@ Category: Fundamentals of HTML Structure and Core
 
 HTML (Hypertext Markup Language) is the language used to build and display web pages. The 'hypertext' part refers to the ability to move around the web by clicking special text called hyperlinks. The 'markup' part refers to the code or *tags* used to build and display the web page. Finally the 'language' part implies that HTML has a specific syntax or way of being written to make it work properly. 
 
-As mentioned above, HTML is written using markup code, otherwise known as **tags**. These tags are usually surround by angled brackets `<>` and most come as opening and closing pairs. Let's look at an example:
+As mentioned above, HTML is written using markup code, otherwise known as **tags**. These tags are usually surrounded by angled brackets `<>` and most come as opening and closing pairs. Let's look at an example:
 
 	<p></p>
 
-The tag shown above is the paragraph tag and it contains both an opening `<p>` tag and a closing `</p>` tag. *It is important to note that not all opening tags contain closing tags*. A simple example of how we use the paragraph tags is as follows:
+The tag shown above is the paragraph tag and it contains both an opening `<p>` tag and a closing `</p>` tag. *It is important to note that not all opening tags contain closing tags*. 
+A simple example of how we use the paragraph tags is as follows:
 
 	<p>Hello I'm a paragraph of text!</p>
 
@@ -47,7 +48,7 @@ Both the semantic and non-semantic tags in HTML are important and have their use
 - semantic HTML enables computers, screenreaders and search engines etc. to read and better understand the content on a web page.
 - Semantic HTML is easier to work with for current and future developers as the code is easier to understand. 
 
-I'll close by leaving you to ponder how hard it would be to properly understand and HTML document where everything is just thrown into a `<div>`.  
+I'll close by leaving you to ponder how hard it would be to properly understand an HTML document where everything is just thrown into a `<div>`.  
 
 ####Question 3
 
@@ -59,16 +60,16 @@ Comments in HTML are bits of code that aren't displayed by the browser. The synt
 
 Comments are very important when writing code and are often used write notes or reminders on why something was done. Let's look at a quick example. 
 
-	<h1 style="color:green">Your Season Welcomes You</h1>
+	<h1 style="color:green">Your Season Welcomes You!</h1>
 
 We look at this code and we can see that we have an h1 element that is styled with the color green. Let's say 3 months later, you come back to this code and you couldn't remember why it was styled using green. A comment here would immediately solve this problem so let's improve the example a bit.
 
 	<!-- This elements is styled Green in spring, Yellow in Summer, Orange in Fall and White in Winter -->
-	<h1 style="color:green">Your Season Welcomes You</h1>
+	<h1 style="color:green">Your Season Welcomes You!</h1>
 
 You now know exactly why it was styled green and you also know how to change its style moving forward. 
 
-When writing HTML (or any other language) you should make use of comments. It is not a good idea to put a comment for every single thing you write however using it smartly will allow for easier understanding and maintenance of your code. 
+When writing HTML (or any other language) you should make use of comments. It is not a good idea to put a comment for every single thing you write however using them smartly will allow for easier understanding and maintenance of your code. 
 
 ####Question 4
 
@@ -86,7 +87,7 @@ As seen above, `<link>` is a singleton tag, and it provides the link to a file c
 
 - type: specifies the media type of the linked document. In our example the document is of type `text/css`.
 
-- href: specifies the location of the linked element through a URL. in our example, the main.css file is in our current directory. the link could have easily been comething like this. `href="/css/main.css"
+- href: specifies the location of the linked element through a URL. in our example, the main.css file is in our current directory. the link could have easily been something like this. `href="/css/main.css"`
 
 There are also some attributes not shown here that can be included in the `<link>` tag -
 
@@ -98,3 +99,57 @@ There are also some attributes not shown here that can be included in the `<link
 
 Just to recap, the `<link>` tag along with its associated attributes define the link between a document and an external resource. 
 
+####Question 5
+
+Fully describe the function of the pre tag.
+
+In HTML, the `<pre>` tag defines preformatted text. The text within this tag is displayed in a fixed-width font like Courier or Monaco and it shows both spaces and line breaks that are otherwise removed by HTML tags. The `<pre>` element is best used for text that has typographic formatting that affects the meaning of the content. A great example for usage of the `<pre>` tag is for displaying computer code on a web page. A classic situation would be the Apostrophe vs Quote dilema. When writing code, there is a big difference between `''` and &rsquo;&rsquo; so it is always a good idea to use the `<pre>` tag if you want to display exact typographic formatting of what you put on a web page. 
+
+####Question 6
+
+Explain in detail the function of the select tag and how it is added to web pages.
+Title: Making Selections with HTML Select Tag
+
+In HTML, the `<select>` tag is used to create dropdown lists. It also contains a one or more `<input>` tags that each define one of the options available within that dropdown. Let's look at a quick example of how to use this tag.
+
+	<select name="select">
+	  <option value="value1">Value 1</option> 
+	  <option value="value2" selected>Value 2</option>
+	  <option value="value3">Value 3</option>
+	</select>
+
+In our example above we created a dropdown list with three elements - Value1 , Value 2 and Value 3. This same code is rendered as HTML below.
+
+
+<select name="select">
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+
+Usually, this tag is placed within a form so that the user has some options to select before submitting. This tag also has a number of attributes that define how it behaves and one of the more popular attributes is `multiple` which allows users to select more than one option. Let's add this to our example. 
+
+	<select name="select" multiple>
+	  <option value="value1">Value 1</option> 
+	  <option value="value2" selected>Value 2</option>
+	  <option value="value3">Value 3</option>
+	</select>
+
+And this will render in HTML like so:
+
+<select name="select" multiple>
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+
+This allows users to hold down SHIFT and click multiple options from the dropdown. Other attributes of the `<select>` tag include:
+
+- autofocus: this causes the select tag to automatically get focus when the page loads
+- disabled: this attribute causes the select tag to be disabled
+- form: defines one or more forms that the select tag belongs to
+- name: specifies the name of the dropdown
+- reuqired: forces the user to choose an option before submitting the form
+- size: defines the number of visible options in the dropdown
+
+With that, you have everything you need to start using the `<select>` tag. Happy Coding!
