@@ -7,6 +7,7 @@ Explain the function and purpose of HTML.
 Title: The Purpose of HTML
 Category: Fundamentals of HTML Structure and Core
 
+#####Function of HTML
 HTML (Hypertext Markup Language) is the language used to build and display web pages. The 'hypertext' part refers to the ability to move around the web by clicking special text called hyperlinks. The 'markup' part refers to the code or *tags* used to build and display the web page and finally the 'language' part implies that HTML has a specific syntax or way of being written to make it work properly. 
 
 As mentioned above, HTML is written using markup code, otherwise known as **tags**. These tags are usually surrounded by angled brackets `<>` and most come as opening and closing pairs. Let's look at an example:
@@ -27,7 +28,10 @@ There are quite a number of HTML tags available that are used to display various
 
 #####Purpose of HTML
 
-Now that you know a little bit more about HTML let's discuss its purpose. HTML is a standard for describing the structure and presentation of information on the Internet. Web browsers are aware of this standard allowing them take HTML code and render the corresponding elements to the screen. HTML gives internet users the ability to navigate the web as well as view the content on these web pages in a rich format. 
+Now that you know a little bit more about HTML let's discuss its purpose. HTML is a standard for describing the structure and presentation of information on the Internet. Web browsers are aware of this standard allowing them take HTML code and render the corresponding elements to the screen. 
+
+####Conclusion
+HTML gives internet users the ability to navigate the web as well as view the content on these web pages in a rich format. 
 
 ####Question 2
 
