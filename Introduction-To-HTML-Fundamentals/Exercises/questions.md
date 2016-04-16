@@ -7,18 +7,34 @@ Explain the function and purpose of HTML.
 Title: The Purpose of HTML
 Category: Fundamentals of HTML Structure and Core
 
-HTML (Hypertext Markup Language) is the language used to build and display web pages. The 'hypertext' part refers to the ability to move around the web by clicking special text called hyperlinks. The 'markup' part refers to the code or *tags* used to build and display the web page. Finally the 'language' part implies that HTML has a specific syntax or way of being written to make it work properly. 
+HTML (Hypertext Markup Language) is the language used to build and display web pages. The 'hypertext' part refers to the ability to move around the web by clicking special text called hyperlinks. The 'markup' part refers to the code or *tags* used to build and display the web page and finally the 'language' part implies that HTML has a specific syntax or way of being written to make it work properly. 
 
 As mentioned above, HTML is written using markup code, otherwise known as **tags**. These tags are usually surrounded by angled brackets `<>` and most come as opening and closing pairs. Let's look at an example:
 
 	<p></p>
 
-The tag shown above is the paragraph tag and it contains both an opening `<p>` tag and a closing `</p>` tag. *It is important to note that not all opening tags contain closing tags*. 
-A simple example of how we use the paragraph tags is as follows:
+The tag shown above is the paragraph tag and it contains both an opening `<p>` tag and a closing `</p>` tag. A simple example of how we use the paragraph tags is as follows:
 
 	<p>Hello I'm a paragraph of text!</p>
+	
+Looking at the code above, we see that the content is added between the opening and closing paragraph tags. This is how most HTML code is written - an opening tag, the content to be added to that tag followed by the corresponding closing tag. 
 
-There are quite a number of HTML tags available that are used to display various elements and usually, a series of these tags are combined to produce a complete web page. 
+**It is important to note that not all opening tags in HTML contain closing tags. These are called singleton tags and they require no content.**. 
+An example of a singleton tag in HTML is `<br>`. This is the line break tag and it is used to jump to the next line of the page. 
+
+There are quite a number of HTML tags available that are used to display various elements, perform various tasks and usually, a series of these tags are combined to produce a complete web page. 
+
+One of the best things about HTML is its low learning curve. Compared to other programming languages, HTML is a lot easier because many of the elements or tags are easily understood by humans. Let's look at a quick example:
+
+	<form>
+		<table>
+			<tr>
+				<td>Orange</td>
+			<tr>
+		</table>
+	</form>
+	
+Even if you new nothing about HTML, it is fairly easy deduce that this code has something to do with a form and a table. 	
 
 HTML gives internet users the ability to navigate the web as well as view the content on these web pages in a rich format. 
 
