@@ -30,7 +30,7 @@ There are quite a number of HTML tags available that are used to display various
 
 Now that you know a little bit more about HTML let's discuss its purpose. HTML is a standard for describing the structure and presentation of information on the Internet. Web browsers are aware of this standard allowing them take HTML code and render the corresponding elements to the screen. 
 
-####Conclusion
+#####Conclusion
 HTML gives internet users the ability to navigate the web as well as view the content on these web pages in a rich format. 
 
 ####Question 2
