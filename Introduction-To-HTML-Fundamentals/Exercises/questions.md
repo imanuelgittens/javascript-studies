@@ -101,55 +101,31 @@ Just to recap, the `<link>` tag along with its associated attributes define the 
 
 ####Question 5
 
-Fully describe the function of the pre tag.
+Explain how unordered list items can be added to an HTML page.
 
-In HTML, the `<pre>` tag defines preformatted text. The text within this tag is displayed in a fixed-width font like Courier or Monaco and it shows both spaces and line breaks that are otherwise removed by HTML tags. The `<pre>` element is best used for text that has typographic formatting that affects the meaning of the content. A great example for usage of the `<pre>` tag is for displaying computer code on a web page. A classic situation would be the Apostrophe vs Quote dilema. When writing code, there is a big difference between `''` and &rsquo;&rsquo; so it is always a good idea to use the `<pre>` tag if you want to display exact typographic formatting of what you put on a web page. 
+An unordered list can be added to an HTML document by using the `<ul></ul>` tags. You may have already guessed, but for the sake of completeness I have to say that the `ul` here stands for `unordered list`. Used by themselves, the `<ul></ul>` tags just create an empty list which isn't very useful. We must add some items to this list so that they can be displayed on our HTML page. To add items to an unordered list in HTML we use the `<li></li>` tags. Again for completeness, the `li` here stands for `list item` and similarly to the `<ul></ul>` tags, if we leave this tag empty, it just creates a blank list item. Let's see how add values to our list items:
 
-####Question 6
+    <li>Red</li>
+    
+Here we have created a list item containing the word *Red*. An unordered list can have many list items so let's add a few more colors:
 
-Explain in detail the function of the select tag and how it is added to web pages.
-Title: Making Selections with HTML Select Tag
+    <li>Green</li>
+    <li>Blue</li>
+    
+Now that we have all the pieces, let's put them together. We will add all the list items that we've just created to the `<ul></ul>` tags:
 
-In HTML, the `<select>` tag is used to create dropdown lists. It also contains a one or more `<input>` tags that each define one of the options available within that dropdown. Let's look at a quick example of how to use this tag.
+    <ul>
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ul>    
+    
+Rendered in actual HTML it looks like this
 
-	<select name="select">
-	  <option value="value1">Value 1</option> 
-	  <option value="value2" selected>Value 2</option>
-	  <option value="value3">Value 3</option>
-	</select>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul> 
 
-In our example above we created a dropdown list with three elements - Value1 , Value 2 and Value 3. This same code is rendered as HTML below.
-
-
-<select name="select">
-  <option value="value1">Value 1</option> 
-  <option value="value2" selected>Value 2</option>
-  <option value="value3">Value 3</option>
-</select>
-
-Usually, this tag is placed within a form so that the user has some options to select before submitting. This tag also has a number of attributes that define how it behaves and one of the more popular attributes is `multiple` which allows users to select more than one option. Let's add this to our example. 
-
-	<select name="select" multiple>
-	  <option value="value1">Value 1</option> 
-	  <option value="value2" selected>Value 2</option>
-	  <option value="value3">Value 3</option>
-	</select>
-
-And this will render in HTML like so:
-
-<select name="select" multiple>
-  <option value="value1">Value 1</option> 
-  <option value="value2" selected>Value 2</option>
-  <option value="value3">Value 3</option>
-</select>
-
-This allows users to hold down SHIFT and click multiple options from the dropdown. Other attributes of the `<select>` tag include:
-
-- autofocus: this causes the select tag to automatically get focus when the page loads
-- disabled: this attribute causes the select tag to be disabled
-- form: defines one or more forms that the select tag belongs to
-- name: specifies the name of the dropdown
-- reuqired: forces the user to choose an option before submitting the form
-- size: defines the number of visible options in the dropdown
-
-With that, you have everything you need to start using the `<select>` tag. Happy Coding!
+And that's it! You now know how to add unordered lists to HTML documents. 
