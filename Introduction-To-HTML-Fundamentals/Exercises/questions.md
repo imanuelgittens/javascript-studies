@@ -33,6 +33,8 @@ Now that you know a little bit more about HTML let's discuss its purpose. HTML i
 #####Conclusion
 HTML gives internet users the ability to navigate the web as well as view the content on these web pages in a rich format. 
 
+---
+
 ####Question 2
 
 Describe what it means for HTML tags to have 'semantic value' and the effect this should have on how HTML documents are constructed.
@@ -61,6 +63,8 @@ Both the semantic and non-semantic tags in HTML are important and have their use
 
 I'll close by leaving you to ponder how hard it would be to properly understand an HTML document where everything is just thrown into a `<div>`.  
 
+---
+
 ####Question 3
 
 Explain the function of HTML comments and describe how to add them to an HTML document.
@@ -81,6 +85,8 @@ We look at this code and we can see that we have an h1 element that is styled wi
 You now know exactly why it was styled green and you also know how to change its style moving forward. 
 
 When writing HTML (or any other language) you should make use of comments. It is not a good idea to put a comment for every single thing you write however using them smartly will allow for easier understanding and maintenance of your code. 
+
+---
 
 ####Question 4
 
@@ -109,6 +115,8 @@ There are also some attributes not shown here that can be included in the `<link
 - crossorigin: specifies how the element handles cross-origin requests. 
 
 Just to recap, the `<link>` tag along with its associated attributes define the link between a document and an external resource. 
+
+---
 
 ####Question 5
 
