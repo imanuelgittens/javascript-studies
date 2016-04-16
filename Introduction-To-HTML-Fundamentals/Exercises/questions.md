@@ -149,6 +149,8 @@ Rendered in actual HTML it looks like this
 
 And that's it! You now know how to add unordered lists to HTML documents. 
 
+---
+
 ####Question 6
 
 Describe the function of the `code` tag and describe the formatting of its output.
