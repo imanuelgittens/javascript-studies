@@ -155,20 +155,24 @@ And that's it! You now know how to add unordered lists to HTML documents.
 
 Describe the function of the `code` tag and describe the formatting of its output.
 
-The `<code></code>` in HTML defines a section of computer code. Let's go through a quick example to see how it can be used:
+The `<code></code>` tag in HTML defines a section of computer code. It is also used in combination with the `<pre></pre>` tag so that the exact formatting (including spaces, line breaks etc.) is preserved when rendering the output to the screen. Let's go through a quick example to see how it can be used:
 
     <code>
+    <pre>
         function sqaure(n){
             return n*n;
         }
+    </pre>
     </code>
     
 Rendered in HTML, the above code looks like this:
 
 <code>
+<pre>
     function sqaure(n){
         return n*n;
     }
+</pre>
 </code>
 
-As you can see, it shows the code in a monospace font and I like to think of this code block as having a small text editor output on the page. The code block is great because it allows you to display code examples on a web page that can be copied and pasted into a text editor or IDE without having to worry about extra formatting. A classic situation of extra formatting that this `<code>` tag avoids would be the Apostrophe vs Quote dilema. When writing code, there is a big difference between `''` and &rsquo; &rsquo; so it is always a good idea to use the `<code>` tag if you want to display exact typographic formatting of what you put on a web page.
+As you can see, it shows the code in a monospace font and I like to think of this code block as having a small text editor output on the page. The code block is great because it allows you to display code examples on a web page that can be copied and pasted into a text editor or IDE without having to worry about extra formatting. A classic situation of extra formatting that this `<code>` tag avoids would be the Apostrophe vs Quote dilema. When writing code, there is a big difference between `''` and &rsquo; &rsquo; so it is always a good idea to use the `<code>` tag in combination with the `<pre>` tag if you want to display exact typographic formatting of what you put on a web page.
