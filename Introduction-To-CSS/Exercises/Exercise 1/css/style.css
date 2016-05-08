@@ -1,0 +1,18 @@
+body {
+  padding: 2% 5%;
+  color: #555;
+}
+
+/* Write your CSS Styles below: */
+
+ul.favorites{
+  color: red;
+}
+
+.food{
+  color: green;
+}
+
+div.favorites {
+  background-color: yellow;
+}

@@ -1,0 +1,2 @@
+The p element will be orange because the style tag rules are applied after the external
+stylesheet rules. 

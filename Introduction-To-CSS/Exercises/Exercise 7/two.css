@@ -1,0 +1,17 @@
+#main div{
+	width:50%;
+	float: left
+}
+
+.a{
+	background-color: yellow;
+}
+
+.b{
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+}
+
+.c{
+	background-color: green;
+}

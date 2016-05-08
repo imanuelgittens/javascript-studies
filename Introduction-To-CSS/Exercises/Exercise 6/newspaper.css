@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+	padding: 20px;
+	background-color: #999999;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.column{
+	width:33%;
+	float: left;
+	padding: 20px;
+}
+
+.footer{
+	clear: left;
+	text-align: center;
+	padding: 20px;
+	background-color: #999999;
+	text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+ul.some-letters .a + .b {
+  color: cyan;
+}
+
+li ~ .c {
+  color: orange;
+}
+
+.a ~ .b{
+  color:red;
+}
+
+.c ~ .d {
+  color: orange;
+}
+
+ol.animals > li{
+  color: green;
+}
+

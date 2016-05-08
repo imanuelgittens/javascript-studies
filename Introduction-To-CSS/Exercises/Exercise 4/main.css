@@ -1,0 +1,13 @@
+.one{
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: line-through;
+}
+
+.two{
+	font-family: "Roboto", "Lora", "Times New Roman", sans-serif; 
+}
+
+.three{/*I like 1.5 em best.*/
+	line-height: 1.5em;
+}
