@@ -48,14 +48,14 @@ It is my hope that this article has helped you to understand the purpose and usa
 *Explain in detail what the CSS Box Model is.*
 
 
-The CSS box model is a term used when talking about the layout and design of HTML elements. To understand the CSS box model, we must first accept it wraps a rectangular shaped box, containing several layers, around ALL HTML elements. This can be seen is we inspect an element using a modern browser such as Chrome or Firefox. The following screenshot is taken from the Chrome browser:
+The CSS box model is a term used when talking about the layout and design of HTML elements. To understand the CSS box model, we must first accept it wraps a rectangular shaped box, containing several layers, around ALL HTML elements. This can be seen when we inspect an element using a modern browser such as Chrome or Firefox. The following screenshot is taken from the Chrome browser:
 
 ![Imgur](http://i.imgur.com/r0E6jag.jpg)
 
 We can see that the `div` element that was inspected is rectangular in shape and contains several layers (it is the same for all HTML elements). Let's look at each of these layers in some more detail starting from the inside go out. 
 
 - The innermost (blue) section contains the actual text or images of the HTML element
-- The padding layer (green) contains some optional invisible space between the content of the element and the margin.
+- The padding layer (green) contains some optional invisible space between the content of the element and the border.
 - The border layer (yellowish orange) contains an optional border surrounding the content and padding of the HTML element.
 - The margin layer (orange) contains an optional invisible space between the margin of an element and any other surrounding elements.
 
@@ -75,9 +75,9 @@ The total width of this element will be the sum of the width, padding, margin an
 
 	300 + 5 + 5 + 1 = 311px;
 
-The total height would be the same. The CSS property that is used to control how the box model works is `box-sizing: content-box` and `box-sizing:border-box`. The first option is the default state and functions as shown above by add all the values that make up an element's size together. 
+The total height would be the same. The CSS property that is used to control how the box model works is `box-sizing: content-box` and `box-sizing:border-box`. The first option is the default state and functions as shown above by adding all the values that make up an element's size together. 
 
-The second options works a bit differently and specifies that the total width of the element is specified by the `width` property. Any extra paddings or margins that are added to the element will cause the width of the content (blue) section to shrink so that the overall width or height does not extend the value set.Let's look at and example.
+The second options works a bit differently and specifies that the total width of the element is specified by the `width` property. Any extra paddings or margins that are added to the element will cause the width of the content (blue) section to shrink so that the overall width or height does not extend the value set. Let's look at and example.
 
 	{
 		width: 300px
@@ -162,7 +162,7 @@ The CSS property that defines how the box model works is `box-sizing` and it acc
 	box-sizing: content-box;
 	box-sizing: border-box;
 
-The width of an element is determined by which `box-sizing` option is chosen. We'll explore the first option since is is the default. With `box-sizing: content-box;` the width of the element is the sum of the width of its *content*, the padding, the border and the margin. Let's say we have a random element with a class of "heading" and its styling is as follows - 
+The final width of an element is determined by which `box-sizing` option is chosen. We'll explore the first option since is is the default. With `box-sizing: content-box;` the width of the element is the sum of the width of its *content*, the padding, the border and the margin. Let's say we have a random element with a class of "heading" and its styling is as follows - 
 
 	*heading{
 		width: 300px;
@@ -175,7 +175,7 @@ The total width of this element in this case will be :
 
 	300 + 5 + 5 + 1 = 311px;
 
-If, we took the same example however, and used the second box model option (`box-sizing: border-box`) then the width of the element would be 300px. Why? Because in this mode, the width of the element is always the value specifically set using the width property. What actually happens is that the width of the content of the element will be reduced until the sum of the content width, padding, margin and border is equal to the the value specified in the width property. Here the width of the content area of the HTML element would be:
+If, we took the same example however, and used the second box model option (`box-sizing: border-box`) then the width of the element would be 300px. Why? Because in this mode, the width of the element is always the value specifically set using the width property. What actually happens is that the width of the content of the element will be reduced until the sum of the content width, padding, margin and border is equal to the the value specified in the width property. Here, the width of the content area of the HTML element would be:
 
 	300 - 5 - 5 - 1 = 289px;
 
@@ -218,4 +218,47 @@ If these elements where not floated, they would just appear one after the other 
 
 ![Imgur](http://i.imgur.com/W3TyMjI.png)
 
-All you just need to remember that floating an element takes it out from the normal flow of the document and places it to either side of its container. 
+When begin to work with floats, it is important to remember that floating an element takes it out from the normal flow of the document and places it to either side of its container. 
+
+####Question 6
+
+*Explain the purpose and function of the `clear` property in positioning elements. List and explain the different values this property can take. Give an example of how to use this property.*
+
+In CSS, the `clear` property is used to specify whether an element can be next to floating elements that come before it or must be moved below these floating elements. In other words, it can be used to remove HTML elements from the floating context and be put back into the regular document flow. The syntax for the `clear` property looks like this:
+
+	clear: both; /* No floating elements allowed on either side of this element */
+	clear: left; /* No floating elements allowed on the left side of this element */
+	clear: right; /* No floating elements allowed on the right side of this element */
+	clear: none; /* (Default) Allow floating on both sides of this element */
+
+Looking at the code above we see that we can use the `clear` property on an element to specify how it interacts with floating elements.  Let's take a look at how the `clear` property works with an example. 
+
+Imagine that we have four divs like this:
+
+	<div style="padding: 50px; margin: 5px; width: 15%; background-color: red"></div>
+	<div style="padding: 50px; margin: 5px; width: 15%; background-color: blue"></div>
+	<div style="padding: 50px; margin: 5px; width: 15%; background-color: green"></div>
+	<div style="padding: 50px; margin: 5px; width: 15%; background-color: yellow"></div>
+
+![Imgur](http://i.imgur.com/ERTBhd3.png)
+
+We see that in the normal document flow, the divs appear one below the other. This is because divs are block level elements and take up the entire width of the page. Let's say we wanted to get these elements next to each other, we would simply need to add the `float` property like so:
+
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: red;"></div>
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: blue;"></div>
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: green;"></div>
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: yellow;"></div>
+
+![Imgur](http://i.imgur.com/RvsBoy0.png)
+
+And here is where the `clear` property comes in. Let's say we wanted to remove the yellow div from the floating context and put it under the other divs that are floating. Since the elements are currently being floated to the left, we need to **clear all left floating elements from the yellow div.**
+
+
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: red;"></div>
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: blue;"></div>
+	<div style="padding: 50px; float: left; margin: 5px; width: 15%; background-color: green;"></div>
+	<div style="clear: left; padding: 50px; float: left; margin: 5px; width: 15%; background-color: yellow;></div>
+
+![Imgur](http://i.imgur.com/9WnKBDx.png)
+
+And that's how clear works. It simply specifies whether an element is allowed to have other floating elements next to it. If the preceding elements where floated to the right, we would use a `clear:right;` and if there where both left and right floating elements before our yellow div, we would need to use a `clear:both;`. 
