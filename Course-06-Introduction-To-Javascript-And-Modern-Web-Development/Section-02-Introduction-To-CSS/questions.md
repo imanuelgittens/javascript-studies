@@ -73,7 +73,7 @@ When defining the width and height of an element, by default, these values are a
 
 The total width of this element will be the sum of the width, padding, margin and border.
 
-	300 + 5 + 5 + 1 = 311px;
+	300 + 5 + 5 + 5 + 5 + 1 + 1 = 311px; /*base width plus the padding left and right plus the margin left and right plus the border left and right*/
 
 The total height would be the same. The CSS property that is used to control how the box model works is `box-sizing: content-box` and `box-sizing:border-box`. The first option is the default state and functions as shown above by adding all the values that make up an element's size together. 
 
@@ -89,7 +89,7 @@ The second options works a bit differently and specifies that the total width of
 
 Here, the total width of the element will always be 300px. Instead the width of the inner content shrinks to accommodate the padding, margins and border. The actual width of the content of this element is 
 
-	300 - 5 - 5 -1 = 289px;
+	300 - 5 - 5 - 5 - 5 - 1 - 1 = 278px; /*base width minus the padding left and right minus the margin left and right minus the border left and right*/
 
 And there you have it. You know have a better understanding of hw the CSS Box Model Works and how is can be used to layout and style HTML elements correctly. 
 
