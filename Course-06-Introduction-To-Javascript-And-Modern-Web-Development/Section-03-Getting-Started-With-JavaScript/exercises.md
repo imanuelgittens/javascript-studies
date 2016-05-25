@@ -695,3 +695,76 @@ The number one has the same value as true
 
 4)
 
+	function randomNumber(min, max){
+		return Math.random() * (max - min) + min;
+	}
+
+	randomNumber(-10,1);
+
+5)
+
+	function randomNumber(min, max){
+		return Math.floor(Math.random() * (max - min) + min);
+	}
+
+	randomNumber(-10,1);
+
+6)
+
+	function randomItem(arr){
+		var index = Math.floor(Math.random() * (arr.length));
+		return arr[index];
+	}
+
+	randomItem([1,2,true, "string", false, 5,"test"]);
+
+7)
+
+	function gcd(a, b){
+		var result = 1;
+		for(var i = 1; i <= Math.min(a, b); i++){
+			if(a % i === 0 && b % i === 0){
+				result = i;
+			}
+		}
+		return result;
+	}
+
+	gcd(4,12);
+
+8)
+
+	function powerOfTwo(num){
+		if(num === 0){
+			return true;
+		}else{
+			if(num == 1){
+				return false;
+			}else{
+				while(num >= 2){
+					remainder = num % 2;
+					num = num / 2;
+				}
+				if(remainder % 2 === 0){
+					return true;
+				}else{
+					return false;
+				}
+			}
+		}
+		
+	}
+
+	powerOfTwo(64);
+
+9)
+
+	function checkInt(num){
+		if(num === Math.floor(num) && num === Math.ceil(num)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	checkInt(3.14);
