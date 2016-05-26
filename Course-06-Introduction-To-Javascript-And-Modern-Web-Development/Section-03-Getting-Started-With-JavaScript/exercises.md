@@ -768,3 +768,191 @@ The number one has the same value as true
 	}
 
 	checkInt(3.14);
+
+10) //TODO Roman Numerals
+
+11)
+
+	function addMoney(a, b){
+		var floatA = parseFloat(a);
+		var floatB = parseFloat(b);
+		
+		var result = floatA + floatB;
+		
+		return result.toFixed(2);
+	}
+
+	addMoney("444.24", "7.12");
+
+
+#### Exercise 12 (Strings in Depth)
+
+1)
+
+	function checkString(value){
+		return value === value.toString();
+	}
+
+	checkString(true);
+
+2)
+
+	function stringLength(value){
+		return value.length === 0;
+	}
+
+	stringLength("2");
+
+3)
+
+	function wordSplit(sentence){
+		var arr = sentence.split(/[^\w]/);
+		for(var i = 0; i < arr.length; i++){
+			console.log(arr[i]);
+		}
+	}
+
+	wordSplit("The quick brown, fox jumped? over. The lazy dog! 1");
+
+4)
+
+	function numDigits(num){
+		return num.toString().length;
+	}
+
+	numDigits(23456778865);
+
+5)
+
+	function binaryLength(num){
+		result = "";
+		
+		while(num > 0){
+			var remainder = num%2;
+			result = remainder + result;
+			if(remainder === 1){
+				num = num - 1;
+			}
+			num = num/2;
+		}
+		
+		return result.length;
+	}
+
+	binaryLength(10000123);
+
+6) TODO remove white space
+
+7)
+
+	function abbreviateLast(string){
+		var arr = string.split(/\s/);
+		arr[arr.length-1] = arr[arr.length-1].charAt(0) + ".";
+		return arr.join(" ");
+		
+	}
+	abbreviateLast("Noel Brown crust");
+
+8)
+
+	function maskEmail(email){
+		var atIndex = email.indexOf("@");
+		if(atIndex > 4){
+			return email.substr(0, 5) + "..." + email.substr(atIndex);
+		}else{
+			return email.substr(0, 1) + "..." + email.substr(atIndex);
+		}
+	}
+
+	maskEmail("nuel@gmail.com")
+
+9 10 11
+
+####Exercise 13 (Objects in Depth)
+
+1)
+
+	function Course(duration, numStudents, instructorName){
+		this.duration = duration;
+		this.numStudents = numStudents;
+		this.instructorName = instructorName;
+	}
+
+	var introToJS = new Course("7 Days", 40, "Khan");
+	var introToCSS = new Course("10 Days", 40, "Rory");
+	var introToHTML = new Course("5 Days", 50, "Sean");
+
+I used a Constructor Function to create these objects since they all are courses and all have the same properties. 
+
+2)
+
+For this project I would create a library object with name and address properties( These would be string data types). The library object would also have a books property however, the value of this property would be an array of book objects. Each book object would have name, authorname and type properties. The last property of the library object would be "borrowers" and this will store the customer information who borrowed the book. This will be an array of customer objects. Each customer object will have a name, email address and age. 
+
+3)
+
+	function merge(obj1, obj2){
+		var result =  {};
+		for(var p in obj1){
+			if(p in obj2){
+				result[p] = obj2[p];
+			}else{
+				result[p] = obj1[p];
+			}
+		}
+		
+		for(var property in obj2){
+			result[property] = obj2[property];
+		}
+		
+		return result;
+	}
+
+	merge({a:2, b:3, c:4}, {b:67, d:12, e:14});
+
+4)
+
+	function pickBy(obj, callback){
+		var result = [];
+		
+		for(var property in obj){
+			var test = callback(property);
+			if(test){
+				result.push(property);
+			}
+		}
+		return result;
+	}
+
+	pickBy({"name": "mani", "age": 27, "hair": "long"}, function(prop){
+		return prop === "age" || prop === "hair";
+	});
+
+5)
+
+	function omit(obj, callback){
+		var result = [];
+		
+		for(var property in obj){
+			var test = callback(property);
+			if(test){
+				result.push(property);
+			}
+		}
+		return result;
+	}
+
+	omit({"name": "mani", "age": 27, "hair": "long"}, function(prop){
+		return prop !== "age" && prop !== "hair";
+	});
+
+6)
+
+	function values(object){
+		var result = [];
+		for(var property in object){
+			result.push(object[property]);
+		}
+		return result;
+	}
+
+	values({a:1, b:2, c:3});
