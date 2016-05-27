@@ -956,3 +956,136 @@ For this project I would create a library object with name and address propertie
 	}
 
 	values({a:1, b:2, c:3});
+
+####Exercise 14 (Dates in Depth)
+
+1)
+
+	function getDays(month, year){
+		//January is 1 based
+		// Day 0 is the last day of the previous month
+		var d = new Date(year, month, 0);
+		return d.getDate();
+	}
+
+	getDays(2,2017);
+
+2)
+
+	function getMonthName(date){
+		var date1 = new Date(date);
+		var monthNum = date1.getMonth() + 1;//month is 0 based so we add 1
+		var result = "";
+		switch(monthNum){
+			case 1:
+				result = "January";
+				break;
+			
+			case 2:
+				result = "February";
+				break;
+			
+			case 3:
+				result = "March";
+				break;
+				
+			case 4:
+				result = "April";
+				break;
+				
+			case 5:
+				result = "May";
+				break;
+				
+			case 6:
+				result = "June";
+				break;
+				
+			case 7:
+				result = "July";
+				break;
+				
+			case 8:
+				result = "August";
+				break;
+				
+			case 9:
+				result = "September";
+				break;
+				
+			case 10:
+				result = "October";
+				break;
+				
+			case 11:
+				result = "November";
+				break;
+				
+			case 12:
+				result = "December";
+				break;
+				
+			default:
+				result = "Invalid Month";
+				break;
+		}
+		return result;
+	}
+
+	getMonthName("December 15, 1986 11:23:07");
+
+3)
+
+	function addMinutes(date, mins){
+		var d = new Date(date);
+		d.setMinutes(d.getMinutes() + mins);
+		return d;
+	}
+
+	addMinutes("October 15, 1986 10:23:07", 40);
+
+4)
+
+	function lastDay(year, month){
+		var d = new Date(year, month, 0);
+		var day = d.getDay();
+		var result = "";
+		switch(day){
+			case 0:
+				result = "Sunday";
+				break;
+				
+			case 1:
+				result = "Monday";
+				break;
+				
+			case 2:
+				result = "Tuesday";
+				break;
+				
+			case 3:
+				result = "Wednesday";
+				break;
+				
+			case 4:
+				result = "Thursday";
+				break;
+				
+			case 5:
+				result = "Friday";
+				break;
+				
+			case 6:
+				result = "Saturday";
+				break;
+				
+				
+			default:
+				result = "Invalid Day";
+				break;
+		}
+		
+		return result;
+	}
+
+	lastDay(2016,2);
