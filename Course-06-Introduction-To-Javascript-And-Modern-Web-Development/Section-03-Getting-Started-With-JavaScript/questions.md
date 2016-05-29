@@ -170,4 +170,181 @@ Since the operands are converted to the same type before comparing, all these st
 	10 <= 9 //false
 	2 <= 3 //true
 
-You now know about JavaScript's comparison operators and how they work.  
+You now know about JavaScript's comparison operators and how they work. 
+
+####Question 5
+
+*Explain what a self-invoking function is and describe the use of such a function, including a demonstration.* 
+
+A self invoking function is a function that is called immediately. It is built in such a way that the user does not have to explicitly call the function, it just runs automatically.  Let's compare a regular funtion to a self invoking function to get a better understand of how these self invoking fucntions work.
+
+In JavaScript, we write a function like this:
+
+	function hello(){
+		console.log("Hello");
+	}
+
+However, this function will not be executed unless we *call** it like this:
+
+	hello() //the () calls signals that the function should be run or called.
+
+It is the same when we assign a function to a varible
+
+	var hello = function(){
+		console.log("Hello");
+	}
+
+We must still all the function like this:
+
+	hello();
+
+With self invoking functions however, we do not need to call them. Let's see how they are written:
+
+	(function(){
+		console.log("Hello")
+	})()				
+
+notice that we add the **()** to the end of the function. Written this way, the function is executed immediately without the need for calling hence we say it is a self invoking function. 
+
+####Question 6
+
+*Describe what closures are and use at least two examples to demonstrate how they work.*
+
+
+Closures are a very important feature of the JavaScript language and are responsible for ensuring that functions always have access to the variables that they require in order to run properly. Closures are one of the most advanced and confusing topics in JavaScript so they are best explained using an example. 
+
+Let's explore the following function.
+
+	function hello(greeting){
+		return function(name){
+			console.log(greeting + " " + name);
+		}
+	}
+
+We see that this `hello` function (outer function) returns another anonymous function (inner function). We want to use this hello function so we can do this:
+
+	var talk = hello("Yo");// We have run the hello function with "Yo" as a paramter.
+
+Since our function returns a function, the `talk` variable is now:
+
+	var talk = function(name){
+			console.log(greeting + " " + name);
+		};
+
+We can now run this function like so:
+	
+	talk("Mark"); // returns "Yo Mark"
+
+Something unexpected happens here however because the inner function that was returned still printed "Yo" as the `greeting` even though only the `name` parameter was passed to it. This `greeting` variable should have disappeared after calling the `hello` function. This is where closures come in. They ensure that the inner function still has a reference to the variables of the outer function, even though the outer function has finished executing. 
+
+Let's explore another example
+
+	function subtractor(x) {
+	  return function(y) {
+	    return x - y;
+	  };
+	}
+
+We create a subtractor function that accepts a value and returns a function. A closure is created here and the inner function has a reference to the variables of the outer function - namely `x`.
+
+	var sub5 = subtractor(5);
+	
+Here we invoke the subtractor function with a value of 5 and store it in the sub5 variable. This function return a function so the sub5 variable now looks like this:
+
+	var sub5 = function(y){
+		return x - y;
+	};
+
+We run the sub5 function and we see that it still had a reference to the `x` variable and used it to produce a result. 
+
+	console.log(sub5(2));  // 3
+
+And that's what closures do. They basically ensure that functions have access to variables by keeping a reference to those variables.
+
+####Question 7
+
+*Whether a variable is declared with the `var` keyword or not determines the scope of that variable. Describe how this mechanism works and give at least one example of how this works.*
+
+**Title**: Declaring JavaScript Variables in The Right Scope
+
+**Category**: Working with JavaScript Variables
+
+The JavaScript language uses a concept called **scope** to determine how and where a variable can be accessed. A variable can have two scopes - local and global. If a variable is in the global scope, it can be accessed from anywhere within the program but if a variable is in the local scope, it is only accessible from within the function in which it was created. Let's look at an example to get a better understanding of variable scopes
+
+	var arr = [1,2,3]; //global scope variable
+
+	function test(){
+		var hello = "hello"; //local scope variable
+		console.log(hello);
+	}
+
+
+We see that the variable defined outside of the function is a global variable and the one defined inside the function is a local variable. AS mentioned above, global variables can be access from anywhere in a program, even inside a function. This means that the following code will work.
+
+	var arr = [1,2,3]; //global scope variable
+
+	function test(){
+		var hello = "hello"; //local scope variable
+		console.log(arr); //accessed the global variable inside the function
+		console.log(hello);
+	}
+
+Local variables however, can only be accessed inside the function in which it was created so the following code will not work. 
+
+	var arr = [1,2,3]; //global scope variable
+
+	function test(){
+		var hello = "hello"; //local scope variable
+		console.log(hello);
+	}
+
+	console.log(hello); //ERROR: this hello variable cab only be accessed within the **test** function.
+
+It is also important to note that in JavaScript, if you define a variable without the `var` keyword, it is **automatically placed in the global scope** no matter where it is defined. Let's look at an example:
+
+	var arr = [1,2,3]; //global scope variable
+
+	function(){
+	    hello = "hello"; //this variable is now defined without the var keyword hence is in the global scope
+		console.log(hello);
+	}
+
+	console.log(hello); // works because hello is now a global variable. 
+
+When declaring variables in JavaScript, it is important that they be put in the right scope to allows for the right levels of access an to avoid unexpected errors in your program. 
+
+
+####Question 8
+
+*Describe how the JavaScript built-in functions `apply` and `call` work. Use examples to demonstrate how each one works.*
+
+In order to understand how **call** and **apply** work, we must first understand that functions in JavaScript are objects as well. Like all other objects, they have access to certain methods (**call** and **apply** are town of these methods). These methods allow us to define what the `this` variable points to when executing a function. Let's look at an example:
+
+	var person = {
+		firstname: 'John',
+		lastname: 'Dillon',
+		getFullName: function(){
+			var fullname = this.firstname + ' ' + this.lastname;
+			return fullname;
+		} 
+	}
+
+We set up a person object and it has a method on it called `getFullName`. The method uses the `this` keyword to point to the person object and get the firstname and lastname to return the fullname. Let's also look at this other function:
+
+	var sayNameAge = function(age){
+		console.log(this.getFullName + 'is '+ age + ' years old.');
+	}
+
+	sayNameAge(24);//error
+
+This function produces an error because the `this` keyword points to the global object which has no method called `getFullName`. But what if there was a way to determine which object the `this` variable points to when invoking a function? This is where the **call** and **apply** methods come in. We can use them on functions to define where the `this` variable points when that function is executed. Let's look at some examples:
+
+	sayNameAge.call(person, 24); // "John Dillon is 24 years old."
+
+We used the `call` method on our `sayNameAge` function to make the `this` keyword point to the person object before passing in the `age` argument and it gave us the correct result. 
+
+The `apply` method does the same thing, but we need to pass the function's arguments as an array after defining the `this` pointer:
+
+	sayNameAge.apply(person, [24]); // "John Dillon is 24 years old."
+
+And that's how the **call** and **apply** methods work. They allow us to define where the `this` variable points to when executing our functions.
