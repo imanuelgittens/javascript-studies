@@ -529,7 +529,24 @@ The number one has the same value as true
 
 5)
 
-//ToDo
+	function sumTen(arr){
+		var result = [];
+		var first, j, i;
+		var count = 0;
+		while(count < arr.length){
+			first = arr[count];
+			for(j = 0; j < arr.length; j++){
+				if(((first + arr[j]) === 10) && (arr.indexOf(first)) != arr.indexOf(arr[j])){
+					result.push([first, arr[j]]);
+				}
+			}
+			count++;
+		}
+		return result;
+	}
+
+
+sumTen([1,2,3,4,5,6,7,8,9]);
 
 ####Exercise 9 (Error Handling)
 
@@ -644,8 +661,7 @@ The number one has the same value as true
 		for(var j = 0; j < newNum.length; j++){
 			if(callback(newNum.charAt(j))){
 				result += newNum.charAt(j);
-			}
-		}
+			}for
 		
 		return parseFloat(result);
 	}
@@ -657,33 +673,34 @@ The number one has the same value as true
 	console.log(num);
 	//end convert european number to string
 
-	//convert number to European string TODO
+	//convert number to European string 
 
-	function convertNum(num){
-	var numString = num.toString();
-	counter = 1;
-	var result = "";
-	for(var i = numString.length; i >= 0; i--){ //start processing from the end of the string
-		if(numString.charAt(i) === "."){ 
-			result = "." + result;
-			counter = 1;
-		}else{
-			if(counter <= 3 ){
-				result = numString.charAt(i) + result;
-				counter++;
+
+	function numToString(num){
+		var str = num.toString();
+		var result = "";
+		var count = 0;
+		for(var i = str.length-1; i >= 0; i--){
+			if(count < 3 && str.charAt(i) !== "."){
+				result = str.charAt(i) + result;
+				count++;
 			}else{
-				result = "," + result;
-				i++;
-				counter = 1;
+				if(count < 3 && str.charAt(i) === "."){
+					result = "," + result;
+					count = 0;
+				}else{
+					count = 0;
+					i++;
+					result = "." + result;
+				}
 			}
 		}
-		
-	}
-	
-	return result;
+		return result;
 	}
 
-	convertNum(3434444123654.85); //has errors need to redo
+	numToString(3398763.89);
+
+	//end convert number to European String
 
 3)
 
@@ -770,6 +787,27 @@ The number one has the same value as true
 	checkInt(3.14);
 
 10) //TODO Roman Numerals
+
+function romanNumeral(num){
+	var result = "";
+	while(num > 0){
+		if(num > 1000){
+			var times = Math.floor(num/1000);
+			console.log(times);
+			for(var i = 0; i < times; i++){
+				result += "M";
+			}
+			num = num/1000;
+		}else{
+			num = 0;
+		}
+	}
+	
+	return result;
+	
+}
+
+romanNumeral(1500);
 
 11)
 
@@ -866,7 +904,57 @@ The number one has the same value as true
 
 	maskEmail("nuel@gmail.com")
 
-9 10 11
+9)
+
+	function camelCase(sentence){
+		var result = "";
+		var lower = sentence.toLowerCase();
+		for(var i = 0; i < lower.length; i++){
+			if(lower.charAt(i) === " "){
+				result = result + lower.charAt(i+1).toUpperCase();
+				i++;
+			}else{
+				result = result + lower.charAt(i);
+			}
+		}
+		return result;
+	}
+
+	camelCase("The Quick Brown Fox.");
+
+10)
+
+	function underScore(sentence){
+		var result = "";
+		var lower = sentence.toLowerCase();
+		for(var i = 0; i < lower.length; i++){
+			if(lower.charAt(i) === " "){
+				result = result + "_"
+			}else{
+				result = result + lower.charAt(i);
+			}
+		}
+		return result;
+	}
+
+	underScore("The Quick Brown Fox.");
+
+ 11)
+
+	function underCamel(sentence){
+		var result = "";
+
+		for(var i = 0; i < sentence.length; i++){
+			if(sentence.charAt(i) === sentence.charAt(i).toUpperCase()){
+				result = result + "_" + sentence.charAt(i).toLowerCase() ;
+			}else{
+				result = result + sentence.charAt(i);
+			}
+		}
+		return result;
+	}
+
+	underCamel("theQuickBrownFox");
 
 ####Exercise 13 (Objects in Depth)
 
@@ -1089,3 +1177,175 @@ For this project I would create a library object with name and address propertie
 	}
 
 	lastDay(2016,2);
+
+
+	####Exercise 15 (Arrays In-Depth)
+
+1)
+
+	function oneD(arr){
+		var result = [];
+		for(var i = 0; i < arr.length; i++){
+			for(var j = 0; j < arr[i].length; j++){
+				result.push(arr[i][j]);
+			}
+		}
+		return result;
+	}
+
+	oneD([[1,2,4,5,6,7], [3,4,4,5,3]]);
+
+2)
+
+	function findItem(arr, key) {
+	    var min = 0;
+	    var max = arr.length - 1;
+	    var guess;
+	    while(min < max){
+	    	guess = Math.floor((min + max) / 2);
+	    	if(arr[guess] === key){
+	    		return "Item is at array index " + guess;
+	    	}else{
+	    		if(arr[guess] < key){
+	    			min = guess;
+	    		}else{
+	    			max = guess;
+	    		}
+	    	}
+	    }
+	    return -1;
+	}
+
+	findItem([1,2,3,4,5,6,7,8,9], 4);	
+
+3)
+
+	function shuffle(array) {
+	    var counter = array.length;
+	    while (counter > 0) {
+	        var index = Math.floor(Math.random() * counter);
+	        counter--;
+	        var temp = array[counter];
+	        array[counter] = array[index];
+	        array[index] = temp;
+	    }
+
+	    return array;
+	}
+
+	shuffle(['1','2','3','4','5','6','7','8','9']);
+
+4)
+
+	function sort(items) {
+	  var length = items.length;
+	  for (var i = 0; i < length; i++) { 
+	    for (var j = 0; j < (length - i - 1); j++) { 
+	  
+	      if(items[j] > items[j+1]) {
+	     
+	        var tmp = items[j];  
+	        items[j] = items[j+1]; 
+	        items[j+1] = tmp; 
+	      }
+	    }        
+	  }
+	  return items;
+	}
+
+	sort([1,3,5,2,6,9,8]);
+
+5)
+
+	function removeFalsy(arr){
+		var result = [];
+		for(var i = 0; i < arr.length; i++){
+			if(arr[i]){
+				result.push(arr[i]);
+			}
+		}
+		return result;
+	}
+
+	removeFalsy([1,2,3,4, "", null, 0, false]);
+
+6)
+
+	function vectorAddition(arr1, arr2){
+		var result = [];
+		for(var i = 0; i < arr1.length; i++){
+			result.push(arr1[i] + arr2[i]);
+		}
+		return result;
+	}
+
+	vectorAddition([1,2,3], [4,5,6]);
+
+7)
+
+	function union(arr1, arr2){
+		var result = [];
+		for(var i = 0; i < arr1.length; i++){
+			result.push(arr1[i]);
+		}
+		for(var j = 0; j < arr2.length; j++){
+			if(result.indexOf(arr2[j]) < 0){
+				result.push(arr2[j]);
+			}
+		}
+		return result;
+	}
+
+	union([1,2,3,4], [3,4,5,6]);
+
+8)
+
+	function intersection(arr1, arr2){
+		var result = [];
+		for(var i = 0; i < arr1.length; i++){
+			if(arr2.indexOf(arr1[i]) >= 0){
+				result.push(arr1[i]);
+			}
+		}
+		return result;
+	}
+
+	intersection([3,4,6,7,8,5], [3,4,5]);
+
+9)
+
+	function difference(arr1, arr2){
+		var result = [];
+		for(var i = 0; i < arr1.length; i++){
+			if(arr2.indexOf(arr1[i]) < 0){
+				result.push(arr1[i]);
+			}
+		}
+		return result;
+	}
+
+	difference([3,4,6,7,8,5], [3,4,5,6,0,4,3]);
+
+10)
+
+	function dropWhile(arr, callback){
+		var result = arr;
+		for(var i = 0; i < arr.length; i++){
+			console.log(result);
+			if(callback(arr[i])){
+				result.splice(0,1);
+				i--;
+			}else{
+				break;
+			}
+		}
+		return result;
+	}
+
+	dropWhile([1,13,14,2,3,4,5,6,7,6,2,3,4,5], function(item){
+		if(item != 7){
+			return true;
+		}else{
+			return false;
+		}
+	})
