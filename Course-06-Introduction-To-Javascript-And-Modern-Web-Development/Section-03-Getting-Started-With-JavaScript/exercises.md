@@ -641,6 +641,7 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 	console.log(num);
 
 2)
+
 	//convert European number to string
 	function filter(str, callback){
 		var result = "";
@@ -786,96 +787,75 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 
 	checkInt(3.14);
 
-10) //TODO Roman Numerals
+10) 
 
-function romanNumeral(num){
-	var result = "";
-	while(num > 0){
-		if(num > 1000){
-			var times = Math.floor(num/1000);
-			console.log(times);
-			for(var i = 0; i < times; i++){
-				result += "M";
+	function romanNumeral(num){
+		var result = "";
+		var times, i;
+		while(num > 0){
+			if(num >= 1000){
+				times = Math.floor(num/1000);
+				for(i = 0; i < times; i++){
+					result += "M";
+				}
+				num = num%1000;
+			}else{
+				if(num >= 500){
+				times = Math.floor(num/500);
+				for(i = 0; i < times; i++){
+					result += "D";
+				}
+				num = num%500;
+				}else{
+					if(num >= 100){
+				times = Math.floor(num/100);
+				for(i = 0; i < times; i++){
+					result += "C";
+				}
+				num = num%100;
+				}else{
+					if(num >= 50){
+				times = Math.floor(num/50);
+				for(i = 0; i < times; i++){
+					result += "L";
+				}
+				num = num%50;
+				}else{
+					if(num >= 10){
+				times = Math.floor(num/10);
+				for(i = 0; i < times; i++){
+					result += "X";
+				}
+				num = num%10;
+				}else{
+					if(num >= 5){
+				times = Math.floor(num/5);
+				for(i = 0; i < times; i++){
+					result += "V";
+				}
+				num = num%5;
+				}else{
+					if(num >= 1){
+				times = Math.floor(num/1);
+				for(i = 0; i < times; i++){
+					result += "I";
+				}
+				num = 0;
+				}
+				}
+				}
+				}
+				}
+				}
 			}
-			num = num/1000;
-		}else{
-			num = 0;
+			console.log(num);
 		}
+		
+		return result;
+		
 	}
-	
-	return result;
-	
-}
 
-romanNumeral(1500);
-
-function romanNumeral(num){
-	var result = "";
-	var times, i;
-	while(num > 0){
-		if(num >= 1000){
-			times = Math.floor(num/1000);
-			for(i = 0; i < times; i++){
-				result += "M";
-			}
-			num = num%1000;
-		}else{
-			if(num >= 500){
-			times = Math.floor(num/500);
-			for(i = 0; i < times; i++){
-				result += "D";
-			}
-			num = num%500;
-			}else{
-				if(num >= 100){
-			times = Math.floor(num/100);
-			for(i = 0; i < times; i++){
-				result += "C";
-			}
-			num = num%100;
-			}else{
-				if(num >= 50){
-			times = Math.floor(num/50);
-			for(i = 0; i < times; i++){
-				result += "L";
-			}
-			num = num%50;
-			}else{
-				if(num >= 10){
-			times = Math.floor(num/10);
-			for(i = 0; i < times; i++){
-				result += "X";
-			}
-			num = num%10;
-			}else{
-				if(num >= 5){
-			times = Math.floor(num/5);
-			for(i = 0; i < times; i++){
-				result += "V";
-			}
-			num = num%5;
-			}else{
-				if(num >= 1){
-			times = Math.floor(num/1);
-			for(i = 0; i < times; i++){
-				result += "I";
-			}
-			num = 0;
-			}
-			}
-			}
-			}
-			}
-			}
-		}
-		console.log(num);
-	}
-	
-	return result;
-	
-}
-
-romanNumeral(1600);
+	romanNumeral(1600);
 
 
 11)
@@ -950,19 +930,19 @@ romanNumeral(1600);
 
 6)
 
-function removeWhiteSpace(sentence){
-	while(sentence.charAt(0) === " "){
-		sentence = sentence.slice(1);
-	}
-	
-	while(sentence.charAt(sentence.length-1) === " "){
-		sentence = sentence.slice(0, -1);
+	function removeWhiteSpace(sentence){
+		while(sentence.charAt(0) === " "){
+			sentence = sentence.slice(1);
+		}
+		
+		while(sentence.charAt(sentence.length-1) === " "){
+			sentence = sentence.slice(0, -1);
+		}
+
+		return sentence;
 	}
 
-	return sentence;
-}
-
-removeWhiteSpace("   the quick brown fox  ");
+	removeWhiteSpace("   the quick brown fox  ");
 
 7)
 
@@ -1128,6 +1108,7 @@ For this project I would create a library object with name and address propertie
 
 	values({a:1, b:2, c:3});
 
+
 ####Exercise 14 (Dates in Depth)
 
 1)
@@ -1217,6 +1198,42 @@ For this project I would create a library object with name and address propertie
 
 4)
 
+	function currentDay(){
+		var day = new Date(Date.now());
+		var result = ""
+		switch(day.getDay()){
+			case 0:
+				result = "Sunday";
+				break;
+			case 1:
+				result = "Monday";
+				break;
+			case 2:
+				result = "Tuesday";
+				break;
+			case 3:
+				result = "Wednesday";
+				break;
+			case 4:
+				result = "Thursday";
+				break;
+			case 5:
+				result = "Friday";
+				break;
+			case 6:
+				result = "Saturday";
+				break;
+			default:
+				result = "Invalid Day";
+				break;
+		}
+		return result;
+	}
+
+	currentDay();
+
+5)
+
 	function lastDay(year, month){
 		var d = new Date(year, month, 0);
 		var day = d.getDay();
@@ -1262,7 +1279,71 @@ For this project I would create a library object with name and address propertie
 	lastDay(2016,2);
 
 
-	####Exercise 15 (Arrays In-Depth)
+6)
+
+	function recentDate(arr){
+		var closestDate = new Date(arr[0]);
+		for(var i = 0; i < arr.length; i++){
+			var temp = new Date(arr[i]);
+			if(temp > closestDate){
+				closestDate = temp;
+			}
+		}
+		return closestDate;
+	}
+
+
+	recentDate(["October 15, 1987 11:23:07", "October 15, 1986 11:23:07", "October 15, 1988 11:23:07"]);
+
+7)
+
+	function sortDate(arr){
+		for(var i = 0; i < arr.length; i++){
+			for(var j = 0; j < arr.length - i - 1; j++ ){
+				var firstDate = new Date(arr[j]);
+				var secondDate = new Date(arr[j+1]);
+				if(firstDate > secondDate) {
+			        var tmp = arr[j];  
+			        arr[j] = arr[j+1]; 
+			        arr[j+1] = tmp; 
+		      	}
+			}
+		}
+		
+		return arr;
+	}
+
+
+	sortDate(["October 15, 1990 11:23:07", "October 15, 1986 11:23:07", "October 15, 1988 11:23:07"]);
+
+8)
+
+	function daysCount(){
+		var year = new Date(Date.now());
+		var date1 = new Date("January 01, "+ year.getFullYear());
+		var date2 = new Date(Date.now());
+		
+		var diffInMilliSec = Math.abs(date1.getTime() - date2.getTime());
+		var milliSecInDay = 24 * 60 * 60 * 1000; 
+		return Math.floor(diffInMilliSec/milliSecInDay);
+	}
+
+	daysCount();
+
+9)
+
+	function age(dob){
+
+		var date1 = new Date(dob);
+		var date2 = new Date(Date.now());
+		
+		return date2.getFullYear() - date1.getFullYear()
+
+	}
+
+	age("January 08, 1990");
+
+####Exercise 15 (Arrays In-Depth)
 
 1)
 
