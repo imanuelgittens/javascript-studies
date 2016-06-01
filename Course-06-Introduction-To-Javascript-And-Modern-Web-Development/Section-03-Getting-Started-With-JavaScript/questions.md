@@ -16,9 +16,9 @@ This element also has a number of attributes that affect its behaviour and these
 
 2) cols - this attribute is used like this `cols="4"`. It specifies the visible width of the textarea. Our example states that the width should be 4 columns.
 
-3) disabled - this attributes specifies that the textarea should be disabled thus preveting users from using it
+3) disabled - this attributes specifies that the textarea should be disabled thus preventing users from using it.
 
-4) form - this attribute allows you to specify which form (within the same document) this textarea is associated with. If this form value is not specified, then the textarea must be a descendent of a form tag.
+4) form - this attribute allows you to specify which form (within the same document) this textarea is associated with. If this form value is not specified, then the textarea must be a descendant of a form tag.
 
 5) maxlength - this attribute specifies the maximum number of characters allows in the textarea.
 
@@ -32,7 +32,7 @@ This element also has a number of attributes that affect its behaviour and these
 
 10) rows - this attribute is used like this `rows="4"`. It specifies the visible height of the textarea. Our example states that the height should be 4 rows/lines.
 
-11) wrap - this attribute specifies how text should be wrapped when submitted a form. Possible values for this attribute are `wrap=hard` and `wrap=soft`.
+11) wrap - this attribute specifies how text should be wrapped when submitting a form. Possible values for this attribute are `wrap=hard` and `wrap=soft`.
 
 And that's about it for the `<textarea></textarea>` element. You now know what its used for and how different attributes affect its behaviour.
 
@@ -78,20 +78,20 @@ And that's how you use sibling selectors in CSS.
 
 *List the JavaScript keywords and describe their purpose and function.*
 
-* break - used to jump out of a loop
-* case - used as a comparator for the item in a switch statement
-* catch - used to handle an error
+* break - used to jump out of a loop.
+* case - used as a comparator for the item in a switch statement.
+* catch - used to handle an error.
 * class - used to define a class. 
 * const - creates a readOnly reference to a variable.
 * continue - this statement is used to skip on iteration of a loop.
 * debugger - invokes available debugging functionality.
 * default - used as default actions for switch and export statements.
-* delete - used to delete object properties or array elements
+* delete - used to delete object properties or array elements.
 * do - creates a loop that executes until a condition is met.
 * else - perform an action when an if statement's criteria is not met.
 * export - this statement is used to export functions, objects or primitives from a file or module.
 * extends - used to create a class that is a child of another class.
-* finally - is used to perform an action after a try-catch block (regardless of the try-catch results)
+* finally - is used to perform an action after a try-catch block (regardless of the try-catch results).
 * for - creates a loop that executes until a condition is met.
 * function - used to create a function.
 * if - used to test a condition.
@@ -104,14 +104,14 @@ And that's how you use sibling selectors in CSS.
 * super - used to call functions on an object's parent.
 * switch - used to select one of many code blocks to be executed.
 * this - used to specify the object that "owns" this current piece of code.
-* throw - used to create custom errors
+* throw - used to create custom errors.
 * try - used to execute a piece of code the perform different actions based on the outcome.
-* typeof - used to find a variable's type
+* typeof - used to find a variable's type.
 * var - used to define a variable.
-* void - used to evaluate a given expression and return undefined
-* while - used to create a loop that runs until a condition is met
-* with - extends the scope chain for a statement
-* yield - used to pause and resume generator functions
+* void - used to evaluate a given expression and return undefined.
+* while - used to create a loop that runs until a condition is met.
+* with - extends the scope chain for a statement.
+* yield - used to pause and resume generator functions.
 
 
 ####Question 4
@@ -120,15 +120,15 @@ And that's how you use sibling selectors in CSS.
 
 In JavaScript there are several ways in which values can be compared.  We will go through each of the comparison operators in detail for you to get a better idea of what they do and how they are used. 
 
-1) Equality(==) - this operator converts the two operands being compared to the same type then compares them to see if they are equal. Some example outputs from this comparator include
+1) Equality(==) - this operator converts the two operands being compared to the same type then compares them to see if they are equal. Some example outputs from this comparator include:
 	
 	1  == 1 //true
 	"1" == 1 // true
 	0 == false //true
 
-We see that even though the operands are of different types, when we compare them, they return true
+We see that even though the operands are of different types, when we compare them, they return true.
 
-2) Inequality(!=) - this operator converts the two operands being compared to the same type then checks if they are **not** equal. Some example outputs  from this comparator include
+2) Inequality(!=) - this operator converts the two operands being compared to the same type then checks if they are **not** equal. Some example outputs  from this comparator include:
 
 	1 != 1 //false
 	false != 0 //false
@@ -136,35 +136,35 @@ We see that even though the operands are of different types, when we compare the
 
 Since the operands are converted to the same type before comparing, all these statements return false.
 
-3) Identity or Strict Equality (===) - this operator compares two operands without any type conversion i.e they must be of the same type and have the same value. Some example outputs from this comparator include
+3) Identity or Strict Equality (===) - this operator compares two operands without any type conversion i.e they must be of the same type and have the same value. Some example outputs from this comparator include:
 
 	"1" === 1 //false
 	1 === 1 //true
 	false === 0 //false
 
-4) Non Identity or Strict Inequality (!==) - this operator compares two operands without any type conversion i.e. they must not be of the same type and must not have the same values. Some example outputs from this comparator include
+4) Non Identity or Strict Inequality (!==) - this operator compares two operands without any type conversion i.e. they must not be of the same type and must not have the same values. Some example outputs from this comparator include:
 
 	"1" !== 1 //true
 	"1" !== "1" //false
 	false !== 0 //true
 
-5) Greater than (>) - this operator returns true if the operand to it's left is greater than the operand to it's right. Some example outputs from this comparator include
+5) Greater than (>) - this operator returns true if the operand to it's left is greater than the operand to it's right. Some example outputs from this comparator include:
 
 	5 > 3 //true
 	1 > 4 //false
 
-6) Greater than or Equal to (>=) - this operator returns true if the operand to it's left is greater than or equal to the operand to it's right. Some example outputs from this comparator include
+6) Greater than or Equal to (>=) - this operator returns true if the operand to it's left is greater than or equal to the operand to it's right. Some example outputs from this comparator include:
 
 	3 >= 3 //true
 	10 >= 9 //true
 	2 >= 3 //false
 
-7) Less than (<) - this operator returns true if the operand to it's left is less than the operand to it's right. Some example outputs from this comparator include
+7) Less than (<) - this operator returns true if the operand to it's left is less than the operand to it's right. Some example outputs from this comparator include:
 
 	5 < 3 //false
 	1 < 4 //true
 
-8) Less than or Equal to (<=) - this operator returns true if the operand to it's left is less than or equal to the operand to it's right. Some example outputs from this comparator include
+8) Less than or Equal to (<=) - this operator returns true if the operand to it's left is less than or equal to the operand to it's right. Some example outputs from this comparator include:
 
 	3 <= 3 //true
 	10 <= 9 //false
@@ -184,7 +184,7 @@ In JavaScript, we write a function like this:
 		console.log("Hello");
 	}
 
-However, this function will not be executed unless we *call** it like this:
+However, this function will not be executed unless we **call** it like this:
 
 	hello() //the () calls signals that the function should be run or called.
 
@@ -194,7 +194,7 @@ It is the same when we assign a function to a varible
 		console.log("Hello");
 	}
 
-We must still all the function like this:
+We must still call the function like this:
 
 	hello();
 
@@ -204,7 +204,7 @@ With self invoking functions however, we do not need to call them. Let's see how
 		console.log("Hello")
 	})()				
 
-notice that we add the **()** to the end of the function. Written this way, the function is executed immediately without the need for calling hence we say it is a self invoking function. 
+Notice that we add the `()` to the end of the function. Written this way, the function is executed immediately without the need for calling hence we say it is a self invoking function. 
 
 ####Question 6
 
@@ -249,7 +249,7 @@ We create a subtractor function that accepts a value and returns a function. A c
 
 	var sub5 = subtractor(5);
 	
-Here we invoke the subtractor function with a value of 5 and store it in the sub5 variable. This function return a function so the sub5 variable now looks like this:
+Here we invoke the subtractor function with a value of 5 and store it in the sub5 variable. This function returns a function so the sub5 variable now looks like this:
 
 	var sub5 = function(y){
 		return x - y;
@@ -259,7 +259,7 @@ We run the sub5 function and we see that it still had a reference to the `x` var
 
 	console.log(sub5(2));  // 3
 
-And that's what closures do. They basically ensure that functions have access to variables by keeping a reference to those variables.
+And that's what closures do, they basically ensure that these inner functions have access to variables from their parent functions by keeping a reference to those variables.
 
 ####Question 7
 
@@ -279,7 +279,7 @@ The JavaScript language uses a concept called **scope** to determine how and whe
 	}
 
 
-We see that the variable defined outside of the function is a global variable and the one defined inside the function is a local variable. AS mentioned above, global variables can be access from anywhere in a program, even inside a function. This means that the following code will work.
+We see that the variable defined outside of the function is a global variable and the one defined inside the function is a local variable. As mentioned above, global variables can be accessed from anywhere in a program, even inside a function. This means that the following code will work.
 
 	var arr = [1,2,3]; //global scope variable
 
@@ -298,7 +298,7 @@ Local variables however, can only be accessed inside the function in which it wa
 		console.log(hello);
 	}
 
-	console.log(hello); //ERROR: this hello variable cab only be accessed within the **test** function.
+	console.log(hello); //ERROR: this hello variable can only be accessed within the **test** function.
 
 It is also important to note that in JavaScript, if you define a variable without the `var` keyword, it is **automatically placed in the global scope** no matter where it is defined. Let's look at an example:
 
@@ -318,7 +318,7 @@ When declaring variables in JavaScript, it is important that they be put in the 
 
 *Describe how the JavaScript built-in functions `apply` and `call` work. Use examples to demonstrate how each one works.*
 
-In order to understand how **call** and **apply** work, we must first understand that functions in JavaScript are objects as well. Like all other objects, they have access to certain methods (**call** and **apply** are town of these methods). These methods allow us to define what the `this` variable points to when executing a function. Let's look at an example:
+In order to understand how **call** and **apply** work, we must first understand that functions in JavaScript are objects as well. Like all other objects, they have access to certain methods (**call** and **apply** are two of these methods). These methods allow us to define what the `this` variable points to when executing a function. Let's look at an example:
 
 	var person = {
 		firstname: 'John',
