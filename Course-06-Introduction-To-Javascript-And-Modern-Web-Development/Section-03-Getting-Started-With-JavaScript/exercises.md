@@ -809,6 +809,75 @@ function romanNumeral(num){
 
 romanNumeral(1500);
 
+function romanNumeral(num){
+	var result = "";
+	var times, i;
+	while(num > 0){
+		if(num >= 1000){
+			times = Math.floor(num/1000);
+			for(i = 0; i < times; i++){
+				result += "M";
+			}
+			num = num%1000;
+		}else{
+			if(num >= 500){
+			times = Math.floor(num/500);
+			for(i = 0; i < times; i++){
+				result += "D";
+			}
+			num = num%500;
+			}else{
+				if(num >= 100){
+			times = Math.floor(num/100);
+			for(i = 0; i < times; i++){
+				result += "C";
+			}
+			num = num%100;
+			}else{
+				if(num >= 50){
+			times = Math.floor(num/50);
+			for(i = 0; i < times; i++){
+				result += "L";
+			}
+			num = num%50;
+			}else{
+				if(num >= 10){
+			times = Math.floor(num/10);
+			for(i = 0; i < times; i++){
+				result += "X";
+			}
+			num = num%10;
+			}else{
+				if(num >= 5){
+			times = Math.floor(num/5);
+			for(i = 0; i < times; i++){
+				result += "V";
+			}
+			num = num%5;
+			}else{
+				if(num >= 1){
+			times = Math.floor(num/1);
+			for(i = 0; i < times; i++){
+				result += "I";
+			}
+			num = 0;
+			}
+			}
+			}
+			}
+			}
+			}
+		}
+		console.log(num);
+	}
+	
+	return result;
+	
+}
+
+romanNumeral(1600);
+
+
 11)
 
 	function addMoney(a, b){
@@ -879,7 +948,21 @@ romanNumeral(1500);
 
 	binaryLength(10000123);
 
-6) TODO remove white space
+6)
+
+function removeWhiteSpace(sentence){
+	while(sentence.charAt(0) === " "){
+		sentence = sentence.slice(1);
+	}
+	
+	while(sentence.charAt(sentence.length-1) === " "){
+		sentence = sentence.slice(0, -1);
+	}
+
+	return sentence;
+}
+
+removeWhiteSpace("   the quick brown fox  ");
 
 7)
 
