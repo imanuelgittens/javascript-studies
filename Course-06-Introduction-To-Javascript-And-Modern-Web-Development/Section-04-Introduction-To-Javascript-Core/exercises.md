@@ -156,5 +156,43 @@ Question 10)
 	}
 	console.log(i); //->5
 
-`i` is defined in the global scope so the 
+`i` is defined in the global scope so when the loop stops, `i` is 5 and that is printed tot he console. 
+
+####Exercise 3
+
+Question 1)
+
+	var obj = {
+	    a : 6,
+	    print: function () {
+	        console.log(this.a); 
+	    }
+	};
+	var obj1 = {
+	    a : 7,
+	    print: null
+	};
+	obj.print(); //->6
+	obj1.print = obj.print;
+	obj1.print.call(obj);//->6
+
+
+Question 2)
+
+var name = 'John Doe';
+ 
+var person = {
+   name: 'Johnny Doe',
+   details: {
+      name: 'Jonathan Doe',
+      print: function() {
+         return this.name;
+      }
+   }
+};
+ 
+console.log(person.details.print()); // Jonathan Doe - The object that invokes this function is the details object. 
+ 
+var detailsPrint = person.details.print;
+console.log(detailsPrint()); //John Doe - The variable definition does not invoke the function it simply defines it. The function is invoked in the global scope hence it prints 'John Doe'.
 
