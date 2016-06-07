@@ -94,6 +94,48 @@ Strings
 
 Strings are passed by reference however they are immutable so this means that the swap function actually created new values for these strings hence the original values are unchanged.
 
+Arrays
+
+var a = [1,2,3];
+var b = [4,5,6];
+
+	function swap(first, second){
+	    var tmp = [];
+	    var len = first.length;
+	    var i;
+	    for (i = 0; i < len; i++) {
+	        tmp.push(first[i]);
+	        first[i] = second[i];
+	        second[i] = tmp[i];
+	    }
+	}
+
+	swap(a,b);
+
+	console.log("a = " +a);//4,5,6
+	console.log("b = " +b);//1,2,3
+
+Arrays are passed by reference so this means that a pointer to the actual memory location of a is passed to the function. The function updates the value so the actual values of a and b are changed even after the function is completed. 
+
+Objects
+
+	var a = {name: "John"};
+	var b = {name: "Tom"};
+	function swap(first, second){
+	    var tmp = {};
+	    for(var property in first){
+	    	tmp[property] = first[property];
+	    	first[property] = second[property];
+	    	second[property] = tmp[property];
+	    }
+	}
+
+	swap(a,b);
+
+	console.log("a = " +a.name);//Tom
+	console.log("b = " +b.name);//John
+
+Objects are passed by reference so this means that a pointer to the actual memory location of a is passed to the function. The function updates the value so the actual values of a and b are changed even after the function is completed. 
 
 ###Exercise 2
 
