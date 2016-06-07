@@ -40,7 +40,59 @@ Question 2)
 
 Question 3)
 
-TODO
+Numbers
+
+	var a = 1;
+	var b = 2;
+
+	function swap(first,second){
+		var temp = first;
+		first = second;
+		second = temp;
+	}
+
+	swap(a,b);
+
+	console.log("a = " +a); //1
+	console.log("b = " +b); //2
+
+Numbers are passed by value so this means that a copy of a and b were passed to the function hence the original values are unchanged.
+
+Booleans
+
+	var a = true;
+	var b = false;
+
+	function swap(first,second){
+		var temp = first;
+		first = second;
+		second = temp;
+	}
+
+	swap(a,b);
+
+	console.log("a = " +a); //true
+	console.log("b = " +b); //false
+
+Booleans are passed by value so this means that a copy of a and b were passed to the function hence the original values are unchanged.
+
+Strings
+
+	var a = "String1";
+	var b = "String2";
+
+	function swap(first,second){
+		var temp = first;
+		first = second;
+		second = temp;
+	}
+
+	swap(a,b);
+
+	console.log("a = " +a); //"String1"
+	console.log("b = " +b); //"String2"
+
+Strings are passed by reference however they are immutable so this means that the swap function actually created new values for these strings hence the original values are unchanged.
 
 
 ###Exercise 2
@@ -121,33 +173,33 @@ Question 6)
 
 Question 7)
 
-var a = 5;
-scopeFunc9();
-function scopeFunc9(){
-    console.log(a); //undefined - because the variable `a` is hoisted when the function runs and its value is set to undefined. 
-    if (false)
-    {
-        var a = 123;  
-    }
-}
+	var a = 5;
+	scopeFunc9();
+	function scopeFunc9(){
+	    console.log(a); //undefined - because the variable `a` is hoisted when the function runs and its value is set to undefined. 
+	    if (false)
+	    {
+	        var a = 123;  
+	    }
+	}
 
 Question 8)
 
 	var scopeFunc10;
-	console.log(typeof scopeFunc10); //-?
+	console.log(typeof scopeFunc10); //-function - because functions are hoisted in their entirety before the code is actually executed. 
 	function scopeFunc10() {
 	   console.log(5);
 	}
-	console.log(typeof scopeFunc10); //-?
+	console.log(typeof scopeFunc10); //-function - because functions are hoisted in their entirety before the code is actually executed.
 
 Question 9)
 
-	console.log(typeof scopeFunc11); //-?
+	console.log(typeof scopeFunc11); //-function - before the code is executed, the functions are hoisted in their entirety to we get this result before the code even runs
 	var scopeFunc11 = 7;
 	function scopeFunc11() {
 	   console.log(5);
 	}
-	console.log(typeof scopeFunc11); //-?
+	console.log(typeof scopeFunc11); //number - initially the variable called scopeFunc11 would be set to undefined however when we executed the code it is properly defined as a number hence we get this result after it is defined properly
 
 Question 10)
 
@@ -156,7 +208,7 @@ Question 10)
 	}
 	console.log(i); //->5
 
-`i` is defined in the global scope so when the loop stops, `i` is 5 and that is printed tot he console. 
+`i` is defined in the global scope so when the loop stops, `i` is 5 and that is printed to the console. 
 
 ####Exercise 3
 
@@ -179,20 +231,20 @@ Question 1)
 
 Question 2)
 
-var name = 'John Doe';
+	var name = 'John Doe';
+	 
+	var person = {
+	   name: 'Johnny Doe',
+	   details: {
+	      name: 'Jonathan Doe',
+	      print: function() {
+	         return this.name;
+	      }
+	   }
+	};
+	 
+	console.log(person.details.print()); // Jonathan Doe - The object that invokes this function is the details object. 
  
-var person = {
-   name: 'Johnny Doe',
-   details: {
-      name: 'Jonathan Doe',
-      print: function() {
-         return this.name;
-      }
-   }
-};
- 
-console.log(person.details.print()); // Jonathan Doe - The object that invokes this function is the details object. 
- 
-var detailsPrint = person.details.print;
-console.log(detailsPrint()); //John Doe - The variable definition does not invoke the function it simply defines it. The function is invoked in the global scope hence it prints 'John Doe'.
+	var detailsPrint = person.details.print;
+	console.log(detailsPrint()); //John Doe - The variable definition does not invoke the function it simply defines it. The function is invoked in the global scope hence it prints 'John Doe'.
 

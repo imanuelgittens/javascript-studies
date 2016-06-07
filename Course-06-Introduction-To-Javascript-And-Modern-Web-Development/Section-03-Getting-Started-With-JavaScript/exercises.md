@@ -103,8 +103,7 @@ The number one has the same value as true
 4)
 
 	function max(a, b){
-		var result = a > b === true ? "a greater than b" : "b greater than a";
-		return result;
+		return (a > b) ? "a greater than b" : "b greater than a";
 	}
 
 	max(4, 3);
@@ -136,15 +135,8 @@ The number one has the same value as true
 
 	function min(a, b, c){
 		var min = a;
-		if(b < c){
-			if(b < min){
-				min = b;
-			}
-		}else{
-			if(c < min){
-				min = c;
-			}
-		}
+		if( b < min) {min = b;}
+		if( c < min) {min = c;}
 		return min;
 	}
 
@@ -319,8 +311,6 @@ The number one has the same value as true
 			for(var i = 2; i < num; i++){
 				if(num % i === 0){
 					return false;
-				}else{
-				
 				}
 			}
 			return true;
@@ -342,8 +332,6 @@ The number one has the same value as true
 			for(var i = 2; i < num; i++){
 				if(num % i === 0){
 					return false;
-				}else{
-				
 				}
 			}
 			return true;
@@ -433,12 +421,22 @@ The number one has the same value as true
 		var count = 0;
 		var num = 0;
 		do{
-			if(num % 3 === 0 || num % 5 ===0){
-				console.log(num);
+			if(num % 3 === 0 && num % 5 ===0){
 				num++;
-				count++;
+			}else{
+				if(num % 3 === 0 || num % 5 ===0){
+				
+					console.log(num);
+					num++;
+					count++;
+				
+				
+				}else{
+					num++;
+				}
 			}
-			num++;
+			
+			
 		}
 		while(count < 100);
 	}
@@ -606,12 +604,15 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 
 2)
 
-	function reduce(arr, callback){
-		var result = 0;
-		for(var i = 0; i < arr.length; i++){
-			result += callback(0, arr[i]);
-		}
-		return result;
+	function reduce(arr, cb, initial) {
+	    var result = initial || arr[0],
+	        i = initial ? 0 : 1,
+	      len = arr.length;
+
+	  for ( ; i < len; i++) {
+	    result = cb(result, arr[i]);
+	  }
+	  return result;
 	}
 
 	var sum = reduce([1, 3, 6, 7], function(previous_value, current_value){
@@ -639,6 +640,12 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 	});
 
 	console.log(num);
+
+	//second solution
+
+	function toNum(numberString) {
+  		return +numberString.replace(/,/g, '');
+	}
 
 2)
 
@@ -857,6 +864,29 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 
 	romanNumeral(1600);
 
+	//second (more elegant solution)
+
+	function toRoman(num) {
+	    let result = '';
+	    let dictionary = [
+	        { v: 1000, r: 'M' },
+	        { v: 500, r: 'D' },
+	        { v: 100, r: 'C' },
+	        { v: 50, r: 'L' },
+	        { v: 10, r: 'X' },
+	        { v: 5, r: 'V' },
+	        { v: 1, r: 'I' }
+	    ];
+
+	    dictionary.forEach(function(item) {
+	       while (num >= item.v) {
+	            result += item.r;
+	            num -= item.v;
+	       }
+	    });
+	    return result;
+	}
+
 
 11)
 
@@ -893,13 +923,21 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 3)
 
 	function wordSplit(sentence){
-		var arr = sentence.split(/[^\w]/);
+		var str = sentence.replace(/[^a-zA-Z ]+/g, '').trim();
+		var arr = str.split(/\s/);
 		for(var i = 0; i < arr.length; i++){
 			console.log(arr[i]);
 		}
+		
 	}
 
-	wordSplit("The quick brown, fox jumped? over. The lazy dog! 1");
+	wordSplit("The quick brown, fox jumped? over. The lazy dog!      ");
+
+	//second solution
+
+	function trim(sentence) {
+  		return sentence.replace(/^\s*|\s*$/g, '');
+	}
 
 4)
 
@@ -1044,11 +1082,7 @@ For this project I would create a library object with name and address propertie
 	function merge(obj1, obj2){
 		var result =  {};
 		for(var p in obj1){
-			if(p in obj2){
-				result[p] = obj2[p];
-			}else{
 				result[p] = obj1[p];
-			}
 		}
 		
 		for(var property in obj2){
@@ -1059,6 +1093,18 @@ For this project I would create a library object with name and address propertie
 	}
 
 	merge({a:2, b:3, c:4}, {b:67, d:12, e:14});
+
+	//second solution
+
+	function merge(obj1, obj2) {
+	  var result = {},
+	        allKeys = Object.keys(obj1).concat(Object.keys(obj2));
+
+	  allKeys.forEach(function(key) {
+	    result[key] = (key in obj2) ? obj2[key] : obj1[key];
+	  });
+	  return result;
+	}
 
 4)
 
@@ -1081,12 +1127,12 @@ For this project I would create a library object with name and address propertie
 5)
 
 	function omit(obj, callback){
-		var result = [];
+		var result = {};
 		
 		for(var property in obj){
 			var test = callback(property);
 			if(test){
-				result.push(property);
+				result[property] = obj[property];
 			}
 		}
 		return result;
@@ -1315,6 +1361,12 @@ For this project I would create a library object with name and address propertie
 
 
 	sortDate(["October 15, 1990 11:23:07", "October 15, 1986 11:23:07", "October 15, 1988 11:23:07"]);
+
+	//second solution
+
+	function sortDate(arr){	
+		return arr.sort();
+	}
 
 8)
 
