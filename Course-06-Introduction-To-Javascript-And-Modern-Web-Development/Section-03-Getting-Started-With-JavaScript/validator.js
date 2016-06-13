@@ -233,19 +233,247 @@
 		//todo
 	}
 
+	validator.isComposedof = function(){
+		//todo
+	}
+
+	validator.isLength = function(input, n){
+
+		if(!input){
+			throw "Missing Parameter in isLength function: 'input'.";
+		}
+		
+		return input.length <= n;
+	};
+
+	validator.isOfLength = function(input, n){
+
+		if(!input){
+			throw "Missing Parameter in isOfLength function: 'input'.";
+		}
+		
+		return input.length >= n;
+	};
+
+	validator.countWords = function(){
+		//todo
+	}
+
+	validator.lessWordsThan = function(){
+		//todo
+	}
+
+	validator.moreWordsThan = function(){
+		//todo
+	}
+
+	validator.isBetween = function(input, floor, ceil){
+		if(!input){
+			throw "Missing Parameter in isBetween function: 'input'.";
+		}
+
+		return (input >= floor && input <= ceil);
+	}
+
+	validator.isAlphanumeric = function(input){
+	
+		if(input.length === 0){
+			return true;
+		}
+		
+		if(!input){
+			throw "Missing Parameter in isAlphanumeric function: 'input'.";
+		}
+
+		var result = true;
+		var i, char;
+
+		for(i = 0; i < input.length; i++){
+			char = input.charAt(i);
+			if((char.toLowerCase() === char.toUpperCase())){
+				result = false;
+			}
+		}
+		
+		return result;
+	};
+
+	validator.isCreditCard = function(input){
+
+		if(!input){
+				throw "Missing Parameter in isCreditCard function: 'input'.";
+		}
+		
+		var noHyphens, i;
+		var result = true;
+			
+		if(input.indexOf("-") > -1){ //check for hyphens
+			noHyphens = input.split("-").join(""); //make string without hyphens
+			
+			if(noHyphens.length !== 16){
+				result = false;
+			}else{
+					for(i = 0; i < noHyphens.length; i++){
+					char = noHyphens.charAt(i);
+					if((parseInt(char).toString() !== char) && (char.toLowerCase() === char.toUpperCase())){ //check if char is not a number or if char is a symbol
+						console.log(char);
+						result = false;
+					}
+				}
+			}
+		}else{ // no hyphens
+			if(input.length !== 16){
+				result = false;
+			}else{
+					for(i = 0; i < input.length; i++){
+					char = input.charAt(i);
+					if((parseInt(char).toString() !== char) && (char.toLowerCase() === char.toUpperCase())){ //check if char is not a number or if char is a symbol
+						console.log(char);
+						result = false;
+					}
+				}
+			}
+		}
+		
+		return result;
+	
+	};
+
+	validator.isHex = function isHex(input){
+		if(!input){
+			throw "Missing Parameter in isCreditCard function: 'input'.";
+		}
+		
+		var i, char;
+		var result = true;
+		
+		if(input.charAt(0) !== "#"){
+			result = false;
+		}else{
+			if(input.length !== 4 && input.length !== 7){ //ensure that the lengths are correct
+				result = false;
+			}else{
+				for(i = 1; i < input.length; i++){ //we start from the second character since we already identified the #
+					char = input.charAt(i);
+					if((parseInt(char).toString() !== char) && (char.toLowerCase() === char.toUpperCase())){ //if char is not a number and character is a symbol
+						result = false;
+					}else{
+						if((parseInt(char).toString() !== char) && (char.toUpperCase() > "F")){ //if char is not a number and char is a letter greater than F
+							result = false;
+						}
+					}
+				}
+			}
+		}
+	};
+
+	validator.isRGB = function(input){
+
+		if(!input){
+			throw "Missing Parameter in isRGB function: 'input'.";
+		}
+
+		var firstPart = input.slice(0,4); //test for 'rgb(' at the start
+		var lastPart = input.charAt(input.length - 1); //test for ')' at the end
+		var colorCode = input.slice(4, input.length - 2); //get content that is inside the brackets
+		var codeValues = colorCode.split(","); //break string apart by colors
+		var i, colorNum;
+		var result = true;
+		
+		if(firstPart === "rgb(" && lastPart === ")"){
+			for(i = 0; i < codeValues.length; i++){
+				colorNum = parseInt(codeValues[i].trim());
+				if(colorNum < 0 || colorNum > 255){
+					result = false;
+				}
+			}
+		}else{
+			result = false;
+		}
+		
+		return result;
+			
+		}
+	};
+
+	validator.isHSL = function(input){
+
+	if(!input){
+		throw "Missing Parameter in isHSL function: 'input'.";
+	}
+
+	var firstPart = input.slice(0,4); //test for 'rgb(' at the start
+	var lastPart = input.charAt(input.length - 1); //test for ')' at the end
+	var colorCode = input.slice(4, input.length - 1); //get content that is inside the brackets
+	var codeValues = colorCode.split(","); //break string apart by colors
+	var i, colorNum;
+	var result = true;
+	
+	if(firstPart === "hsl(" && lastPart === ")"){
+			
+		for(i = 0; i < codeValues.length; i++){ // try to convert all code values from a string to a number 
+			codeValues[i] = Number(codeValues[i].trim());
+		}
+		
+		if(!isNaN(codeValues[0])){//ensure that value is a number
+			if(codeValues[0] < 0 || codeValues[0] > 360){
+				result = false;
+			}
+		}else{
+			result = false
+		}
+		
+		if(!isNaN(codeValues[1])){//ensure that value is a number
+			if(codeValues[1] < 0 || codeValues[1] > 1){
+				result = false;
+			}
+		}else{
+			result = false;
+		}
+		
+		if(!isNaN(codeValues[2])){//ensure that value is a number
+			if(codeValues[2] < 0 || codeValues[2] > 1){
+				result = false;
+			}
+		}else{
+			result = false;
+		}
+	}else{
+		result = false;
+	}
+	
+	return result;
+
+	};
+	
+	validator.isColor = function(input){
+
+		if(!input){
+			throw "Missing Parameter in isColor function: 'input'.";
+		}
+
+		if(this.isHex(input) && this.RGB(input) && this.isHSL(input)){
+			return true;
+		}else{
+			return false;
+		}
+	};
+
+	validator.isTrimmed = function(input){
+
+		if(!input){
+			throw "Missing Parameter in isTrimmed function: 'input'.";
+		}
+
+		var newString = input.split(" ");
+		if(newString.indexOf('') !== -1){
+			return false;
+		}else{
+			return true;
+		}
+	};
+
+
 })(window);
-
-
-/*var isTweetLength = function(tweet) {
-  if (!tweet) throw "Missing Parameter in isTweetLength function: 'tweet'."
-  if (tweet.length <= 140 && tweet.length > 0) return true;
-  return false;
-}*/
-
-// you do not need to include the isTweetLength function in your file.
-/*validator.isTweetLength = function(tweet) {
-  
-};*/
-
 
 
