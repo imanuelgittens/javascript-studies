@@ -81,8 +81,26 @@
 		return input;
 	};
 
-	utilities.pluralize = function(){
-		//todo
+	utilities.pluralize = function d(n, word, pluralWord){
+
+		if(pluralWord){
+			if(n === 1){
+				return word;
+			}else{
+				if(n == 2){
+					return pluralWord;
+				}
+			}
+		}else{
+			if(n === 1){
+				return word;
+			}else{
+				if(n != 1){
+					return word+"s";
+				}
+			}
+		}
+		
 	};
 
 	utilities.toDash = function(input){
@@ -108,5 +126,74 @@
 
 		
 	};
+
+	utilities.toCamel = function(input){
+		if(!input){
+			throw "Missing Parameter in pairs toCamel function: 'input'.";	
+		}
+
+		var i;
+		var result = "";
+		if(input.length > 1){ //string must have a length great than one
+			for(i = 0; i < input.length; i++){ 
+				if(input.charAt(i) === "-"){
+					result += input.charAt(i+1).toUpperCase();
+					i++;
+				}else{
+					result += input.charAt(i).toLowerCase();
+				}
+			}
+		}else{
+			throw "Please provide a non-empty string.";
+		}
+		
+		return result;
+
+		
+	};
+
+	utilities.has = function(obj, search){
+		if(!obj){
+			throw "Missing Parameter in has function: 'obj'.";	
+		}
+
+		if(!search){
+			throw "Missing Parameter in has function: 'search'.";	
+		}		
+		
+		var key;
+		var result = false;
+		
+		for(key in obj){
+			if(obj[key] === search){
+				result = true;
+			}
+		}
+
+		return result;
+
+	};
+
+	utilities.pick = function(obj, keysArr){
+		if(!obj){
+			throw "Missing Parameter in pick function: 'obj'.";	
+		}
+
+		if(!search){
+			throw "Missing Parameter in pick function: 'keysArr'.";	
+		}	
+		
+		var key, i;
+		var result = {};
+		
+		for(i = 0; i < keysArr.length; i++){
+			result[keysArr[i]] = obj[keysArr[i]];
+		}
+
+		return result;
+
+	};
+
+	window.utilities = utilities; //pass utilites object to global scope
 
 })(window);
