@@ -225,8 +225,26 @@
 		
 	};
 	
-	validator.contains = function(){
-		//todo
+	validator.contains = function(inputString, wordsArray){
+		var i,j,k;
+		var result = true;
+		
+		for(i = 0; i < inputString.length; i++){//remove symbols
+
+				if(inputString.charAt(i).toLowerCase() === inputString.charAt(i).toUpperCase()){
+					inputString = inputString.split(inputString.charAt(i)).join(" ");
+				}
+		}
+		
+		var words = inputString.toLowerCase().split(' ');
+
+		for(k = 0; k < wordsArray.length; k++){
+
+			if(words.indexOf(wordsArray[k]) === -1){
+				result = false;
+			}
+		}
+		return result;
 	};
 
 	validator.lacks = function(){
