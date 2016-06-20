@@ -2,8 +2,24 @@
 
 	var utilities = {};
 
-	utilities.by = function(){
-		//todo
+	utilities.by = function(list, index, callback){
+
+		if(!list){
+			throw "Missing Parameter in by function: 'list'.";	
+		}
+
+		if(!index){
+			throw "Missing Parameter in by function: 'index'.";	
+		}
+
+		if(!callback){
+			throw "Missing Parameter in by function: 'callback'.";	
+		}
+		
+		for(var i = index-1; i <= list.length; i+=index){
+			callback(list[i]);
+		}
+		
 	};
 
 	utilities.keys = function(input){
