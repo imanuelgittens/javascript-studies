@@ -173,3 +173,59 @@ The name servers for the top level .tt domains are
 
 3) We can use the browser address bar to test if a domain name is case sensitive. If we enter GOOGLE.COM and google.com, they both go to the same web page so this leads to the conclusion that domain names are case insensitive. 
 
+
+####Exercise 5
+
+1) DNS using UDP over TCP because of the speed associated with UDP. We expect DNS requests to be handled quickly so it uses UDP to avoid all the over of SYN, SYN-ACK and ACK used by the TCP protocol. 
+
+2) TCP's 3 way handshake is used to ensure that a connection is established. This connection guarantees that any information from the sender is delivered the receiver. 
+
+The server must do the SYN-ACK to inform the client about the socket through which the data will be sent. Once the client knows which socket to connect to, it sends a final ACK and data transfer can begin. 
+
+3) Protocols such as RTP can adjust the rate at which they display received data to give them enough time to make another request for lost packets. The protocol knows when packets are lost based on packet header information so in the case of video the user may experience a lag while the protocol makes requests for lost packets.
+
+
+####Exercise 6
+
+1) The 403 Forbidden HTTP response code will be shown when a user is trying to access a protected resource on a server.
+
+2) For this case, only one HTTP session is need to get all the information required however 4 total requests need to be made within that one session. Three requests for the images and one for the CSS stylesheet. 
+
+3) 
+
+Create - We can use the POST HTTP method to create new resources on the server
+Read - We can use the GET HTTP method to read data from the server
+Update - We can use the PUT HTTP method to update resources on the server
+Delete - We can use the DELETE HTTP method to delete resources on the server
+
+####Exercise 7
+
+1) The tokens for this HTML code are -
+
+	<html>, <head>, <title>, My Homepage, </title>, </head>, <body>, <h1>, About Me, </h1>, <img>, </body>, </html>
+
+![Imgur](http://i.imgur.com/LokxSWV.jpg)
+
+2)
+
+	<html>
+	  <body>
+	    </div>
+	    <h1><p>My bad HTML</h1></p>
+	    <br>
+	  </body>
+	  </br>
+	</html>
+
+The above code is malformed because -
+
+- there is a closing div without an opening div
+- the h1 and p tags are closed int he wrong order
+
+The chrome browser does display the HTML as expected however. 
+
+####Exercise 8
+
+1) The page is re-painted when we scroll and whenever we click on things. There is also some recursive painting when the page is loaded. It seems that every time an element on the page moves or is interacted with, the browser need to re-paint either the page or the element that is being acted upon.
+
+2) When we set the position on an HTML element as **fixed**, we remove it from the normal document flow. FOr this reason, adjusting the size or position of a fixed position element will not affect the other element in the normal document flow.  
