@@ -52,7 +52,7 @@ This status code is returned when a request is sent to the server however the re
 
 205 Reset Content
 
-There are some cases where the client sends a request to the server and the server fulfills the request but the document view (client side) that sent the request needs to be reset. A classic example of this is when an HTML form is submitted, and the fields are reset to contain no data. This reseting of the document view on the client's end the the HTTP 205 status code in action. It resets the document view once the request has been accepted by the server.
+There are some cases where the client sends a request to the server and the server fulfills the request but the document view (client side) that sent the request needs to be reset. A classic example of this is when an HTML form is submitted, and the fields are reset to contain no data. This reseting of the document view on the client's end is the HTTP 205 status code in action. It resets the document view once the request has been accepted by the server.
 
 
 
@@ -61,7 +61,7 @@ There are some cases where the client sends a request to the server and the serv
 
 301 Moved Permanently
 
-This HTTP status code means that the resource requested by the client has been permanently moved and has been assigned  new URI. This status code returns the new URI of the requested resource and future requests should use the return URI instead of the old one. 
+This HTTP status code means that the resource requested by the client has been permanently moved and has been assigned  new URI. This status code returns the new URI of the requested resource and future requests should use the returned URI instead of the old one. 
 
 
 302 Found
@@ -73,7 +73,7 @@ This HTTP status code means that the resource requested by the client has been t
 
 305 Use Proxy
 
-This HTTP status code indicates that the requested resource must be accessed through the proxy given in the Location field. the client is expected to use this proxy for future requests. 
+This HTTP status code indicates that the requested resource must be accessed through the proxy given in the Location field. The client is expected to use this proxy for future requests. 
 
 
 
@@ -103,7 +103,7 @@ The server encountered an unexpected condition which prevented it from fulfillin
 
 502 Bad Gateway
 
-Sometimes a server can act as a gateway to get information hosted on other servers that are connected to it. If a server that is acting as a gateway receives an error while requested a resource from one of its connected servers, the 502 HTTP status code is returned. 
+Sometimes a server can act as a gateway to get information hosted on other servers that are connected to it. If a server that is acting as a gateway receives an error while requesting a resource from one of its connected servers, the 502 HTTP status code is returned. 
 
 
 
@@ -122,6 +122,9 @@ Description	- The HINFO DNS record specifies the host / server's type of CPU and
 
 Example - 
 
+	owner-name ttl  class   rr      Hardware        OS
+                	IN      HINFO   PC-Intel-700mhz "Redhat Linux 7.1"
+
 
 DNS Record Type - ISDN
 
@@ -130,6 +133,9 @@ Full form - Integrated Services Digital Network
 Description	- The ISDN DNS maps a domain name to an ISDN (Integrated Services Digital Network) telephone number.	
 
 Example - 
+
+	owner 			ttl 	class    isdn_address sub_address
+	example.com     3600	IN   	 491234567890  
 
 
 DNS Record Type - NS
@@ -140,6 +146,9 @@ Description	- The NS DNS records identify the DNS servers responsible for a zone
 
 Example - 
 
+	owner-name     ttl  class   rr     target-name
+	example.com.        IN      NS     ns1.example.com.
+
 
 DNS Record Type - PTR	
 
@@ -149,6 +158,9 @@ Description	- PTR DNS records are primarily used as "reverse records" - to map I
 
 Example - 
 
+	NAME							TTL		TYPE	DATA/SYSTEM
+	10.27/1.168.192.in-addr.arpa.	1800	PTR		mail.example.com.
+
 
 DNS Record Type - SOA
 
@@ -157,6 +169,9 @@ Full form - Start Of Authority
 Description	- A start of authority (SOA) record is information stored in a domain name system (DNS) zone about that zone and about other DNS records.
 
 Example - 
+
+	owner-name  	ttl 	class 	rr    name-server 		email-addr
+	example.com.    		IN    	SOA   ns.example.com. 	hostmaster.example.com.
 
 
 ####Question 4
@@ -171,7 +186,7 @@ Advantages
 
 1) Cheap to install and expand
 
-2) Transmitting data is not affected by high traffic since since computers that have tokens can transmit data
+2) Transmitting data is not affected by high traffic since only computers that have tokens can transmit data
 
 Disadvantages
 
@@ -183,7 +198,7 @@ Disadvantages
 
 
 
-Tree Topology
+**Tree Topology**
 
 This type of network has one root node and all other nodes are connected to it making a hierarchy. This type of network should have at least three levels to the hierarchy.
 
@@ -206,7 +221,7 @@ Disadvantages
 3) Requires a lot of cables
 
 
-Bus Topology	
+**Bus Topology**	
 
 In this type of network, every computer and network device is connect to a single cable. 
 

@@ -9,7 +9,7 @@ When we speak about protocols within the context of web development, we are gene
 
 	A network protocol defines the rules and conventions for communication between network devices. 
 
-From this definition we can see that a protocol governs how devices connected to a network talk or communicate with each other. The internet, begin the largest and most complex network in the world, uses a variety of protocols to perform different tasks and to ensure that connected devices can communicate with each other as expected. TCP/IP is one of these protocols.
+From this definition we can see that a protocol governs how devices connected to a network talk or communicate with each other. The internet, being the largest and most complex network in the world, uses a variety of protocols to perform different tasks and to ensure that connected devices can communicate with each other as expected. TCP/IP is one of these protocols.
 
 TCP/IP (short for Transmission Control Protocol/Internet Protocol) is one of the most common protocols on the internet and it defines a set of steps necessary to send and receive data between internet connected devices. These steps (commonly refered to as *layers*) are shown in the diagram below. For now, take a look at the diagram and afterward, we'll go into some more detail about what each layer does.  
 
@@ -41,7 +41,7 @@ The Internet protocol is used to indicate the location of a device on a network 
 
 	#1 Main Street.
 
-So to does each device connect to a network have an address. This address is called an IP or Internet Protocol Address. These addresses look different from the ones that we're accustomed to, but their purpose is the same. An IP address looks something like this:
+So to does each device connected to a network have an address. This address is called an IP or Internet Protocol Address. These addresses look different from the ones that we're accustomed to, but their purpose is the same. An IP address looks something like this:
 
 	192.168.1.1
 
@@ -57,7 +57,7 @@ We see that it is comprised of a set of numbers separated by periods. An IPv6 ad
 
 	2001:0db8:0a0b:12f0:0000:0000:0000:0001
 
-This version of an IP address is made up of 8 sets of four hexadecimal digits and are separated by colons. The need for IPv6 arose when the amount of IPv4 address were beginning to run out. Even though IPv4 can accommodate around 4.3 billion different addresses, the high rate of computers being connected to the Internet, the huge blocks of IP addresses being reserved by large corporations, and various other factors, caused them to run out. IPv6 aims to solve this problem by being able to accommodate trillions or numbers so we should never run out of IP Addresses again. 
+This version of an IP address is made up of 8 sets of four hexadecimal digits and are separated by colons. The need for IPv6 arose when the amount of IPv4 address were beginning to run out. Even though IPv4 can accommodate around 4.3 billion different addresses, the high rate of computers being connected to the Internet, the huge blocks of IP addresses being reserved by large corporations, and various other factors, caused them to run out. IPv6 aims to solve this problem by being able to accommodate trillions of numbers so we should never run out of IP Addresses again. 
 
 To understand how the IP addressing system works, we will use IPv4. With the IPv4 address, part determines which network (network address) the data should be sent to and the other part determines which computer within that network (host address) the data should be sent to. 
 
