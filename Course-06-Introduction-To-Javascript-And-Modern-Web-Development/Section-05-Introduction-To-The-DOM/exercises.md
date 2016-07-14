@@ -67,11 +67,11 @@ Additional properties of the navigator object include:
 
 Question 1)
 
-	if(nodeForm.nodeType == 1){
+	if(nodeForm.nodeType == Node.ELEMENT_NODE){
 		//do something
 	}
 
-	if(nodeInput.nodeType == 1){
+	if(nodeInput.nodeType == Node.ELEMENT_NODE){
 		//do something
 	}
 
