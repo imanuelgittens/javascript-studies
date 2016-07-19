@@ -10,7 +10,7 @@ Three drawbacks of style guide usage in web development are -
 
 - Additional resources are required to build and maintain the style guide so the development process can be more costly.
 
-- 
+- TODO
 
 Question 2)
 
@@ -32,7 +32,16 @@ Question 2)
 
 Question 3)
 
-	<div class="field-wrapper form-inline with-button"> 
-  		<input type="text" name="inputandbutton" placeholder="I'm an input" class="av-text" id="inputandbutton"> 
-  		<a href="#" class="button-small p0">I'm a button</a> 
+
+	<div class="field-wrapper form-inline with-button">
+        <input type="text" name="inputandbutton" placeholder="Enter your Password" class="av-text" id="inputandbutton">
+        <a href="#" class="button-small p0">Submit</a>
 	</div>
+
+
+####Exercise 2
+
+Question 1)
+
+	<
+
