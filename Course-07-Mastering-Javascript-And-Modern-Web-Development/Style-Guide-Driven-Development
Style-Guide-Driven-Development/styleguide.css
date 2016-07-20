@@ -1,0 +1,55 @@
+/*Question 3*/
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Georgia;
+  background-color: #FFCAD4;
+}
+.subHeading {
+  text-decoration: underline;
+}
+/*section{
+  background: #EFF5FB;
+  padding: 10px;
+  border: dashed 2px maroon;
+  margin-bottom: 20px;
+  width: 15%;
+}*/
+
+
+.container{
+	margin-right: auto;
+	margin-left:auto;
+	border: 1px dashed #000;
+	width: 1170px;
+	height: 200px;
+	background: #EFF5FB;
+  padding: 10px;
+  border: dashed 2px maroon;
+}
+
+.label{
+	font-weight: bold;
+}
+
+.text-input{
+	padding: 5px 5px;
+	border-radius: 3px;
+	border: 1px solid #999;
+	color: #333;
+	background-color: #fff;
+}
+
+input[type="radio"]{
+	margin-top: 4px;
+	cursor: pointer;
+}
+
+.submit-button{
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 5px;
+	border: 1px solid #999;
+}
