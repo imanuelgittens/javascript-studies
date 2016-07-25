@@ -89,6 +89,14 @@ To improve the Starbucks style guide, we can do a few things -
 
 - We can add more documentation to the style guide to explain how each component works. 
 
-- We can finish the Tool Tips and Utilities Sections. It would be nice to have ways to align and space things etc. There are many utilities that we can add to the Starbucks style guide. Tooltips can also be useful for explaining things on the website. 
+- We can finish the Tool Tips and Utilities Sections. It would be nice to have ways to align and space things etc. There are many utilities that we can add to the Starbucks style guide. Tooltips can also be useful for explaining things on the website.
+
+
+
+####Exercise 5)
+
+![Imgur](http://i.imgur.com/jNym92h.png)
+
+
 
 
