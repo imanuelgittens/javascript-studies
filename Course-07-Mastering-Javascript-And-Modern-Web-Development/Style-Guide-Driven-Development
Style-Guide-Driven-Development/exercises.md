@@ -10,7 +10,7 @@ Three drawbacks of style guide usage in web development are -
 
 - Additional resources are required to build and maintain the style guide so the development process can be more costly.
 
-- TODO
+- Requires a shift in thinking for a development team if they have never used style guide driven development before. Mistakes an be expected. 
 
 Question 2)
 
@@ -48,6 +48,10 @@ Question 3)
 **See exercises.html**
 
 ####Exercise 4
+
+TODO
+
+####Exercise 5
 
 Question 1)
 
@@ -93,7 +97,7 @@ To improve the Starbucks style guide, we can do a few things -
 
 
 
-####Exercise 5)
+####Exercise 6)
 
 ![Imgur](http://i.imgur.com/jNym92h.png)
 
