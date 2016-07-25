@@ -66,3 +66,29 @@ Style guide differences -
 - Code for America gives a lot more complex layouts that can be easily added to a project (teaser apps, footer, profile, post preview, nav tabs etc. Starbucks does have a few complex structures like blog posts and tab kit, but other necessary complex structures must be built manually from the other basic components in the style guide. 
 
 - The Code for America styleguide is easier to use because an example of the components are placed right next to their names and can be easily identified. The Starbucks styleguide has the names of the component listed and the user must click these names to explore the contents of that HTML component. 
+
+####Question 2
+
+Github as a style guide that can be found [here](http://primercss.io/scaffolding/). I find it simple and and without extra fluff. It's also easy to understand.
+
+Yelp's style guide can be found [here](http://www.yelp.com/styleguide). Its very comprehensive and covers a lot of things usually needed in a web app. 
+
+Lonely Planet style guide can be found [here](http://rizzo.lonelyplanet.com/styleguide). I like how they show an example of the elements right next to the code for implementing it. 
+
+Salesforce has an awesome style guide that can be found [here](https://www.lightningdesignsystem.com/). The documentation on this is one of the best I've seen! The components are also beautifully designed. 
+
+Foundation is a great style guide that can be found [here](http://foundation.zurb.com/sites/docs/). I like Foundation because they also have tutorials that teach how to use it properly. 
+
+####Question 3
+
+To improve the Starbucks style guide, we can do a few things -
+
+- Make the code for the different components easily access. Some components such as the Blog Entry don't even have an code associated with it for easy use and reuse. Having code next to ALL components in this style guide is essential. 
+
+- C# and Razor may not be the best languages to display for these components because I don't think it is popular enough. To ensure that this guide is easily understand by the largest amount of developers we need to use a common language like Javascript. 
+
+- We can add more documentation to the style guide to explain how each component works. 
+
+- We can finish the Tool Tips and Utilities Sections. It would be nice to have ways to align and space things etc. There are many utilities that we can add to the Starbucks style guide. Tooltips can also be useful for explaining things on the website. 
+
+
