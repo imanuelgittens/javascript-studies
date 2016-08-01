@@ -1,0 +1,54 @@
+<html> 
+  <head>
+    <title>
+      HTML5 Forms Hands-on Exercise #2
+    </title>
+    <link rel="stylesheet" type="text/css" href="fitness-form.css">
+    <!-- Insert meta elements here -->
+  </head>
+  
+  <body>
+    <header>
+      Welcome to the 24x7 Fitness Club : Courts Reservation Page!!
+    </header>
+    
+    <section>
+      <!-- Create the HTML form here -->
+      <form>
+        <fieldset>
+          
+        <legend>Member Demographics</legend>
+         <label for="name">Player Name: </label>
+         <input type="text" id="name" title="Enter your first name, followed by a space then your last name." placeholder="Enter first and last name." pattern="^[A-Za-z]+[\s]{1}[A-Za-z]+$" required><br><br>
+
+         <label>Are you a member?</label>
+
+         <label for="member">Yes</label>
+         <input type="radio" name="memberCheck" id="member" value="member">
+
+         <label for="notMember">No</label>
+         <input type="radio" name="memberCheck" id="notMember" value="notMember">
+         <br><br>
+
+         <label for="email">Email Address: </label>
+         <input type="email" id="email" title="Enter a valid email address" placeholder="Email Address." required>
+        </fieldset>
+        <br><br>
+        <label>Facility</label>
+         <select name="facility">
+           <option value="bdm">Badminton</option>
+           <option value="squ">Squash</option>
+           <option value="rcb">Racquetball</option>
+         </select>
+         <br><br>
+         <label for="reservationDate">Reservation Date</label>
+         <input type="datetime-local" name="reservationDate" id="reservationDate" required>
+         <br><br>
+         <input type="checkbox" value="tnc" required>I accept the terms and conditions.
+         <br><br> 
+         <input type="submit" name="submit" value="Submit">
+      </form>
+    </section>
+
+  </body>
+</html>
