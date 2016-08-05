@@ -98,7 +98,7 @@ When thinking about these tags to add columns to the table, it is better to thin
 
 Hope you understood everything so far because now we're going to bring everything together and make a complete HTML 5 table.
 
-	<table>
+	<table border=1>
 		<thead>
 			<tr>
 				<th>Color</th>
@@ -135,3 +135,30 @@ A added a `border=1` to show the borders but the result looks something like thi
 ![Imgur](http://i.imgur.com/SUOdw5V.png)
 
 We didn't add anything to the footer but we could've easily done so by following the same structure used for the body. With this, I hope that you have a better understanding of how to build tables using HTML 5. I challenge you to take these basic tables and give them some awesome styles.   
+
+####Question 4
+
+The canvas tag in HTML is a special tag used for rendering graphics on a page. It comes bundled with a Javascript based API that allows developers to "draw and color" on the page. It supports both 2D and 3D graphics, is supported by all modern browsers and requires no extra plugins to run. Let's explore the basics of the canvas tag with an example
+
+	<canvas id="firstCanvas" width="500" height="500" style="border:1px solid #333">
+		you browser does not support the canvas element.
+	</canvas>
+
+So we've created a basic canvas above and we've added some simple styles to make it appear on the page. We can now use some javascript to "draw" on this canvas. Let's see how we draw a simple shape using the HTML 5 Canvas API:
+
+	<script>
+		var canvas = document.getElementById('firstcanvas');
+		var context = canvas.getContext('2d');
+
+		context.beginPath();
+    	context.rect(200, 200, 400, 200);
+    	context.fillStyle = 'blue';
+    	context.fill();
+    
+	</script>
+
+We first store a reference to the canvas element using the `getElementById` method. After this we set the context for our graphics and we've chosen 2D. 
+
+We want to draw a rectangle so we then start using the `beginPath` method followed by the method to draw a rectangle using the Canvas API `context.rect();`. The first two values represent the distance from the top left corner of the canvas. The second, two values represent the width and height of the rectangle respectively. After this we define the color of the rectangle with the `fillstyle` method, then we actually add the color with the `fill` method. 
+
+And that's it! We've just drawn a rectangle using the HTML 5 Canvas API! This API is very broad and I encourage you to checkout the methods to draw pretty much anything using HTML and Javascript!
