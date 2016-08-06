@@ -144,7 +144,7 @@ The canvas tag in HTML is a special tag used for rendering graphics on a page. I
 		you browser does not support the canvas element.
 	</canvas>
 
-So we've created a basic canvas above and we've added some simple styles to make it appear on the page. We can now use some javascript to "draw" on this canvas. Let's see how we draw a simple shape using the HTML 5 Canvas API:
+So we've created a basic canvas above and we've added some simple styles to make it appear on the page. We've also added some fallback text between the tags in case the browser does not support the `canvas` tag. We can now use some javascript to "draw" on this canvas. Let's see how we draw a simple shape using the HTML 5 Canvas API:
 
 	<script>
 		var canvas = document.getElementById('firstcanvas');
@@ -159,6 +159,32 @@ So we've created a basic canvas above and we've added some simple styles to make
 
 We first store a reference to the canvas element using the `getElementById` method. After this we set the context for our graphics and we've chosen 2D. 
 
-We want to draw a rectangle so we then start using the `beginPath` method followed by the method to draw a rectangle using the Canvas API `context.rect();`. The first two values represent the distance from the top left corner of the canvas. The second, two values represent the width and height of the rectangle respectively. After this we define the color of the rectangle with the `fillstyle` method, then we actually add the color with the `fill` method. 
+We want to draw a rectangle so we then start using the `beginPath` method followed by the method to draw a rectangle using the Canvas API `context.rect();`. The first two values represent the distance from the top, left corner of the canvas. The second, two values represent the width and height of the rectangle respectively. After this we define the color of the rectangle with the `fillstyle` method, then we actually add the color with the `fill` method. 
 
 And that's it! We've just drawn a rectangle using the HTML 5 Canvas API! This API is very broad and I encourage you to checkout the methods to draw pretty much anything using HTML and Javascript!
+
+####Question 5
+
+The `svg` tag in HTML 5 is another way to display graphics on a web page. SVG is the abbreviation of the term Scalable Vector Graphic and they provide a better alternative for displaying these graphics than its `canvas` counterpart. Why is it superior? Well an SVG scales based on the the size of the screen that it is shown on whereas the canvas graphic stays fixed at its defined size, no matter the screen size. We can imagine the canvas as a non-responsive HTML element while the svg is fully responsive. Some of the other advantages of SVG include:
+
+- svg is resolution independent. This means that svg delivers high quality graphics at all screen sizes. The graphics scale to meet the screen size. This offers another benefit as one svg graphic can be used for all screens as opposed to canvas where a small graphic would have to be used for a small screen, a medium graphic for a medium screen and so on.  
+
+- svg files are small and can even be compressed. This makes them great for use on mobile devices.
+
+- svg is written in XML which makes it readily available to the browser. There is no need to call Javascript files so the svg actually loads faster.
+
+
+Let's take a look at an svg element to get a better idea of how they work.
+
+	<svg width="500" height="500" style="border:1px solid black;">
+  		
+  		<rect x="50" y="10" width="400" height="100" style="fill:blue" />
+
+  		<!-- Fallback text -->
+  		Your browser does not support the SVG tag.
+
+	</svg>
+
+The HTML snippet above produces a rectangle on the web page. Notice that no Javascript is need for this to occur. We simply use the special HTML tag `rect` to draw the rectangle. the x and y values define the position of the rectangle based on the the top, left corner of the svg element. The width and height values are pretty much self explanatory and finally, we the give the rectangle a simple style that makes it blue.
+
+And that's all there is to the `svg` element. You simply need to get familiar with the tags and styling; before you know it, you'll be producing exceptional web graphics. 
