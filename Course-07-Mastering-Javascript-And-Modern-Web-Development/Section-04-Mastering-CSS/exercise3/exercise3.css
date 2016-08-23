@@ -1,0 +1,48 @@
+body{
+	
+	margin:0;
+}
+
+.container{
+	padding: 30px 50px;
+	width: 500px;
+	border:1px solid #999;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.left, .right, .middle{
+	border: 1px solid #999;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+.left{
+	background-color: purple;
+	float: left;
+} 
+
+.right{
+	background-color: aqua;
+	float: right
+}
+
+.middle{
+	background-color: maroon;
+	position:absolute;
+	top: 30px;
+	left: 200px;
+}
+
+.fixed{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding: 10px;
+	background-color: green;
+	opacity: 0.5;
+	color:#fff;
+}
