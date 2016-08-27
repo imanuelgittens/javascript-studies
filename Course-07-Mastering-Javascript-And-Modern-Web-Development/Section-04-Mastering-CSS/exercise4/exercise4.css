@@ -1,0 +1,11 @@
+.gradient-circle-to-square{
+	width: 200px;
+	height:200px;
+	background: radial-gradient(circle, orange 30%, red, white);
+	transition: transform 2s;
+}
+
+div[class|="gradient"]:hover{
+	background: linear-gradient(to left, blue, green, black);
+	transform: rotate(180deg);
+}
