@@ -1,0 +1,43 @@
+/* Selector #1  */
+div.tabComponent{
+	position: relative;
+	clear: both;	
+}
+
+/* Selector #2  */
+div.tabComponent .tab{
+	float: left;
+	margin: 2px 0 0 5px;
+}
+
+div.tabComponent .tab label {
+	padding:5px;
+}
+
+div.tabComponent .tab input {
+	display: none;
+}
+
+div.tabComponent .tab .tabData{
+	position: absolute;
+	left: 0;
+	top: 25px;
+	margin: 0 0 0 5px;
+	background: #fff;
+	width: 40%;
+	padding: 5px;
+	min-height: 100px;
+	border: 1px solid #ccc;
+}
+
+div.tabComponent .tab input[type="radio"]:checked ~ label{
+	background: #000;
+	color:#fff;
+	z-index: 2;
+}
+
+div.tabComponent .tab input[type="radio"]:checked ~ label ~ .tabData{
+	z-index: 1;
+}
+
+
