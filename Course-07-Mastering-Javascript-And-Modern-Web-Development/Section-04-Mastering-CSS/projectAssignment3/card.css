@@ -1,4 +1,55 @@
-.card {
+.bizCardWrapper{
+	
+	height: 800px;
+	background-color: #F17563;
+}
+
+
+.bizCardWrapper input[type="checkbox"]:checked + .bizCard > .front{
+	transform: rotateX(180deg);
+	transition: 3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	z-index:99;
+	perspective: 1000;
+}
+
+.bizCardWrapper input[type="checkbox"]:checked + .bizCard > .back{
+	transform: rotateX(180deg);
+	transition: 3s;
+	transform-style: preserve-3d;
+	z-index: 100;
+	
+}
+
+.bizCard{
+	position: relative;
+}
+
+.bizCard .front{
+	height: 200px;
+	width: 200px;
+	background-color: #fff;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 100;
+}
+
+.bizCard .back{
+
+	height: 200px;
+	width: 200px;
+	background-color: #333;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 99;
+
+}
+
+/*.card {
 	display: block;
 }
 
@@ -37,8 +88,10 @@ label div.card .card-face input[type="radio"]{
 	display: none;
 }
 
-label div.card .card-face input[type="radio"]:checked ~ label{
+label div.card .card-face input[type="radio"] ~ label{
 	display: block;
+	transform: rotateX(180deg);
+	transition: 1s;
 }
 
 label div.card .card-face input[type="radio"]:checked ~ label > div.front:hover{
@@ -53,5 +106,5 @@ label div.card .card-face input[type="radio"]:checked ~ label > div.back:hover{
 	transform: rotateX(-20deg);
 	transition: 0.5s;
 	cursor: pointer;
-}
+}*/
 
