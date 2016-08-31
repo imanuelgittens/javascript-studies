@@ -28,7 +28,7 @@ nav.thumbnails ul li img{
 }
 
 .target figure img{
-	width:1000px;
+	width:1200px;
 	
 }
 
@@ -36,7 +36,7 @@ nav.thumbnails ul li img{
 .target{
 	position: absolute;
 	z-index: -1;
-	left:-1100px;
+	left:-1300px;
 	top:0px;
 	-webkit-transition: 1s;
        -moz-transition: 1s;
