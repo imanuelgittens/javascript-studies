@@ -1,4 +1,4 @@
-utility Styles*/
+/*utility Styles*/
 
 *{
 	box-sizing: border-box;
@@ -130,48 +130,102 @@ section.main-content header p{
 	text-align: center;
 }
 
-/*projects styles*/
+/*tab styles*/
 section.projects{
 	margin-top:50px;
+	margin-bottom: 110px;
 }
 
-section.projects .tabComponent{
+.tabComponent{
 	position: relative;
+	/*overflow: hidden;*/
 } 
 
-section.projects .tabComponent .tab input[type="radio"]{
+.tabComponent .tab input[type="radio"]{
 	display: none;
 }
 
-section.projects .tabComponent .tab label{
+.tabComponent .tab label{
 	display: inline-block;
 	width:25%;
-	padding: 15px;
+	padding: 20px;
 	color:#444;
 }
 
-section.projects .tabComponent .tab label:hover{
+.tabComponent .tab label:hover{
 	cursor: pointer;
 	color: #E05FB0;
 }
 
-section.projects .tabComponent .tab .tabContent{
+.tabComponent .tab .tabContent{
 	display: none;
 
 }
 
-section.projects .tabComponent .tab input[type="radio"]:checked ~ label{
+.tabComponent .tab input[type="radio"]:checked ~ label{
 	background-color: #4C4A4A;
 	color:#E05FB0;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
 
-section.projects .tabComponent .tab input[type="radio"]:checked ~ label ~ .tabContent{
+.tabComponent .tab input[type="radio"]:checked ~ label ~ .tabContent{
 	display: inline-block;
+	position: absolute;
+	top: 0;
+	background-color: #4C4A4A;
+	width: 75%;
+	height: 500px;
+	padding: 20px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	overflow: none;
 }
 
-/*End projects styles*/
+/*End tab styles*/
+
+/*carousel styles*/
+
+.carouselComponent .carouselItem input[type="radio"]{
+	display: none;
+}
+
+.carouselComponent .carouselItem label{
+	display: none;
+}
+
+.carouselComponent .carouselItem input[type="radio"]:checked ~ label.previous,
+.carouselComponent .carouselItem input[type="radio"]:checked ~ label.next{
+	display: inline-block;
+	width:6%;
+	border-radius: 5px;
+	color:#fff;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.carouselComponent .carouselItem .content{
+	display: none;
+}
+
+.carouselComponent .carouselItem input[type="radio"]:checked ~ .content{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+
+.carouselComponent .carouselItem label.previous{
+	float:left;
+	text-align:left;
+}
+
+.carouselComponent .carouselItem label.next{
+	float:right;
+	text-align:right;
+}
+/*End carousel styles*/
 
 /*End Main Content Styles*/
 
