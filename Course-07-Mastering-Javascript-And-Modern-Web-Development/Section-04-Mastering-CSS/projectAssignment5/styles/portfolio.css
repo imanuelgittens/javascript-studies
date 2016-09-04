@@ -61,11 +61,18 @@ header section.menu-main ul li a{
 	color: #fff;
 	font-weight:300;
 	padding: 10px 10px 16px 10px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 header section.menu-main ul li a:hover{
+	background-color: #D273B0;
+	color:#fff;
+}
+
+header section.menu-main ul li a.active{
 	background-color: #D273B0;
 	color:#fff;
 }
@@ -175,8 +182,8 @@ section.projects{
 	top: 0;
 	background-color: #4C4A4A;
 	width: 75%;
-	height: 500px;
-	padding: 20px;
+	min-height: 800px;
+	padding: 50px 20px 20px 20px;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
@@ -186,6 +193,9 @@ section.projects{
 /*End tab styles*/
 
 /*carousel styles*/
+/*.carouselComponent{
+	position: relative;
+}*/
 
 .carouselComponent .carouselItem input[type="radio"]{
 	display: none;
@@ -202,6 +212,7 @@ section.projects{
 	border-radius: 5px;
 	color:#fff;
 	background-color: rgba(0,0,0,0.5);
+
 }
 
 .carouselComponent .carouselItem .content{
@@ -210,20 +221,40 @@ section.projects{
 
 .carouselComponent .carouselItem input[type="radio"]:checked ~ .content{
 	display: block;
-	margin-left:auto;
-	margin-right:auto;
+	/*margin-left:auto;
+	margin-right:auto;*/
+	text-align:center;
+}
 
-
+.carouselComponent .carouselItem input[type="radio"]:checked ~ .content .text-content p, h3{
+	color:#fff;
+	padding: 5px 160px;
 }
 
 .carouselComponent .carouselItem label.previous{
 	float:left;
 	text-align:left;
+
 }
 
 .carouselComponent .carouselItem label.next{
 	float:right;
 	text-align:right;
+	
+
+}
+
+.tabComponent .tab .tabContent .carouselComponent .bullet-nav{
+	text-align:center;
+}
+
+.tabComponent .tab .tabContent .carouselComponent .bullet-nav .bullet{
+	padding:5px;
+	background-color: #fff;
+	width:3px;
+	height: 3px;
+	border-radius: 5px;
+	margin: 20px 2px;
 }
 /*End carousel styles*/
 
@@ -234,7 +265,6 @@ section.projects{
 footer{
 	height: 40px;
 	line-height: 40px;
-	/*background: linear-gradient(to right, #B55894, #4686E6);*/
 	background-color: #333;
 	color: #fff;
 }
