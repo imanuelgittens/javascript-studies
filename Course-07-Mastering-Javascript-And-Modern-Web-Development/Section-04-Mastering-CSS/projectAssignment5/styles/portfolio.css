@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6{
 body{
 	margin:0;
 	font-family: 'Roboto', serif;
+	background-color: #eee;
 }
 
 
@@ -46,6 +47,7 @@ header section.menu-my-id h3{
 	color: #fff;
 	vertical-align: middle;
 	font-weight: 500;
+	padding:0 120px;
 }
 
 header section.menu-main ul{
@@ -221,8 +223,6 @@ section.projects{
 
 .carouselComponent .carouselItem input[type="radio"]:checked ~ .content{
 	display: block;
-	/*margin-left:auto;
-	margin-right:auto;*/
 	text-align:center;
 }
 
@@ -276,3 +276,24 @@ footer p{
 }
 
 /*End Footer Styles
+
+/*Contact Page Styles*/
+
+.contact-card{
+	width: 700px;
+}
+
+.contact-card .contact-info{
+	display: inline-block;
+	width:50%;
+	background-color: #4686E6;
+}
+
+.contact-card .contact-description{
+	display: inline-block;
+	width:50%;
+	background-color: #fff;
+	color: #333;
+}
+
+/*End Contact Page Styles*/
