@@ -4,54 +4,6 @@ body{
 	box-sizing: border-box;
 }
 
-/*.bizCardWrapper .card{
-	position: relative;
-}
-
-.bizCardWrapper .card label{
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	position: absolute;
-	top:20px;
-	left: 0;
-}
-
-.bizCardWrapper .card input[type="checkbox"] ~ label.back{
-	padding:50px;
-	border: 1px solid black;
-	display: block;
-}
-
-.bizCardWrapper .card input[type="checkbox"] ~ label.front{
-
-	padding:50px;
-	border: 1px solid black;
-	display: block;
-}
-
-.bizCardWrapper .card input[type="checkbox"]{
-	display: none;
-}
-
-.bizCardWrapper .card input[type="checkbox"]:checked ~ .back{
-	transform: perspective(400px) rotateX(0deg);
-	transition: 2s;
-}
-
-.bizCardWrapper .card input[type="checkbox"]:checked ~ .front{
-	transform: perspective(400px) rotateX(-179.9deg);
-	transition: 2s;
-}
-
-.bizCardWrapper .card input[type="checkbox"]:not(:checked) ~ .back{
-	transform: perspective(400px) rotateX(179.9deg);
-	transition: 2s;
-}
-
-.bizCardWrapper .card input[type="checkbox"]:not(:checked) ~ .front{
-	transform: perspective(400px) rotateX(0deg);
-	transition: 2s;
-}*/
 
 label.bizCardWrapper{
 	-webkit-perspective: 1000px;
@@ -107,22 +59,22 @@ label.bizCardWrapper .card:hover {
 
 .bizCardWrapper input[type="checkbox"]:not(:checked) ~ .card .back{
 	transform: rotateX(-160deg);
-	transition: 2s;
+	transition: 1s;
 }
 
 .bizCardWrapper input[type="checkbox"]:not(:checked) ~ .card .front{
 	transform: rotateX(0deg);
-	transition: 2s;
+	transition: 1s;
 }
 
 .bizCardWrapper input[type="checkbox"]:checked ~ .card .back{
 	transform: rotateX(0deg);
-	transition: 2s;
+	transition: 1s;
 }
 
 .bizCardWrapper input[type="checkbox"]:checked ~ .card .front{
 	transform: rotateX(160deg);
-	transition: 2s;
+	transition: 1s;
 }
 
 label.bizCardWrapper .card div.front{
@@ -259,22 +211,16 @@ label.bizCardWrapper .card div.back div.encyclopedia p, div{
 	line-height: 15px;
 }
 
+label.bizCardWrapper .card div.back div.encyclopedia div.icon a{
+	color:#fff;
+}
+
 label.bizCardWrapper .card div.back div.encyclopedia div.icon ul li{
-	/*position: absolute;
+	position: absolute;
     top: 0%;
-    left: 2%;*/
-  /*  width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    background-color: #7D33DC;
-    border: 10px solid #D442E1;
-    vertical-align: middle;
-    display: inline-block;
-	list-style-type: none;
-	width:30px;
-	height:30px;
-	border-radius: 30px;
-	text-align:center;*/
+    left: 1%;
+  	line-height: 30px;
+  	vertical-align: bottom;
 	background-color: #7D33DC;
     border: 10px solid #D442E1;
 	display: inline-block;

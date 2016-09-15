@@ -238,6 +238,10 @@ section.projects{
 .carouselComponent .carouselItem input[type="radio"]:checked ~ .content{
 	display: block;
 	text-align:center;
+	position: absolute;
+	top:30px;
+	width:100%;
+	
 
 }
 
@@ -249,7 +253,7 @@ section.projects{
 .carouselComponent .carouselItem label.previous{
 	text-align:left;
 	position: absolute;
-	top:50%;
+	
 	left:5%;
 
 }
@@ -257,13 +261,16 @@ section.projects{
 .carouselComponent .carouselItem label.next{
 	text-align:right;
 	position: absolute;
-	top:50%;
+	
 	left:90%;
 
 }
 
+
+
 .tabComponent .tab .tabContent .carouselComponent .bullet-nav{
 	text-align:center;
+	padding-top:400px;
 }
 
 .tabComponent .tab .tabContent .carouselComponent .bullet-nav .bullet{
@@ -273,6 +280,7 @@ section.projects{
 	height: 3px;
 	border-radius: 5px;
 	margin: 20px 2px;
+	display: inline-block;
 }
 /*End carousel styles*/
 
