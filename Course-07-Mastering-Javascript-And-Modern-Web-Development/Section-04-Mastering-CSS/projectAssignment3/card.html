@@ -5,15 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="card.css">
 </head>
 <body>
-	<div class="bizCardWrapper">
-		<label>
-			<input type="checkbox" name="businessCard" id="businessCard">
-			<div class="bizCard">
-				<div class="front">Demographic Information</div>
-				<div class="back">Hobbies/Interests/Skills</div>
-			</div>
-		</label>
+	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			<p>Front</p>
+		</div>
+		<div class="back">
+			<p>Back</p>
+		</div>
 	</div>
+</div>
 	
 </body>
 </html>
