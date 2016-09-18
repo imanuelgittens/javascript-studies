@@ -775,6 +775,18 @@ section.about-me{
 	display: block;
 }
 
+.carouselComponent2 .carousel-item input[type="radio"]#first-calc:checked ~ .bullets > label[for="first-calc"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-calc:checked ~ .bullets > label[for="second-calc"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-calc:checked ~ .bullets > label[for="third-calc"]{
+	color: #E05FB0;
+}
+
 .carouselComponent2 .carousel-item input[type="radio"]#first-team:checked ~ .bullets > label[for="first-team"]{
 	color: #E05FB0;
 }
@@ -786,6 +798,130 @@ section.about-me{
 .carouselComponent2 .carousel-item input[type="radio"]#third-team:checked ~ .bullets > label[for="third-team"]{
 	color: #E05FB0;
 }
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-cart:checked ~ .bullets > label[for="first-cart"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-cart:checked ~ .bullets > label[for="second-cart"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-cart:checked ~ .bullets > label[for="third-cart"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-profile:checked ~ .bullets > label[for="first-profile"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-profile:checked ~ .bullets > label[for="second-profile"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-profile:checked ~ .bullets > label[for="third-profile"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-color:checked ~ .bullets > label[for="first-color"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-color:checked ~ .bullets > label[for="second-color"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-color:checked ~ .bullets > label[for="third-color"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-login:checked ~ .bullets > label[for="first-login"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-login:checked ~ .bullets > label[for="second-login"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-login:checked ~ .bullets > label[for="third-login"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-creditCard:checked ~ .bullets > label[for="first-creditCard"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-creditCard:checked ~ .bullets > label[for="second-creditCard"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-creditCard:checked ~ .bullets > label[for="third-creditCard"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-questionnaire:checked ~ .bullets > label[for="first-questionnaire"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-questionnaire:checked ~ .bullets > label[for="second-questionnaire"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-questionnaire:checked ~ .bullets > label[for="third-questionnaire"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-scheduler:checked ~ .bullets > label[for="first-scheduler"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-scheduler:checked ~ .bullets > label[for="second-scheduler"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-scheduler:checked ~ .bullets > label[for="third-scheduler"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-search:checked ~ .bullets > label[for="first-search"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-search:checked ~ .bullets > label[for="second-search"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-search:checked ~ .bullets > label[for="third-search"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-shipping:checked ~ .bullets > label[for="first-shipping"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-shipping:checked ~ .bullets > label[for="second-shipping"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-shipping:checked ~ .bullets > label[for="third-shipping"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-signup:checked ~ .bullets > label[for="first-signup"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-signup:checked ~ .bullets > label[for="second-signup"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-signup:checked ~ .bullets > label[for="third-signup"]{
+	color: #E05FB0;
+}
+
+
+
+
 
 .carouselComponent2 .carousel-item input[type="radio"]:checked ~ label.back,
 .carouselComponent2 .carousel-item input[type="radio"]:checked ~ label.forward{

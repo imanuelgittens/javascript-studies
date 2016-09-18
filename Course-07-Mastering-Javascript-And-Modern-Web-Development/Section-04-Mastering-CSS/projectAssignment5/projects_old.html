@@ -45,72 +45,45 @@
 						<input type="radio" name="projectTabs" id="calculator" checked>
 						<label for="calculator">Real Calculator</label>
 						<div class="tabContent">
-							<div class="carouselComponent2">
-								<div class="carousel-item">
-									<input type="radio" name="teamCarousel" id="first-team" checked>
-									<label class="back" for="third-team"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></label>
-									<label class="forward" for="second-team"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
-									<div class="content">
-										<div class="test">
-											<div class="info">
-												<h3>Overview</h3>
-												<p>The goal of this project is to create a simple calculator using HTML, CSS and JavaScript. The calculator must be able to perform basic arithmetic operations as well as clearing the input for additional data.</p>
-											</div>
-										</div>
-										
-									</div>
-									<div class="bullets">
-										<label for="first-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-											<label for="second-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-											<label for="third-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-									</div>
+							<div class="carouselComponent">
+								<div class="carouselItem">
+									<input type="radio" name="carousel" id="first" checked>
+									<label class="previous" for="third">&lt;</label>
+									<label class="next" for="second">&gt;</label>
 
-								</div>
-								<div class="carousel-item">
-									<input type="radio" name="teamCarousel" id="second-team">
-									<label class="back" for="first-team"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></label>
-									<label class="forward" for="third-team"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
 									<div class="content">
-										<div class="test">
-											<div class="info">
-											<img src="assets/images/calculator.jpg">
-										</div>
-										<div class="links">
-											<h3><strong>Technologies:</strong> HTML, CSS3 and Vanilla JavaScript</h3>
-											<p>This project uses basic HTML, CSS and some simple javascript to achieve the desired calculator functionality. </p>
-											<a class="project-link" href="http://imanuelgittens.github.io/learning-web-components/components/calculator/calculator.html" target="_blank">Project Link</a>
-											<a class="github-link" href="https://github.com/imanuelgittens/learning-web-components/tree/master/components/calculator" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github Link</a>
-										</div>
-										</div>
-										
+										<div class="text-content">
+											<h3>Overview</h3>
+											<p>The goal of this project is to create a simple calculator using HTML, CSS and JavaScript. The calculator must be able to perform basic arithmetic operations as well as clearing the input for additional data.</p>
+										</div>		
 									</div>
-									<div class="bullets">
-										<label for="first-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-											<label for="second-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-											<label for="third-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-									</div>
-
 								</div>
-								<div class="carousel-item">
-									<input type="radio" name="teamCarousel" id="third-team">
-									<label class="back" for="second-team"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></label>
-									<label class="forward" for="first-team"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+								<div class="carouselItem">
+									<input type="radio" name="carousel" id="second">
+									<label class="previous" for="first">&lt;</label>
+									<label class="next" for="third">&gt;</label>
 									<div class="content">
-										<div class="test">
-											<div class="info">
-												<h3>Extra Details</h3>
-												<p>At the time of it's creation, students were beginners with JS so we used the simple eval() function to calulate the answers for a given expression. </p>
-											</div>
-										</div>
 										
+										<img src="assets/images/calculator.jpg" width="600px">
 									</div>
-									<div class="bullets">
-										<label for="first-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-											<label for="second-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-											<label for="third-team"><i class="fa fa-circle" aria-hidden="true"></i></label>
-									</div>
-
 								</div>
+								<div class="carouselItem">
+									<input type="radio" name="carousel" id="third">
+									<label class="previous" for="second">&lt;</label>
+									<label class="next" for="first">&gt;</label>
+									<div class="content">
+										
+										<div class="text-content">
+											<h3>Extra Details</h3>
+											<p>At the time of it's creation, students were beginners with JS so we used the simple eval() function to calulate the answers for a given expression. </p>
+										</div>
+									</div>
+								</div>
+								<div class="bullet-nav">
+									<label class="bullet" for="first"></label>
+									<label class="bullet" for="second"></label>
+									<label class="bullet" for="third"></label>
+								</div>		
 							</div>
 						</div>
 					</div>
