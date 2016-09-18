@@ -675,3 +675,132 @@ section.about-me{
 
 /*end modal styles*/
 
+/*------------------------------------------------------*/
+
+.carouselComponent2{
+	position: relative;
+
+}
+
+.carouselComponent2 .carousel-item{
+	
+	line-height: 500px;
+}
+
+.carouselComponent2 .carousel-item label{
+	vertical-align: middle;
+	color: #fff;
+}
+
+
+
+
+.carouselComponent2 .carousel-item .content{
+	line-height: 20px;
+	display: none;
+	height: 500px;
+	overflow: hidden;
+	text-align: left;
+	color:#fff;
+	font-weight: 400;
+	padding: 10px 40px;
+	
+}
+
+.carouselComponent2 .carousel-item .content img{
+	width:600px;
+}
+
+.carouselComponent2 .carousel-item .content .test{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.carouselComponent2 .carousel-item .content .info{
+	/*padding: 10px 40px;*/
+}
+.carouselComponent2 .carousel-item .content h3{
+	padding: 0;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.carouselComponent2 .carousel-item label.forward{
+	float: right;
+	width:30px;
+	font-size:30px;
+	padding: 0;
+	display: none;
+}
+.carouselComponent2 .carousel-item label.forward:hover, label.back:hover{
+	color:#E05FB0!important;
+}
+
+
+.carouselComponent2 .carousel-item label.back{
+	float: left;
+	width:30px;
+	font-size:30px;
+	padding: 0;
+	display: none;
+}
+
+.carouselComponent2 .carousel-item .bullets{
+	line-height: 20px;
+	text-align: center;
+	display: none;
+}
+
+.carouselComponent2 .carousel-item .bullets label{
+	width: 1px;
+	padding: 0 10px;
+}
+
+.carouselComponent2 .carousel-item .links a{
+	color: #999;
+	text-decoration: none;
+	padding-right: 15px;
+}
+
+.carouselComponent2 .carousel-item .links{
+	padding: 20px 0;
+}
+
+.carouselComponent2 .carousel-item .links a:hover{
+	cursor: pointer;
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]:checked ~ .bullets{
+	display: block;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#first-team:checked ~ .bullets > label[for="first-team"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#second-team:checked ~ .bullets > label[for="second-team"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]#third-team:checked ~ .bullets > label[for="third-team"]{
+	color: #E05FB0;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]:checked ~ label.back,
+.carouselComponent2 .carousel-item input[type="radio"]:checked ~ label.forward{
+	display: inline-block;
+	color:#fff;
+}
+
+.carouselComponent2 .carousel-item input[type="radio"]:checked ~ .content{
+	display: table;
+}
+
+
+
+
+
+
+
+
