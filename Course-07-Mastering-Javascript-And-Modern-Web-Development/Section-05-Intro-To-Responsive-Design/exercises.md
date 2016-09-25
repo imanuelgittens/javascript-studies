@@ -19,3 +19,39 @@ Question 2)
 			box-sizing: border-box;
 		}
 	}
+
+####Exercise 2
+
+Question 1)
+
+	@media only screen and (device-height: 400px) and (orientation: landscape){
+
+	}
+
+Question 2)
+
+	div#topBanner{
+		border: 3px dotted green;
+		background-color: rgba(255, 255, 0, 0.8);
+		width: 100px;
+	}
+
+	@media only screen and (min-width: 320px){
+		background-color:red;
+	}
+
+	@media only screen and (min-width: 720px){
+		width: 400px;
+		opacity: 50%;
+	}
+
+
+####Exercise 3
+
+Question 1)
+
+[Simple Footer](http://codepen.io/imanuelgittens/pen/ZpZmkZ)
+
+Question 2)
+
+[Complex Navigation](http://codepen.io/imanuelgittens/pen/VKpgkY)
