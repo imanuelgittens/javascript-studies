@@ -55,3 +55,36 @@ Question 1)
 Question 2)
 
 [Complex Navigation](http://codepen.io/imanuelgittens/pen/VKpgkY)
+
+Question 3)
+
+[Swap Order](http://codepen.io/imanuelgittens/pen/kkBmay)
+
+
+####Exercise 4
+
+Question 1)
+
+[Navigation Bar](http://codepen.io/imanuelgittens/pen/mAmaRo)
+
+Question 2)
+
+[Grid Content](http://codepen.io/imanuelgittens/pen/xEdmYz)
+
+####Exercise 5
+
+Question 1)
+
+	<img src="ferrari_1x.jpg" srcset="ferrari_2x.jpg 2x, ferrari_4x.jpg 4x" />
+
+Question 2)
+
+	<img sizes=”(max-width: 480px) 90vw, (min-width: 960px) 75vw” src="ferrari_1x.jpg" srcset="ferrari_2x.jpg 2x, ferrari_4x.jpg 4x">
+
+Question 3)
+
+	<picture>
+		<source media="(max-width: 320px)" srcset="ferrari_1x.jpg"/>
+		<source media="(min-width: 960px)" srcset="ferrari_2x.jpg"/>
+		<img src="ferrari_1x.jpg"/>
+	</picture>
