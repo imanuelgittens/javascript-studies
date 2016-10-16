@@ -40,4 +40,50 @@ Question 2:  Describe the function of the `flex-wrap` property and give examples
 
 
 
+CSS Flexbox has various properties for displaying and aligning HTML elements on a page. One of these properties is `flex-wrap` and this article will take a look at this property and explain how it works. Looking at this definition from [w3schools](http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp), we see the following -
+
+>  The flex-wrap property specifies whether the flexible items should wrap or not.
+
+This simply means that items defined within a flexible container will 'wrap' , or move on to the next line. 
+
+`flex-wrap` has the following properties - 
+
+-  `no-wrap`: This is the default value. Flex items will not wrap.
+- `wrap`: Flex items will wrap if necessary.
+- `wrap-reverse`:Flex items will wrap if necessary in the reverse order.  
+
+Let's look at some examples of each:
+
+
+
+**no-wrap**
+
+![Imgur](http://i.imgur.com/BZD6pIM.jpg)
+
+
+
+**wrap**
+
+![Imgur](http://i.imgur.com/HbT6piB.jpg)
+
+It should also be noted that items wrap according to the flex direction. Generally the flex direction is horizontal however the direction can vertical as well. If this is the case, the flex wrap property will work like this - 
+
+
+
+**no-wrap**
+
+![Imgur](http://i.imgur.com/lPfSMjT.jpg)
+
+
+
+**wrap**
+
+![Imgur](http://i.imgur.com/PQ0q6U7.jpg)
+
+
+
+You now have a better understanding of the `flex-wrap` property. 
+
+
+
 Question 3:  Fully explain how the `justify-content` flexbox property works and use code samples and screenshots to demonstrate its usage. 
