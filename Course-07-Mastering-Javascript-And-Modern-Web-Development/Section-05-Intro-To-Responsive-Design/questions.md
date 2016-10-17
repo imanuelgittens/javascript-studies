@@ -17,7 +17,6 @@ At this time of this writing, there are two types of pixels. The first (and more
 *The above image shows a device pixel.*
 
 
-
 The second type of pixel is known as a **CSS pixel** and it is this one that can give the web developer a headache in some cases. The CSS pixel is a *reference based pixel* and before we can understand this term, we need to familiarize ourselves with another term known as *pixel density*. We explained the device pixel above and said that it is the smallest *physical* space on the screen that can hold red, green and blue sub pixels. Companies like Apple however have begun to fit even more sub pixels into that physical space hence the term pixel density. If we can fit two pixels into that physical space then we now have a pixel density of 2. If we can fit 4 pixels into that space then we have a pixel density of 4 and so on. 
 
 ![Imgur](http://i.imgur.com/IwbGs5p.png)
@@ -28,12 +27,12 @@ The second type of pixel is known as a **CSS pixel** and it is this one that can
 
 
 
-So now that we know about pixel density, let's use it to get a better understanding of this reference based pixel. We can think of it like this - 1 reference based pixel is equal to the pixel density of a device. What does this mean? Let's say we wanted to make line on the screen of length 10 CSS pixels. On a device with a pixel density of 1, this would cover 10 physical pixels and would be comprised of 10 pixels but on a device with pixel density 2,  10 device pixels will be used to create the line but it would be comprised of 20 pixels. 
+So now that we know about pixel density, let's use it to get a better understanding of this reference based pixel. We can think of it like this - 1 reference based pixel is equal to the pixel density of a device. What does this mean? Let's say we wanted to make line on the screen of length 10 CSS pixels. On a device with a pixel density of 1, this would cover 10 physical pixels and would be comprised of 10 reference-based or CSS pixels but on a device with pixel density 2,  20 device pixels will be used to create the line but it would be comprised of 10 reference-based or CSS pixels. The reason for this is that our line will indeed be very difficult to see if we used 10 physical pixels on a device that has a pixel density of 2. Just as an example, imagine a device with a pixel density of 4 (4 pixels fit in the physical space of one pixel) and we wanted to draw a 10 pixel line using CSS. The actual amount of physical pixels that would be used for this line is 40. 
+
+I hope this article gives you a better understanding of the two different types of pixels and how they are used when constructing a web page. You may have also figured out the reason why higher pixel densities result in better looking graphics on the screen - because more physical pixels are used to create the same sized objects.
 
 
-
-
-
+---
 
 
 Question 2:  Describe the function of the `flex-wrap` property and give examples of its usage.
@@ -60,11 +59,14 @@ Let's look at some examples of each:
 
 ![Imgur](http://i.imgur.com/BZD6pIM.jpg)
 
-
+There are additional items here but they are hidden because we have not specified that they should wrap.
 
 **wrap**
 
 ![Imgur](http://i.imgur.com/HbT6piB.jpg)
+
+Here the hidden items above are shown because we specified that they should wrap.
+
 
 It should also be noted that items wrap according to the flex direction. Generally the flex direction is horizontal however the direction can vertical as well. If this is the case, the flex wrap property will work like this - 
 
@@ -74,16 +76,60 @@ It should also be noted that items wrap according to the flex direction. General
 
 ![Imgur](http://i.imgur.com/lPfSMjT.jpg)
 
+Hidden items aren't shown.
 
 
 **wrap**
 
 ![Imgur](http://i.imgur.com/PQ0q6U7.jpg)
 
+Hidden items are shown after wrapping on the vertical axis. 
 
+I hope this simple example has helped to provide some insight and give you a better understanding of the `flex-wrap` property. 
 
-You now have a better understanding of the `flex-wrap` property. 
+---
 
+Question 3:  Fully explain how the `justify-content` flexbox property works and use code samples and screen-shots to demonstrate its usage. 
 
+`justify-content` is a flexbox property that defines how extra space within a flexible container is distributed when the flex items do not use up all the available space. Let's look at some of the values for `justify-content`:
 
-Question 3:  Fully explain how the `justify-content` flexbox property works and use code samples and screenshots to demonstrate its usage. 
+- flex-start: flex items are positioned at the beginning of the container.
+- flex-end: flex items are positioned at the end of the container.
+- center: flex items are positioned at the center of the container.
+- space-between: items are positioned with space between the edges of the container.
+- space-around: items are positioned with space before, between and after the edges of the container. 
+
+To get a better understanding of these values, let's see oh they apply visually. We have a flex container (color: light blue) and some flex items (color: pink), let's look at how these different values affect the flex items. 
+
+`justify-content: flex-start;`
+
+![Imgur](http://i.imgur.com/5QmYQxz.png)
+
+The items are positioned at the start of the container. 
+
+`justify-content:flex-end;`
+
+![Imgur](http://i.imgur.com/cdBYAkd.png)
+
+The items are positioned at the end of the container. 
+
+`justify-content: center;`
+
+![Imgur](http://i.imgur.com/QZ02Lxb.png)
+
+The items are positioned at the center of the container. 
+
+`justify-content: space-between;`
+
+![Imgur](http://i.imgur.com/jdEDtuM.png)
+
+The space between the edges of the container is evenly distributed.
+
+`justify-content: space-around;`
+
+![Imgur](http://i.imgur.com/UjVbd3L.png)
+
+The space around all the items is evenly distributed.
+
+And that's it! You now have a better understanding of the `justify-content` property and how to apply it in your every-day web development. Cheers!
+
