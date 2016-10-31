@@ -198,4 +198,15 @@ Click on the style within the Dev tools to edit it and get a live preview as soo
 
 ![Imgur](http://i.imgur.com/extZ8Nl.png)  
 
-And that's it! You can continue making edits like this to get an idea of how different styles will work and take your awesome design mockups back to the team at techcrunch.com for approval.Cheers. 
+And that's it! You can continue making edits like this to get an idea of how different styles will work and take your awesome design mockups back to the team at techcrunch.com for approval.Cheers.
+
+####Question 5
+
+Give a detailed introduction on how to use JavaScript to interact with HTML elements in DevTools Web Console.
+
+
+####Question 6
+
+Describe the function of the `flex-wrap` property and give examples of its usage.
+
+//Answered this question already in in the Intro to Responsive Design Questions. 
