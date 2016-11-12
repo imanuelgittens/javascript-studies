@@ -97,3 +97,13 @@ Taking the definitions from [Google](https://developers.google.com/web/tools/chr
     Step In - If the next line contains a function call, Step Into will jump to and pause that function at its first line.
 
 And that's it! You now have a better understanding of how these tools can be used to debug your code.
+
+####Question 4
+
+Accessibility in the context of the web refers to the ease at which persons of varying physical ability can access and use a website. A website should be usable to as wide an audience as possible and it should be the goal of website creator to make it so.
+
+When creating a website, we need to consider persons who may have low vision or are visually impaired. Persons who may be unable to use a keyboard or mouse and person who can't hear.
+
+The WAI (Web Accessibility Initiative) and ARIA (Accessible Rich Internet Applications) specifications help web developers to make their websites as accessible as possible. This can start from simple things like putting proper `alt` tags on images to using the plethora of other attributes provided in HTML to make your website as accessible as possible.
+
+Any goal you have for a website is faster achieved by making it available to as wide an audience as possible. Greater accessibility means more audience so be sure to make your websites as accessible as possible from now on! Happy coding. 
