@@ -98,7 +98,62 @@ Taking the definitions from [Google](https://developers.google.com/web/tools/chr
 
 And that's it! You now have a better understanding of how these tools can be used to debug your code.
 
+####Question 3
+
+**Define media queries and describe the different kinds of media queries that exist. Give code samples of each kind of media query.**
+
+A media query enables developers to define styles for different devices. In the CSS2 specification, it was possible to define the styles based on the device itself. For example, we could define styles for a computer screen, for a printer and for a hand held device. CSS3 however, extends this capability and allows us to use the media queries to define styles based on the **capability** of the device.
+
+These device capabilities include:
+
+- width and height of the viewport
+- width and height of the device
+- orientation (is the tablet/phone in landscape or portrait mode?)
+- resolution
+
+Let's look at an example of a media query to get a better understanding of how it works.
+
+    @media screen and (min-width: 480px) {
+        body {
+            background-color: lightgreen;
+        }
+    }
+
+The media query above defines a style for a device whose **screen** has a width of 480px and above. It will set the background color of the body to light green.
+
+The above example showed the `screen` media type however there are other device types that can be used with media queries. Let's look at the remaining types in some more detail:
+
+**Print Media Query**
+
+    @media print{
+      body{
+        font-size:17px;
+      }
+    }
+
+**Screen Reader Media Query**
+
+    @media speech{
+      aside{
+        display:none;
+      }
+    }
+
+The last one defines styles for **all** devices. Example:
+
+    @media all{
+      body{
+        background:blue;
+      }
+    }
+
+And that's it! You can now use the different types of media queries to define style for any device you wish. Happy coding.
+
+
+
 ####Question 4
+
+**Describe what accessibility is and explain why it is important for web applications to be accessible.**
 
 Accessibility in the context of the web refers to the ease at which persons of varying physical ability can access and use a website. A website should be usable to as wide an audience as possible and it should be the goal of website creator to make it so.
 
@@ -109,6 +164,8 @@ The WAI (Web Accessibility Initiative) and ARIA (Accessible Rich Internet Applic
 Any goal you have for a website is faster achieved by making it available to as wide an audience as possible. Greater accessibility means more audience so be sure to make your websites as accessible as possible from now on! Happy coding.
 
 ####Question 5
+
+**Describe the function of the `role` attribute and give example code snippets that demonstrate its usage.**
 
 In HTML, the `role` attribute has two primary purposes -
 
@@ -145,4 +202,28 @@ The second way that the role attribute is used is to make HTML more understandab
 
 The second example is much easier understood. Even someone with no knowledge of HTML may be able to pickup on what is going on just by looking at the role attribute.
 
-And that's it! Those are the two main purposes of the `role` attribute in HTML. 
+And that's it! Those are the two main purposes of the `role` attribute in HTML.
+
+####Question 6
+
+**List five `aria-` properties. Describe their purposes and the roles they can be used with.**
+
+Title: Accessibility in Web Development - ARIA Properties
+
+Category: Accessible Rich Internet Applications**
+
+This article will go through just a few of the ARIA properties and give an example role that can be used with that property. Note that many different ARIA properties can be used with many different roles so these property-role relationships are not set in stone.  
+
+Let's begin: 
+
+`aria-described` - This property specifies another element that describes the content of this element. This property can be used with the `tooltip` role to give additional information about an element on the page.
+
+`aria-controls` - This property specifies the element that this element controls. This property can be used with the `tab` role to specify the tab details.
+
+`aria-label` - When an element does not have a label, this property allows an inline label to be defined. This property can be used with the `textbox` role within a form as the label before entering values.  
+
+`aria-labelledby` - This property specifies which element provides the label for this element. This can be used with the `tabpanel` role to specify the tab label.
+
+`aria-owns` - This property is used to specify the parent-child relationship between two elements. This property can be used with the `treeitem` role to specify with items in the tree are owned by this item.
+
+Those where a few examples of different ARIA properties and the roles that could be associated with them.
