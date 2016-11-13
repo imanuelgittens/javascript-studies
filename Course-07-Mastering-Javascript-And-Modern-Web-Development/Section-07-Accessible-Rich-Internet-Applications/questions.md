@@ -106,4 +106,43 @@ When creating a website, we need to consider persons who may have low vision or 
 
 The WAI (Web Accessibility Initiative) and ARIA (Accessible Rich Internet Applications) specifications help web developers to make their websites as accessible as possible. This can start from simple things like putting proper `alt` tags on images to using the plethora of other attributes provided in HTML to make your website as accessible as possible.
 
-Any goal you have for a website is faster achieved by making it available to as wide an audience as possible. Greater accessibility means more audience so be sure to make your websites as accessible as possible from now on! Happy coding. 
+Any goal you have for a website is faster achieved by making it available to as wide an audience as possible. Greater accessibility means more audience so be sure to make your websites as accessible as possible from now on! Happy coding.
+
+####Question 5
+
+In HTML, the `role` attribute has two primary purposes -
+
+- the first is to add additional accessibility to the page as defined in the [WAI-ARIA](https://www.w3.org/TR/wai-aria/) specification. It does this by overriding the implicit semantic meaning of the element.
+- the second is to make the page more semantic i.e. easily understandable to developers.
+
+To get a better understanding of each purpose let's look at an example of both.
+
+Our first example will show how the role attribute is used to make a page more accessible. Let's assume we have an anchor tag that is styled to look like a button.
+
+    <a class="primary" href="#">Click Me!</a>
+
+Using the magic of CSS, we can make this tag look like a button and that's what our users would see. Consider however that some users my have low vision or are visually impaired. They will have to use a screen reader to access the page and to the screen reader, the anchor tag is an anchor tag, not a button. How do we fix this? The `role` attribute of course. It can be used to override the meaning of the element to devices such as screen readers. We can update the code like this -
+
+    <a class="primary" href="#" role="button">Click Me!</a>
+
+The screen reader now understands that this element is supposed to the viewed as a button and allows for the same experience to be had on it as a regular screen.
+
+The second way that the role attribute is used is to make HTML more understandable to developers. Let's look at two scenarios, one without the `role` attribute and one with the role attribute.
+
+**Without the role Attribute**
+
+    <nav>
+        <a href="/shoes">Shoes</a>
+        <a href="/slippers">Slippers</a>
+    </nav>
+
+**With the role Attribute**
+
+    <nav role="menu">
+        <a href="/shoes" role="menuitem">Shoes</a>
+        <a href="/slippers"role="menuitem">Slippers</a>
+    </nav>
+
+The second example is much easier understood. Even someone with no knowledge of HTML may be able to pickup on what is going on just by looking at the role attribute.
+
+And that's it! Those are the two main purposes of the `role` attribute in HTML. 
