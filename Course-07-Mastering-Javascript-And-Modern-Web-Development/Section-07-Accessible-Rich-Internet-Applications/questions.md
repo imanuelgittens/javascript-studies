@@ -4,7 +4,7 @@
 
 **Describe what style inheritance is and use examples to fully describe how it works.**
 
-Style inheritance is a method through which certain CSS properties are passed from a parent HTML element down to its children. Inheritance in CSS is easily understandable if we compare it to inheritance in genetics. Consider a mother and child both have brown hair and blue eyes. In the same way, a parent element and its child element in HTML will have the same font family.
+Style inheritance is a method through which certain CSS properties are passed from a parent HTML element down to their children. Inheritance in CSS is easily understandable if we compare it to inheritance in genetics. Consider a mother and child both have brown hair and blue eyes. In the same way, a parent element and its child element in HTML will have the same font family.
 
 In CSS, inheritance occurs automatically (in applicable scenarios) and developers can also manually invoke inheritance. Let's look at both cases to get a better idea of how they work.
 
@@ -18,7 +18,7 @@ Automatic inheritance only occurs for certain CSS properties. Let's take the `fo
 
 `font-family` is one of those properties that are inherited automatically by all child HTML elements. Imagine if something like this was not automatically inherited, we'd then have to define this style for every single HTML element that we added to the page! This would be very cumbersome and repetitive. As programmers, we want to write the least code possible and we can already see how inheritance assists us with that goal.
 
-It is important to note that not all CSS properties are automatically inherited. Take a property like `border` for instance and image we extended the style about and added a border:
+It is important to note that not all CSS properties are automatically inherited. Take a property like `border` for instance and imagine we extended the style above and added a border:
 
     body{
       font-family: 'Roboto', sans-serif;
@@ -31,7 +31,9 @@ This [link](https://www.w3.org/TR/css-2010/) shows a nice table at the bottom of
 
 **Manual Inheritance**
 
-CSS also allows us to manually invoke inheritance. We can do this quite simply by adding the `inherit` value to the CSS property that we'd like to inherit. Let look at an example - suppose we created a `div` with a top margin of 30px;
+CSS also allows us to manually invoke inheritance. We can do this quite simply by adding the `inherit` value to the CSS property that we'd like to inherit. Let look at an example:
+
+Suppose we created a `div` with a top margin of 30px;
 
     <div class="test">
         <p>Hello</p>
@@ -70,7 +72,7 @@ I've written a script (shown below) that executes when we click the button on th
 
 ![Imgur](http://i.imgur.com/b3ALB8U.png)
 
-As you can see, we are using the 'Sources' tab of the Chrome Dev tool and it allows us to set breakpoints in the code so that we can debug. It also gives us the ability to `step into the next function call` and `step over the next function call`.
+As you can see, we are using the 'Sources' tab of the Chrome Dev tools and it allows us to set breakpoints in the code so that we can debug. It also gives us the ability to `step into the next function call` and `step over the next function call`.
 
 ![Imgur](http://i.imgur.com/YmYJyYt.png)
 
@@ -147,7 +149,7 @@ The last one defines styles for **all** devices. Example:
       }
     }
 
-And that's it! You can now use the different types of media queries to define style for any device you wish. Happy coding.
+And that's it! You can now use the different types of media queries to define style for any device you wish. Happy coding!
 
 
 
@@ -161,7 +163,7 @@ When creating a website, we need to consider persons who may have low vision or 
 
 The WAI (Web Accessibility Initiative) and ARIA (Accessible Rich Internet Applications) specifications help web developers to make their websites as accessible as possible. This can start from simple things like putting proper `alt` tags on images to using the plethora of other attributes provided in HTML to make your website as accessible as possible.
 
-Any goal you have for a website is faster achieved by making it available to as wide an audience as possible. Greater accessibility means more audience so be sure to make your websites as accessible as possible from now on! Happy coding.
+Any goal you have for a website is faster achieved by making it available to as wide an audience as possible. Greater accessibility means more audience so be sure to make your websites more accessible from now on!
 
 ####Question 5
 
@@ -214,7 +216,7 @@ Category: Accessible Rich Internet Applications**
 
 This article will go through just a few of the ARIA properties and give an example role that can be used with that property. Note that many different ARIA properties can be used with many different roles so these property-role relationships are not set in stone.  
 
-Let's begin: 
+Let's begin:
 
 `aria-described` - This property specifies another element that describes the content of this element. This property can be used with the `tooltip` role to give additional information about an element on the page.
 
@@ -226,4 +228,4 @@ Let's begin:
 
 `aria-owns` - This property is used to specify the parent-child relationship between two elements. This property can be used with the `treeitem` role to specify with items in the tree are owned by this item.
 
-Those where a few examples of different ARIA properties and the roles that could be associated with them.
+Those where a few examples of different ARIA properties and the roles that could be associated with them. I encourage you to explore the different ARIA properties and the roles associated with them to help make the web more accessible to all users. 
