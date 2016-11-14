@@ -76,6 +76,7 @@ This is my Learn.ModernDeveloper repository for the entire time that I am a stud
 
 ####Section 6: Counting Principles
 
+
 1. [Exercise Answers](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-03-Math-for-Web-Programmers/Section-06-Counting-Principles/exercises.md)
 
 2. [Project Answers](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-03-Math-for-Web-Programmers/Section-06-Counting-Principles/project-assignment.md)
@@ -90,6 +91,89 @@ This is my Learn.ModernDeveloper repository for the entire time that I am a stud
 
 3. [Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-03-Math-for-Web-Programmers/Section-07-Number-Theory-And-Applications/questions.md)
 
+##[Course 04: Mastering the Programming Editor - Sublime Text](https://github.com/moderndeveloper-students/coursework-imanuelgittens/tree/master/Course-03-Math-for-Web-Programmers)
+
+####Section 1 - Your Most Important Tool
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-04-Mastering-the-Programming-Editor-Sublime-Text/Section-01-Your-Most-Important-Tool/questions.md)
+
+####Section 2 - Downloading and Installing Sublime Text
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-04-Mastering-the-Programming-Editor-Sublime-Text/Section-02-Downloading-And-Installing-Sublime-Text/questions.md)
+
+####Section 3 - User Interface In Depth
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-04-Mastering-the-Programming-Editor-Sublime-Text/Section-03-User-Interface-In-Depth/questions.md)
+
+####Section 4 - Sublime Text From The Ground Up
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-04-Mastering-the-Programming-Editor-Sublime-Text/Section-04-Sublime-Text-From-The-Ground-Up/questions.md)
+
+####Section 5 - Settings and Customizations
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-04-Mastering-the-Programming-Editor-Sublime-Text/Section-05-Settings-And-Customizations/questions.md)
+
+####Section 6 - Managing and Navigating Files
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-04-Mastering-the-Programming-Editor-Sublime-Text/Section-06-Managing-And-Navigating-Files/questions.md)
+
+##[Course 05: Mastering the IDE - Webstorm Text](https://github.com/moderndeveloper-students/coursework-imanuelgittens/tree/master/Course-05-Mastering-the-IDE-Webstorm)
+
+####Section 1 - Why You Need Webstorm And How To Get Install It
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-05-Mastering-the-IDE-Webstorm/Section-01-Why-You-Need-Webstorm-And-How-To-Get-And-Install-It/questions.md)
+
+####Section 2 - Exploring Webstorm Workspace UI And Tools
+
+[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-05-Mastering-the-IDE-Webstorm/Section-02-Exploring-Webstorm-Workspace-UI-And-Tools/questions.md)
+
+####Section 3 - Working With Projects And Files And Git and Github
+
+1. [Exercises](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-05-Mastering-the-IDE-Webstorm/Section-03-Working-With-Projects-And-Files-And-Git-and-Github/exercises.md)
+
+2. [Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-05-Mastering-the-IDE-Webstorm/Section-03-Working-With-Projects-And-Files-And-Git-and-Github/questions.md)
+
+##[Course 06: Introduction To JavaScript and Modern Web Development](https://github.com/moderndeveloper-students/coursework-imanuelgittens/tree/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development)
+
+####Section 1 - Introduction to HTML Fundamentals
+
+1.[Books](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-01-Introduction-To-HTML-Fundamentals/Exercises/books.html)
+
+2.[Exercises](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-01-Introduction-To-HTML-Fundamentals/Exercises/exercises.md)
+
+3.[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-01-Introduction-To-HTML-Fundamentals/Exercises/questions.md)
+
+####Section 2 - Introduction to CSS
+
+1.[Exercises](https://github.com/moderndeveloper-students/coursework-imanuelgittens/tree/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-02-Introduction-To-CSS/Exercises)
+
+2.[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-02-Introduction-To-CSS/questions.md)
+
+####Section 3 - Getting Started with JavaScript
+
+1.[Exercises](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-03-Getting-Started-With-JavaScript/exercises.md)
+
+2.[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-03-Getting-Started-With-JavaScript/questions.md)
+
+3.[Validator Functions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-03-Getting-Started-With-JavaScript/validator.js)
+
+####Section 4 - Introduction To JavaScript Core
+
+1.[Exercises](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-04-Introduction-To-Javascript-Core/exercises.md)
+
+2.[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-04-Introduction-To-Javascript-Core/questions.md)
+
+####Section 5 - Introduction To The DOM
+
+1.[Exercises](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-05-Introduction-To-The-DOM/exercises.md)
+
+2.[Questions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-05-Introduction-To-The-DOM/questions.md)
+
+3.[Utility Functions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-05-Introduction-To-The-DOM/utilities.js)
+
+4.[Validator Functions](https://github.com/moderndeveloper-students/coursework-imanuelgittens/blob/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development/Section-05-Introduction-To-The-DOM/validator.js)
+
+##[Course 07: Mastering JavaScript and Modern Web Development](https://github.com/moderndeveloper-students/coursework-imanuelgittens/tree/master/Course-06-Introduction-To-Javascript-And-Modern-Web-Development)
 
 
 
