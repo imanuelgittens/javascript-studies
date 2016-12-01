@@ -35,3 +35,7 @@ Question 3)
       -ms-#{$property}: $value;
       -o-#{$property}: $value;
     }
+
+####Exercise 3
+
+See folder

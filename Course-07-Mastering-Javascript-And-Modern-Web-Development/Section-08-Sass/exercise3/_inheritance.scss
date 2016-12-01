@@ -1,0 +1,15 @@
+.notification{
+  color: #333;
+  background: #fff;
+  border: 1px solid #999;
+}
+
+.success{
+  @extend .notification;
+  border-color: green;
+}
+
+.failure{
+  @extend .notification;
+  border-color: red;
+}
