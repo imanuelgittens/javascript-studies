@@ -1,0 +1,34 @@
+/*Question 1*/
+@function pxToEm($pixelValue){
+  @return $pixelValue / 16;
+}
+
+@function blankSpace($value){
+  @return "margin-top:" + $value;
+}
+
+/*Question 2*/
+
+  @each $day in monday, tuesday, wednesday, thursday, friday, saturday, sunday{
+    .#{$day}{background: weekColors($day);}
+  }
+
+
+/*Question 3*/
+@function weekColors($day){
+  @if($day == monday){
+    @return red;
+  } @else if($day == tuesday){
+    @return yellow;
+  }@else if($day == wednesday){
+    @return orange;
+  }@else if($day == thursday){
+    @return green;
+  }@else if($day == friday){
+    @return blue;
+  }@else if($day == saturday){
+    @return yellow;
+  }@else if($day == sunday){
+    @return purple;
+  }
+}

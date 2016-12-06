@@ -1,0 +1,26 @@
+/*Question 1*/
+/*Question 2*/
+.monday {
+  background: weekColors(monday); }
+
+.tuesday {
+  background: weekColors(tuesday); }
+
+.wednesday {
+  background: weekColors(wednesday); }
+
+.thursday {
+  background: weekColors(thursday); }
+
+.friday {
+  background: weekColors(friday); }
+
+.saturday {
+  background: weekColors(saturday); }
+
+.sunday {
+  background: weekColors(sunday); }
+
+/*Question 3*/
+
+/*# sourceMappingURL=output.map */
