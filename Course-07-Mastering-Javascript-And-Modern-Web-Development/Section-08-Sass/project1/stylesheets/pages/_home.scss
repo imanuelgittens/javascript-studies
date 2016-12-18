@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.c-subscribe{
+  @include flexbox;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../assets/shipping-bg.jpg");
+  .c-subscribe__form{
+    width: 100%;
+    input{
+      margin: 10px 0;
+      width:100%;
+      border-radius: 3px;
+      border: 2px solid $mid-grey;
+      padding: 5px;
+    }
+    .c-subscribe__submit{
+      padding:20px;
+      border: 2px solid $mid-grey;
+      background-color: #efefef;
+      border-radius: 3px;
+    }
+  }
+}
