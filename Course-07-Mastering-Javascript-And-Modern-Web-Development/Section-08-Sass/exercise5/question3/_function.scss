@@ -1,0 +1,19 @@
+// This file shows a function
+
+@function weekcolor($day){
+  @if $day == monday {
+    @return red;
+  } @else if $day == tuesday {
+    @return orange;
+  } @else if $day == wednesday {
+    @return yellow;
+  } @else if $day == thursday {
+    @return green;
+  } @else if $day == friday {
+    @return blue;
+  } @else if $day == saturday {
+    @return purple;
+  } @else {
+    @return black;
+  }
+}

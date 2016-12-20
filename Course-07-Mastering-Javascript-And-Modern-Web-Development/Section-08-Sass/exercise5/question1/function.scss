@@ -1,0 +1,11 @@
+// This file demonstrates functions in SASS
+
+$container-wdith: 1170px;
+
+@function half($num){
+  @return $num/2;
+}
+
+.container-half{
+  width: half($container-wdith);
+}

@@ -1,0 +1,15 @@
+@import '../question3/function';
+
+@each $day in(
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday
+){
+  .#{$day}{
+    font-size: weekcolor($day);
+  }
+}

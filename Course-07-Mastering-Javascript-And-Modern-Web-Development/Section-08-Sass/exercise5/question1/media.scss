@@ -1,0 +1,8 @@
+// This file demonstrates media queries in SASS
+
+.container{
+  width: 1170px;
+  @media (max-width: 1170px){
+    width: 100%;
+  }
+}

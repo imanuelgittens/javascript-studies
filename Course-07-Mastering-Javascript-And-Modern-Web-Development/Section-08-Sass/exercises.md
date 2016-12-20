@@ -36,6 +36,18 @@ Question 3)
       -o-#{$property}: $value;
     }
 
+####Exercise 2
+
+No written answers required.
+
 ####Exercise 3
+
+No written answers required.
+
+####Exercise 4
+
+See folder
+
+####Exercise 5
 
 See folder
