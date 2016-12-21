@@ -56,8 +56,8 @@
 
 ####Question 1
 
-[Answer Here](https://repl.it/Eup9/0)
+[Answer Here](https://repl.it/Eup9/2)
 
 ####Question 2
 
-[Answer Here](https://repl.it/Eup9/0)
+[Answer Here](https://repl.it/Eup9/2)
