@@ -1,0 +1,7 @@
+// Center any element within its parent (requires a width or max width)
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
