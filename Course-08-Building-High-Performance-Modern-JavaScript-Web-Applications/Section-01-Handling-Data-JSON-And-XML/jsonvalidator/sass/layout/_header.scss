@@ -11,11 +11,11 @@
   &__menu{
     float: right;
     .header__menu-item{
-      color: $text-color;
+      color: $link-color;
       padding-left: 15px;
       font-size: 20px;
       &:hover{
-        color: blue;
+        color: $highlight-color;
       }
     }
   }

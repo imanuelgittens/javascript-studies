@@ -4,17 +4,15 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 1, ../sass/base/_base.scss */
 html {
-  height: 100%;
-}
-
-/* line 5, ../sass/base/_base.scss */
-body {
-  margin: 0;
-  padding: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #333;
+  height: 100%;
+}
+
+/* line 7, ../sass/base/_base.scss */
+body {
+  color: #2B2D42;
   font-family: 'Lato', sans-serif;
   height: 100%;
 }
@@ -23,8 +21,8 @@ body {
 .fullwidth-tabs {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   position: relative;
 }
 /* line 6, ../sass/components/_fullwidth-tabs.scss */
@@ -33,25 +31,27 @@ body {
 }
 /* line 8, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__input:checked ~ .fullwidth-tabs__tab__label {
-  border-bottom: 3px solid blue;
+  color: #D90429;
+  font-weight: 600;
 }
-/* line 11, ../sass/components/_fullwidth-tabs.scss */
+/* line 12, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__input:checked ~ .fullwidth-tabs__tab__content {
   display: block;
   position: absolute;
   top: 50px;
   left: 0;
+  width: 100%;
 }
-/* line 18, ../sass/components/_fullwidth-tabs.scss */
+/* line 20, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__label {
   margin: 0 5px;
   padding: 15px 50px;
 }
-/* line 21, ../sass/components/_fullwidth-tabs.scss */
+/* line 23, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__label:hover {
   cursor: pointer;
 }
-/* line 25, ../sass/components/_fullwidth-tabs.scss */
+/* line 27, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__content {
   display: none;
 }
@@ -62,15 +62,46 @@ body {
   display: flex;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  width: 1180px;
+  width: 100%;
 }
 /* line 5, ../sass/components/_json-zone.scss */
-.json-zone__write {
-  width: 50%;
+.json-zone__content {
+  -moz-border-radius: 3px 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px;
+  width: 80%;
+  height: 400px;
+  border: 1px solid #2B2D42;
+  background-color: #EDF2F4;
 }
-/* line 8, ../sass/components/_json-zone.scss */
-.json-zone__upload {
-  width: 50%;
+/* line 11, ../sass/components/_json-zone.scss */
+.json-zone__content:focus {
+  outline: none;
+  border: 1px solid #D90429;
+}
+/* line 16, ../sass/components/_json-zone.scss */
+.json-zone__actions {
+  width: 20%;
+  margin-left: 5px;
+}
+/* line 19, ../sass/components/_json-zone.scss */
+.json-zone__actions__button {
+  -moz-border-radius: 3px 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px;
+  width: 100%;
+  display: block;
+  padding: 10px 5px;
+  border: 1px solid #2B2D42;
+  margin-bottom: 5px;
+  background-color: #EDF2F4;
+  font-size: 15px;
+}
+/* line 28, ../sass/components/_json-zone.scss */
+.json-zone__actions__button:hover {
+  background: #2B2D42;
+  color: #EDF2F4;
+  cursor: pointer;
 }
 
 /* line 1, ../sass/base/_helpers.scss */
@@ -79,9 +110,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1180px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
+  width: 1180px;
+}
+@media (max-width: 1180px) {
+  /* line 1, ../sass/base/_helpers.scss */
+  .container {
+    width: 100%;
+  }
 }
 
 /* line 1, ../sass/layout/_header.scss */
@@ -106,13 +141,13 @@ body {
 }
 /* line 13, ../sass/layout/_header.scss */
 .header__menu .header__menu-item {
-  color: #333;
+  color: #8D99AE;
   padding-left: 15px;
   font-size: 20px;
 }
 /* line 17, ../sass/layout/_header.scss */
 .header__menu .header__menu-item:hover {
-  color: blue;
+  color: #EF233C;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
