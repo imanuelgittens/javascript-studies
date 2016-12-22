@@ -3,13 +3,31 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+//@import "compass/reset";
+@import "compass";
 
 
-// abstracts
+// Abstracts
 
-@import "abstracts/mixins";
+@import "abstracts/mixins",
+        "abstracts/variables";
+
+
+//  Base
+
+@import "base/base";
+
+// Components
+
+@import "components/fullwidth-tabs",
+        "components/json-zone";
 
 // Helpers
 
 @import "base/helpers";
+
+// Layouts
+
+@import "layout/header",
+        "layout/footer",
+        "layout/body";

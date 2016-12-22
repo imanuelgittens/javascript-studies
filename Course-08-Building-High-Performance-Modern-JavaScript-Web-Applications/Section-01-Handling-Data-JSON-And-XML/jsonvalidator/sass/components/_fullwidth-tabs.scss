@@ -1,0 +1,29 @@
+.fullwidth-tabs{
+  @include display-flex;
+  @include justify-content(center);
+  position: relative;
+  &__tab{
+    &__input{
+      display: none;
+      &:checked ~ .fullwidth-tabs__tab__label{
+        border-bottom: 3px solid blue;
+      }
+      &:checked ~ .fullwidth-tabs__tab__content{
+        display: block;
+        position: absolute;
+        top: 50px;
+        left:0
+      }
+    }
+    &__label{
+      margin: 0 5px;
+      padding: 15px 50px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    &__content{
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.json-zone{
+  @include display-flex;
+  @include justify-content(flex-start);
+  width: $max-width;
+  &__write{
+    width: 50%;
+  }
+  &__upload{
+    width: 50%;
+  }
+}
