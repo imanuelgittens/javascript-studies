@@ -57,4 +57,22 @@
   		}
   	}
   }
+  &__validation-result{
+  	@include border-radius(3px 3px);
+  	padding: 30px;
+  	text-align: center;
+  	text-transform: uppercase;
+  	border: 1px solid $text-color;
+  	color: $base-color;
+  	&__icon{
+  		font-size: 80px;
+  		margin: 0;
+  	}
+  	&--success{
+  		background-color: $success-bg;
+  	}
+  	&--fail{
+  		background-color: $failure-bg;
+  	}
+  }
 }

@@ -33,17 +33,6 @@ function convertToString(jsonFile){
   reader.onerror = errorHandler;
 }
 
-/*function updateProgress(evt) {
-  if (evt.lengthComputable) {
-    // evt.loaded and evt.total are ProgressEvent properties
-    var loaded = (evt.loaded / evt.total);
-    if (loaded < 1) {
-      // Increase the prog bar length
-      // style.width = (loaded * 200) + "px";
-    }
-  }
-}*/
-
 function loaded(evt) {
   // Obtain the read file data
   var fileString = evt.target.result;
@@ -67,7 +56,7 @@ function errorHandler(evt) {
 testButton.addEventListener('click', function(event){
 	 var jsonTextArea = document.getElementById('jsonText').value;
 	 if(jsonTextArea.length < 1){
-	 	alert("Enter some JSON in the textarea.");
+	 	alert('Enter some JSON in the textarea.');
 	 }else{
 	 	var tab1 = document.getElementById('jsonstring');
  		var tab2 = document.getElementById('jsonresult');
@@ -75,10 +64,18 @@ testButton.addEventListener('click', function(event){
  		tab2.checked = true;
 	 	if(validateJSON(jsonTextArea)){
 	 		var result = document.getElementById('vResult');
-	 		result.innerHTML = "Congratulations! Your JSON is Valid!"
+	 		var resultText = document.getElementById('vResultText');
+	 		var resultIcon = document.getElementById('vResultIcon');
+	 		vResult.classList.add('tab-area__validation-result--success')
+	 		resultIcon.innerHTML = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
+	 		resultText.innerHTML = 'Congratulations! Your JSON is Valid!';
 	 	}else{
 	 		var result = document.getElementById('vResult');
-	 		result.innerHTML = "Sorry...something is wrong with your JSON."
+	 		var resultText = document.getElementById('vResultText');
+	 		var resultIcon = document.getElementById('vResultIcon');
+	 		vResult.classList.add('tab-area__validation-result--fail')
+	 		resultIcon.innerHTML = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
+	 		resultText.innerHTML = 'Sorry...something is wrong with your JSON.';
 	 	}
 	 }
 });

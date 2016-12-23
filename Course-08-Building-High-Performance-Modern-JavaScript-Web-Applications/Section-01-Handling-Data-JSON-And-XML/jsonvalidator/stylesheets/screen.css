@@ -138,6 +138,30 @@ body {
   color: #EDF2F4;
   cursor: pointer;
 }
+/* line 60, ../sass/components/_tab-area.scss */
+.tab-area__validation-result {
+  -moz-border-radius: 3px 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #2B2D42;
+  color: #EDF2F4;
+}
+/* line 67, ../sass/components/_tab-area.scss */
+.tab-area__validation-result__icon {
+  font-size: 80px;
+  margin: 0;
+}
+/* line 71, ../sass/components/_tab-area.scss */
+.tab-area__validation-result--success {
+  background-color: #009966;
+}
+/* line 74, ../sass/components/_tab-area.scss */
+.tab-area__validation-result--fail {
+  background-color: #DF9496;
+}
 
 /* line 1, ../sass/base/_helpers.scss */
 .container {
