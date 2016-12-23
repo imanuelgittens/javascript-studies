@@ -25,22 +25,39 @@
 
 				<div class="fullwidth-tabs__tab">
 					<input class="fullwidth-tabs__tab__input" type="radio" name="validJSONTabs" id="jsonstring" checked/>
-					<label class="fullwidth-tabs__tab__label" for="jsonstring">Run Test</label>
+					<label class="fullwidth-tabs__tab__label" for="jsonstring">Test Area</label>
 					<div class="fullwidth-tabs__tab__content">
-						<div class="json-zone">
-							<textarea class="json-zone__content" id="jsonText"></textarea>
-							<aside class="json-zone__actions">
-								<button class="json-zone__actions__button">Upload JSON File</button>
-								<button class="json-zone__actions__button" id="runTest">Validate JSON</button>
+						<div class="tab-area">
+							<div class="tab-area__content">
+								<textarea class="tab-area__content__json-text" id="jsonText" placeholder="Upload a json file or write some json here..."></textarea>
+							</div>
+							<aside class="tab-area__actions">
+								<label class="tab-area__actions__file-label" for="jsonFile" id="jsonFileLabel">
+									<i class="fa fa-upload" aria-hidden="true"></i>
+									<span class="tab-area__actions__file-span" id="jsonFileSpan">Choose a File</span>
+								</label>
+								<input class="tab-area__actions__file-input" id="jsonFile" type="file"/>
+								<!-- <button class="tab-area__actions__button" id="runFileTest">Upload JSON File</button> -->
+								<button class="tab-area__actions__button" id="runTest">Validate JSON</button>
 							</aside>
 						</div>
 					</div>
 				</div>
 				<div class="fullwidth-tabs__tab">
-					<input class="fullwidth-tabs__tab__input" type="radio" name="validJSONTabs" id="jsonresult"/>
+					<input class="fullwidth-tabs__tab__input" type="radio" name="validJSONTabs" id="jsonresult" disabled/>
 					<label class="fullwidth-tabs__tab__label" for="jsonresult">Results</label>
 					<div class="fullwidth-tabs__tab__content">
-						tab 2 content
+						<div class="tab-area">
+							<div class="tab-area__content">
+								<div class="validation-result">
+									<h3 class="validation-result__text" id="vResult"></h3>
+								</div>
+							</div>
+							<aside class="tab-area__actions">
+								<button class="tab-area__actions__button" id="testAgain">Test Again.</button>
+							</aside>
+						</div>
+						
 					</div>
 				</div>
 
@@ -50,6 +67,6 @@
 	<footer class="footer">
 		<p class="footer__copyright">Built by Imanuel Gittens</p>
 	</footer>
-	<script src="js/validate_json.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

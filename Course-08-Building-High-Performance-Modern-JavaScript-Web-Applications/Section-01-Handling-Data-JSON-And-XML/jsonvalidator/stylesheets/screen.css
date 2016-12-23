@@ -56,49 +56,84 @@ body {
   display: none;
 }
 
-/* line 1, ../sass/components/_json-zone.scss */
-.json-zone {
+/* line 1, ../sass/components/_tab-area.scss */
+.tab-area {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   width: 100%;
 }
-/* line 5, ../sass/components/_json-zone.scss */
-.json-zone__content {
+/* line 5, ../sass/components/_tab-area.scss */
+.tab-area__content {
+  width: 80%;
+  height: 400px;
+}
+/* line 8, ../sass/components/_tab-area.scss */
+.tab-area__content__json-text {
   -moz-border-radius: 3px 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px 3px;
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #2B2D42;
   background-color: #EDF2F4;
 }
-/* line 11, ../sass/components/_json-zone.scss */
-.json-zone__content:focus {
-  outline: none;
+/* line 14, ../sass/components/_tab-area.scss */
+.tab-area__content__json-text:focus {
   border: 1px solid #D90429;
+  outline: none;
 }
-/* line 16, ../sass/components/_json-zone.scss */
-.json-zone__actions {
+/* line 20, ../sass/components/_tab-area.scss */
+.tab-area__actions {
   width: 20%;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-/* line 19, ../sass/components/_json-zone.scss */
-.json-zone__actions__button {
+/* line 23, ../sass/components/_tab-area.scss */
+.tab-area__actions__file-label {
+  -moz-border-radius: 3px 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 3px;
+  margin-bottom: 5px;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #EF233C;
+  color: #EDF2F4;
+  font-size: 16px;
+}
+/* line 32, ../sass/components/_tab-area.scss */
+.tab-area__actions__file-label--uploaded {
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #009966;
+  padding: 20px;
+}
+/* line 37, ../sass/components/_tab-area.scss */
+.tab-area__actions__file-label:hover {
+  cursor: pointer;
+}
+/* line 41, ../sass/components/_tab-area.scss */
+.tab-area__actions__file-input {
+  display: none;
+}
+/* line 44, ../sass/components/_tab-area.scss */
+.tab-area__actions__button {
   -moz-border-radius: 3px 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px 3px;
   width: 100%;
   display: block;
-  padding: 10px 5px;
+  padding: 10px 0;
   border: 1px solid #2B2D42;
   margin-bottom: 5px;
   background-color: #EDF2F4;
   font-size: 15px;
 }
-/* line 28, ../sass/components/_json-zone.scss */
-.json-zone__actions__button:hover {
+/* line 53, ../sass/components/_tab-area.scss */
+.tab-area__actions__button:hover {
   background: #2B2D42;
   color: #EDF2F4;
   cursor: pointer;
