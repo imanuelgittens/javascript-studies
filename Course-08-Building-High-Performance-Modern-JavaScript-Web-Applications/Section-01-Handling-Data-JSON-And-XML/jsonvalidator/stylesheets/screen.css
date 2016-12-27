@@ -42,16 +42,29 @@ body {
   left: 0;
   width: 100%;
 }
-/* line 20, ../sass/components/_fullwidth-tabs.scss */
+/* line 19, ../sass/components/_fullwidth-tabs.scss */
+.fullwidth-tabs__tab__input:checked ~ .fullwidth-tabs__tab__line {
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  width: 100%;
+}
+/* line 24, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__label {
-  margin: 0 5px;
-  padding: 15px 50px;
+  display: block;
+  margin: 14px 50px;
+  text-transform: uppercase;
 }
-/* line 23, ../sass/components/_fullwidth-tabs.scss */
-.fullwidth-tabs__tab__label:hover {
-  cursor: pointer;
+/* line 29, ../sass/components/_fullwidth-tabs.scss */
+.fullwidth-tabs__tab__line {
+  z-index: 1000;
+  position: relative;
+  width: 0;
+  height: 5px;
+  background-color: #D90429;
 }
-/* line 27, ../sass/components/_fullwidth-tabs.scss */
+/* line 36, ../sass/components/_fullwidth-tabs.scss */
 .fullwidth-tabs__tab__content {
   display: none;
 }
@@ -71,29 +84,25 @@ body {
 }
 /* line 8, ../sass/components/_tab-area.scss */
 .tab-area__content__json-text {
-  -moz-border-radius: 3px 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px 3px;
+  box-sizing: border-box;
+  padding: 10px;
   width: 100%;
   height: 100%;
-  border: 1px solid #2B2D42;
+  border: none;
   background-color: #EDF2F4;
+  box-shadow: 0 1px 1px #bbb;
 }
-/* line 14, ../sass/components/_tab-area.scss */
+/* line 16, ../sass/components/_tab-area.scss */
 .tab-area__content__json-text:focus {
-  border: 1px solid #D90429;
   outline: none;
 }
-/* line 20, ../sass/components/_tab-area.scss */
+/* line 21, ../sass/components/_tab-area.scss */
 .tab-area__actions {
   width: 20%;
   margin-left: 10px;
 }
-/* line 23, ../sass/components/_tab-area.scss */
+/* line 24, ../sass/components/_tab-area.scss */
 .tab-area__actions__file-label {
-  -moz-border-radius: 3px 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px 3px;
   margin-bottom: 5px;
   display: block;
   padding: 10px 0;
@@ -101,8 +110,9 @@ body {
   background-color: #EF233C;
   color: #EDF2F4;
   font-size: 16px;
+  box-shadow: 0 1px 1px #bbb;
 }
-/* line 32, ../sass/components/_tab-area.scss */
+/* line 33, ../sass/components/_tab-area.scss */
 .tab-area__actions__file-label--uploaded {
   -moz-transition: 1s;
   -o-transition: 1s;
@@ -111,56 +121,46 @@ body {
   background-color: #009966;
   padding: 20px;
 }
-/* line 37, ../sass/components/_tab-area.scss */
+/* line 38, ../sass/components/_tab-area.scss */
 .tab-area__actions__file-label:hover {
   cursor: pointer;
 }
-/* line 41, ../sass/components/_tab-area.scss */
+/* line 42, ../sass/components/_tab-area.scss */
 .tab-area__actions__file-input {
   display: none;
 }
-/* line 44, ../sass/components/_tab-area.scss */
+/* line 45, ../sass/components/_tab-area.scss */
 .tab-area__actions__button {
-  -moz-border-radius: 3px 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px 3px;
   width: 100%;
   display: block;
   padding: 10px 0;
-  border: 1px solid #2B2D42;
+  border: none;
   margin-bottom: 5px;
   background-color: #EDF2F4;
-  font-size: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 1px #bbb;
 }
-/* line 53, ../sass/components/_tab-area.scss */
+/* line 55, ../sass/components/_tab-area.scss */
 .tab-area__actions__button:hover {
   background: #2B2D42;
   color: #EDF2F4;
   cursor: pointer;
 }
-/* line 60, ../sass/components/_tab-area.scss */
+/* line 62, ../sass/components/_tab-area.scss */
 .tab-area__validation-result {
-  -moz-border-radius: 3px 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px 3px;
+  box-shadow: 0 1px 1px #bbb;
+  background-color: #EDF2F4;
   padding: 30px;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid #2B2D42;
-  color: #EDF2F4;
+  border: none;
+  color: #2B2D42;
 }
-/* line 67, ../sass/components/_tab-area.scss */
+/* line 70, ../sass/components/_tab-area.scss */
 .tab-area__validation-result__icon {
   font-size: 80px;
   margin: 0;
-}
-/* line 71, ../sass/components/_tab-area.scss */
-.tab-area__validation-result--success {
-  background-color: #009966;
-}
-/* line 74, ../sass/components/_tab-area.scss */
-.tab-area__validation-result--fail {
-  background-color: #DF9496;
 }
 
 /* line 1, ../sass/base/_helpers.scss */

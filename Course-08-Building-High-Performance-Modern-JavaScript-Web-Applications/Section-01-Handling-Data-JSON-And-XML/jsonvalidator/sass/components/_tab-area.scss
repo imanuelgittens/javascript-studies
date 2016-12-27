@@ -6,13 +6,14 @@
     width: 80%;
     height: 400px;
     &__json-text{
-    	@include border-radius(3px 3px);
+      box-sizing: border-box;
+      padding: 10px;
     	width: 100%;
     	height: 100%;
-    	border: 1px solid $text-color;
+    	border: none;
     	background-color: $base-color;
+      box-shadow: 0 1px 1px #bbb;
     	&:focus{
-    		border: 1px solid $accent-color;
     		outline: none;
     	}
     }
@@ -21,7 +22,6 @@
   	width: 20%;
   	margin-left: 10px;
   	&__file-label{
-  		@include border-radius(3px 3px);
   		margin-bottom: 5px;
   		display: block;
   		padding: 10px 0;
@@ -29,6 +29,7 @@
   		background-color: $highlight-color;
   		color: $base-color;
   		font-size: 16px;
+      box-shadow: 0 1px 1px #bbb;
   		&--uploaded{
   			@include transition(1s);
   			background-color: $success-color;
@@ -42,14 +43,15 @@
   		display: none;
   	}
   	&__button{
-  		@include border-radius(3px 3px);
   		width: 100%;
   		display: block;
   		padding: 10px 0;
-  		border: 1px solid $text-color;
+  		border: none;
   		margin-bottom: 5px;
   		background-color: $base-color;
-  		font-size: 15px;
+  		font-size: 14px;
+      text-transform: uppercase;
+      box-shadow: 0 1px 1px #bbb;
   		&:hover{
   			background: $text-color;
   			color: $base-color;
@@ -58,21 +60,16 @@
   	}
   }
   &__validation-result{
-  	@include border-radius(3px 3px);
+    box-shadow: 0 1px 1px #bbb;
+    background-color: $base-color;
   	padding: 30px;
   	text-align: center;
   	text-transform: uppercase;
-  	border: 1px solid $text-color;
-  	color: $base-color;
+  	border: none;
+  	color: $text-color;
   	&__icon{
   		font-size: 80px;
   		margin: 0;
-  	}
-  	&--success{
-  		background-color: $success-bg;
-  	}
-  	&--fail{
-  		background-color: $failure-bg;
   	}
   }
 }

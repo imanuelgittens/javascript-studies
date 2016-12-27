@@ -1,5 +1,4 @@
 var testButton = document.getElementById('runTest');
-// var fileTestButton = document.getElementById('runFileTest');
 var uploadFileButton = document.getElementById('jsonFile');
 var testAgainButton = document.getElementById('testAgain');
 
@@ -66,14 +65,12 @@ testButton.addEventListener('click', function(event){
 	 		var result = document.getElementById('vResult');
 	 		var resultText = document.getElementById('vResultText');
 	 		var resultIcon = document.getElementById('vResultIcon');
-	 		vResult.classList.add('tab-area__validation-result--success')
 	 		resultIcon.innerHTML = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
 	 		resultText.innerHTML = 'Congratulations! Your JSON is Valid!';
 	 	}else{
 	 		var result = document.getElementById('vResult');
 	 		var resultText = document.getElementById('vResultText');
 	 		var resultIcon = document.getElementById('vResultIcon');
-	 		vResult.classList.add('tab-area__validation-result--fail')
 	 		resultIcon.innerHTML = '<i class="fa fa-frown-o" aria-hidden="true"></i>';
 	 		resultText.innerHTML = 'Sorry...something is wrong with your JSON.';
 	 	}
@@ -87,10 +84,12 @@ uploadFileButton.addEventListener('change', function(event){
 testAgainButton.addEventListener('click', function(event){
 	var jsonTextArea = document.getElementById('jsonText');
 	var uploadLabelText = document.getElementById('jsonFileSpan');
+	var jsonFileLabel = document.getElementById('jsonFileLabel');
 	jsonTextArea.value = '';
 	uploadLabelText.innerHTML = 'Choose a File';
 	var tab1 = document.getElementById('jsonstring');
 	var tab2 = document.getElementById('jsonresult');
+	jsonFileLabel.classList.remove('tab-area__actions__file-label--uploaded');
 	tab1.checked = true;
 	tab2.checked = false;
 });
