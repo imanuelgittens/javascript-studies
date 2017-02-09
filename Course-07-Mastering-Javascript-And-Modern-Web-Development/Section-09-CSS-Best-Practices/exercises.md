@@ -274,3 +274,38 @@
 		  font-size: 15pt;
 		}
 
+
+####Exercise 4
+
+**Question 1**
+
+
+With CSS Minifier 
+
+The file was reduced from 2.1 kB to 1.4 kB
+
+With CSS Compressor
+
+The file was reduced from 2.1 kB to 1.5 kB (43.72% reduction)
+
+
+**Question 2**
+
+Prefixed CSS
+
+
+		.accordion {
+		  -webkit-transition: all .2s ease-out;
+		  transition: all .2s ease-out;
+		  -webkit-transition-delay: 1s;
+		          transition-delay: 1s;
+		}
+
+		.transform-box {
+		  -webkit-transform: translate(20px, 20px) rotate(30deg) scale(2, 2);
+		          transform: translate(20px, 20px) rotate(30deg) scale(2, 2);
+		  box-sizing: border-box;
+		  background: -webkit-linear-gradient(orange, white);
+		  background: linear-gradient(orange, white);
+		  border-radius: 5px;
+		}
