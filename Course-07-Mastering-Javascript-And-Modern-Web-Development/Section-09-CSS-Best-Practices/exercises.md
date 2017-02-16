@@ -309,3 +309,11 @@ Prefixed CSS
 		  background: linear-gradient(orange, white);
 		  border-radius: 5px;
 		}
+
+####Exercise 5
+
+Answer seen on github [here](https://github.com/imanuelgittens/learning-web-components/blob/master/portfolio/sass/components/_contact_card.scss)
+
+####Exercise 6
+
+Answer seen on codepen [here](http://codepen.io/imanuelgittens/pen/oBVrNL)
