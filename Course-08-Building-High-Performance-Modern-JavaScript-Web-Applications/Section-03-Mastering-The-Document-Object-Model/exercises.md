@@ -153,3 +153,11 @@ Contains no specific methods
 `HTMLLIElement.type` - This property is a DOMString that represents the type of bullets, "disc", "square" or "circle".
 
 `HTMLLIElement.value` - This property indicates the position of the list item within a list.
+
+####Exercise 3
+
+See answer on codepen [here](http://codepen.io/imanuelgittens/pen/egwBry)
+
+####Exercise 4
+
+Unfortunately I found no way to do this on codepen since it requires multiple stylesheets. Answer to this question is in the folder.
