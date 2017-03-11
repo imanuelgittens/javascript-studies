@@ -156,5 +156,10 @@ Contains no specific methods
 
 ####Exercise 3
 
+
 See answer on codepen [here](http://codepen.io/imanuelgittens/pen/MJqJOG).
+
+####Exercise 4
+
+Unfortunately I found no way to do this on codepen since it requires multiple stylesheets. Answer to this question is in the folder.
 
