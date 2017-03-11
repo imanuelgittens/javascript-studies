@@ -43,7 +43,7 @@ development. Cheers!
 
 ####Question 2 - Describe how regular expression character sets work and give an example of their usage.
 
-Regular expressions are used to match patterns within a given data set. They allows for this matching to happen using
+Regular expressions are used to match patterns within a given data set. They allow for this matching to happen using
 a number of different syntax formations but this article will delve into what is know as a character set and see how they
 work to match patterns.
 
@@ -55,11 +55,11 @@ Character sets are denoted by square brackets in regular expression syntax and l
 The regular expression above will match any vowel.
 
 Regular expressions also take things further with character sets. A range of common characters can be matched
-by placing a hyphen between the start and end of the range. let look at an example
+by placing a hyphen between the start and end of the range. Let's look at an example
 
     [A-Z]
 
-This regular expression will match an **uppercase** letter between A and Z (inclusive). We can also group
+This regular expression will match any **uppercase** letter between A and Z (inclusive). We can also group
  these ranges together which allows us to get fancy with regular expressions. What patterns to you think this
  expression will match?
 
@@ -82,12 +82,11 @@ This regular expression will match an **uppercase** letter between A and Z (incl
  ####Question 4 - Explain how the HTML element `children` method works and give an example of its usage.
 
  the `Node.children` method returns a live HTMLCollection of all the child elements of that node. This [pen](http://codepen.io/imanuelgittens/pen/xqqyOG)
-
- Show a great example of the `children` method in action and how to use it. Happy coding!
+shows a great example of the `children` method in action and how to use it. Happy coding!
 
  ####Question 5 - Explain what a 'TreeWalker' is. Describe how to create one and give at least two examples of its usage.
 
- A TreeWalker is an object containing a sub-tree of the DOM. The TreeWalker also provides methods for interacting with the subtree stored in the object.
+ A TreeWalker is an object containing a sub-tree of the DOM. The TreeWalker also provides methods for interacting with the subtree stored in that object.
  It can work on any node type and is fairly simple to create. lets look at some example code to see how we can make one.
 
  We have some HTML
