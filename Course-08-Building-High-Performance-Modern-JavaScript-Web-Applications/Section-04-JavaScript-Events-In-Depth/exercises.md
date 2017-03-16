@@ -33,3 +33,7 @@ Question 3)
 
 Answer on codepen [here](http://codepen.io/imanuelgittens/pen/jBGVKG)
 
+####Exercise 6
+
+Answer on codepen [here](http://codepen.io/imanuelgittens/pen/ZeXxyP)
+
