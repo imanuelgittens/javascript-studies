@@ -1,0 +1,18 @@
+.jigSawWrapper{
+  background-color: #090D18;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.puzzle-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jigsaw{
+  &__solved-image{
+    width: 80%;
+    height: auto;
+  }
+}
