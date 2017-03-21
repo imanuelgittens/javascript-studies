@@ -1,7 +1,11 @@
+@import "base/helpers";
+
 .jigSawWrapper{
   background-color: #090D18;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -11,8 +15,11 @@
 }
 
 .jigsaw{
-  &__solved-image{
-    width: 80%;
-    height: auto;
-  }
+  position: relative;
+  width: 768px;
+  height: 479px;
+  background-image: url("../assets/images/_Puzzle_solved.png");
+  background-repeat: no-repeat;
+  background-size:cover;
 }
+
