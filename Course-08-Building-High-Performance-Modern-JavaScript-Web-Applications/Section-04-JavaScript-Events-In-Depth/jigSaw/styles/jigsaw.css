@@ -5,6 +5,33 @@
 .puzzle-visible {
   display: block; }
 
+.piece-holder {
+  width: 75px;
+  height: 75px;
+  border-radius: 40px;
+  background: red;
+  position: absolute; }
+
+.holder1 {
+  left: 48px;
+  top: 45px; }
+
+.holder2 {
+  left: 196px;
+  top: 45px; }
+
+.holder3 {
+  left: 344px;
+  top: 45px; }
+
+.holder4 {
+  left: 492px;
+  top: 45px; }
+
+.holder5 {
+  left: 640px;
+  top: 45px; }
+
 .jigSawWrapper {
   background-color: #090D18;
   height: 100vh;
@@ -13,7 +40,6 @@
   align-items: center; }
 
 .puzzle-container {
-  width: 80%;
   margin: 0 auto; }
 
 .jigsaw {
@@ -23,5 +49,11 @@
   background-image: url("../assets/images/_Puzzle_solved.png");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.puzzle-pieces__piece {
+  display: inline-block;
+  width: 90px; }
+.puzzle-pieces__piece-img {
+  width: 100%; }
 
 /*# sourceMappingURL=jigsaw.css.map */

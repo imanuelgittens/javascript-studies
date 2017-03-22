@@ -7,3 +7,37 @@
 .puzzle-visible{
   display: block;
 }
+
+.piece-holder{
+  width: 75px;
+  height: 75px;
+  border-radius: 40px;
+  background: red;
+  position: absolute;
+}
+
+.holder1{
+  left: 48px;
+  top: 45px;
+}
+
+.holder2{
+  left: 196px; //148 difference
+  top: 45px;
+}
+
+.holder3{
+  left: 344px;
+  top: 45px;
+}
+
+.holder4{
+  left: 492px;
+  top: 45px;
+}
+
+.holder5{
+  left: 640px;
+  top: 45px;
+}
+
