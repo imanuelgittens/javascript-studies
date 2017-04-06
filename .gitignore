@@ -1,2 +1,4 @@
 .idea
 *.sublime-workspace
+*.sass-cache
+*.css.map*

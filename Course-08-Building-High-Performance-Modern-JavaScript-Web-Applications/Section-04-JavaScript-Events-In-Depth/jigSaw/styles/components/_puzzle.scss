@@ -1,7 +1,6 @@
 /* Base styles*/
 
 html, body{
-  box-sizing: border-box;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -12,22 +11,40 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #090D18;
 }
 
 /*Puzzle Specific Styles*/
 .puzzle{
-  &__container{
-    background-image: url("../assets/images/_Puzzle_solved.png");
-    min-width: 900px;
-    min-height: 550px;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-   
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 600px;
+  background-image: url("../assets/images/_Puzzle_solved.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  &__table{
+    width: 100%;
+    color: #fff;
+    text-align:center;
   }
-  
+
+  &__row{
+    height:40px;
+    /*margin:20px;*/
+  }
+
+  &__col{
+    text-align: center;
+  }
 }
 
+
+.thin{
+  width: 20px;
+}
 
 //.jigSawWrapper{
 //  background-color: #090D18;
