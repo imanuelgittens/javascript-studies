@@ -66,10 +66,10 @@ body {
   align-items: center;
   width: 900px;
   height: 600px;
-  background-image: url("../assets/images/_Puzzle_solved.png");
+  /*background-image: url("../assets/images/_Puzzle_solved.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-size:cover;
+  background-position: center;*/ }
   .puzzle__table {
     width: 100%;
     color: #fff;
