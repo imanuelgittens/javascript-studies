@@ -46,41 +46,61 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Base styles*/
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0; }
+/*#drag-position{
+  width:100px;
+  height:100px;
+  border: 1px solid #000;
+}*/
+/*[id^="dropzone"]{
+  width:80px;
+  height:65px;
+  border: 1px solid #fff;
 
-body {
-  display: flex;
+  margin-right: 39.5px;
+}*/
+.puzzle-board-wrapper {
+  /*background-size: 625px;
+  background-position: 50% 10%;*/
+  /*display:inline-block;*/
+  display: inline-flex;
+  /*justify-content: center;
+  align-items:center;*/ }
+
+.puzzle-board {
+  /*margin-left: 200px;*/
+  background: url("../assets/images/_Puzzle_bg_unsolved.png") no-repeat;
+  width: 868px;
+  height: 579px;
+  display: inline-flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: #090D18; }
+  align-items: center; }
+  .puzzle-board__row {
+    display: flex; }
+  .puzzle-board__row-dropzone {
+    width: 110px;
+    height: 95px;
+    border: 1px solid #fff;
+    margin-right: 53.5px; }
+    .puzzle-board__row-dropzone:last-child {
+      margin-right: 0 !important; }
+  .puzzle-board__row-offset {
+    display: flex;
+    margin-left: 83px; }
 
-/*Puzzle Specific Styles*/
-.puzzle {
+#puzzle-pieces {
+  width: 400px;
+  height: 550px;
+  overflow-y: scroll;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 900px;
-  height: 600px;
-  /*background-image: url("../assets/images/_Puzzle_solved.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;*/ }
-  .puzzle__table {
-    width: 100%;
-    color: #fff;
-    text-align: center; }
-  .puzzle__row {
-    height: 40px;
-    /*margin:20px;*/ }
-  .puzzle__col {
-    text-align: center; }
+  flex-wrap: wrap; }
 
-.thin {
-  width: 20px; }
+[id^="puzzle-piece"] {
+  width: 110px;
+  height: 95px; }
+
+/*helpers*/
+.negative-margin {
+  margin-top: -47.5px; }
 
 /*# sourceMappingURL=jigsaw.css.map */
