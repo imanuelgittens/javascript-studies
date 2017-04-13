@@ -70,23 +70,24 @@ table {
   /*margin-left: 200px;*/
   background: url("../assets/images/_Puzzle_bg_unsolved.png") no-repeat;
   width: 868px;
-  height: 579px;
+  height: 574px;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .puzzle-board__row {
-    display: flex; }
+    display: flex;
+    margin-bottom: -2px; }
   .puzzle-board__row-dropzone {
-    width: 110px;
+    width: 113.2px;
     height: 95px;
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     margin-right: 53.5px; }
     .puzzle-board__row-dropzone:last-child {
       margin-right: 0 !important; }
   .puzzle-board__row-offset {
     display: flex;
-    margin-left: 83px; }
+    margin-left: 0px; }
 
 #puzzle-pieces {
   width: 400px;
