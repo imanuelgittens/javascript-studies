@@ -12,8 +12,19 @@
     function drop(event){
         event.preventDefault();
         var data = event.dataTransfer.getData('text');
-        console.log(data);
+       console.log(event.target);
         event.target.appendChild(document.getElementById(data));
+        var completeTest = checkComplete();
+        var l;
+        if(completeTest){
+            var puzzleItems = document.querySelectorAll('[id^="puzzle-piece-"]');
+            for(l=0; l < puzzleItems.length; l++){
+                puzzleItems[l].classList.add('shake');
+            }
+            setTimeout(endGameWinner, 3000);
+        }/*else{
+            console.log('still going!')
+        }*/
     }
 
 /*end drag functions*/
@@ -25,7 +36,7 @@ var timeRemaining;
 var scrambleButton = document.getElementById('scramble');
 
 function scramble(){
-
+    var puzzleBoard = document.getElementById('puzzle-board');
     var puzzlePiecesArea = document.getElementById('puzzle-pieces');
     var difficulty = document.getElementById('difficulty');
     var difficultyValue = difficulty.options[difficulty.selectedIndex].value;
@@ -44,7 +55,7 @@ function scramble(){
     }
 
    /* console.log(timeRemaining);*/
-
+    puzzleBoard.style.background = 'url("./assets/images/_Puzzle_bg_unsolved.png")';
     puzzlePiecesArea.innerHTML = '';
 
     var imgSourceArray = ['<img id="puzzle-piece-5" src="assets/images/Group5.png" ondragstart="drag(event)" draggable="true">',
@@ -125,7 +136,7 @@ function checkComplete(){
             complete = false;
         }
     }
-    alert(complete);
+    /*alert(complete);*/
     return complete;
 }
 
@@ -135,17 +146,32 @@ completeButton.addEventListener('click', checkComplete);*/
 function finishPuzzle(){
     var puzzleBoard = document.getElementById('puzzle-board');
     var piecesShelf = document.getElementById('puzzle-pieces');
-    var items = document.querySelectorAll('[id^="puzzle-piece-"]');
-    /*console.log(items);*/
-    var k;
-    for(k = 0; k < 41; k++){
+    var boardItems = puzzleBoard.querySelectorAll('[id^="puzzle-piece-"]');
+    var items = piecesShelf.querySelectorAll('[id^="puzzle-piece-"]');
+    var k,l,m;
+    for(m = 0; m < boardItems.length; m++){
+        var id = boardItems[m].id.substr(13);
+        var nodeItem = boardItems[m].parentNode.removeChild(boardItems[m]);
+        var correctBoardPosition = puzzleBoard.querySelector('#dropzone-'+ id);
+        correctBoardPosition.appendChild(nodeItem);
+    }
+    for(k = 0; k < items.length; k++){
 
         var idNum = items[k].id.substr(13);
-        /*console.log(idNum);*/
+
         var node = piecesShelf.removeChild(items[k]);
         var correctPosition = puzzleBoard.querySelector('#dropzone-'+ idNum);
         correctPosition.appendChild(node);
 
+    }
+    var completeTest = checkComplete();
+    if(completeTest){
+        for(l=0; l < items.length; l++){
+            items[l].classList.add('shake');
+        }
+        setTimeout(endGameWinner, 3000);
+    }else{
+        endGameLoser();
     }
 
 }
@@ -158,9 +184,6 @@ finishButton.addEventListener('click', finishPuzzle);
 
 function showComplete(){
     var puzzleBoard = document.getElementById('puzzle-board');
-    /*this.classList.add('hidden');*/
-   /* var hideCompleteButton = document.getElementById('hide-hint');
-    hideCompleteButton.classList.remove('hidden');*/
     puzzleBoard.style.background = 'url("./assets/images/_Puzzle_solved.png")';
 }
 
@@ -168,17 +191,13 @@ function showComplete(){
 
 function hideComplete(){
     var puzzleBoard = document.getElementById('puzzle-board');
-   /* this.classList.add('hidden');
-    var showCompleteButton = document.getElementById('show-hint');
-    showCompleteButton.classList.remove('hidden');*/
     puzzleBoard.style.background = 'url("./assets/images/_Puzzle_bg_unsolved.png")';
 }
 
 var showCompleteButton = document.getElementById('show-hint');
 showCompleteButton.addEventListener('mousedown', showComplete);
 showCompleteButton.addEventListener('mouseup', hideComplete);
-/*var hideCompleteButton = document.getElementById('hide-hint');
-hideCompleteButton.addEventListener('click', hideComplete);*/
+
 
 function countDown(timeRemaining){
     var timer = document.getElementById('countdown-timer');
@@ -189,6 +208,7 @@ function countDown(timeRemaining){
         if(timeRemaining === 300000){
             timer.innerHTML = '05:00';
         }else{
+            document.getElementById('show-hint').classList.add('hidden');
             timer.innerHTML = '03:00';
         }
     }
@@ -203,8 +223,8 @@ function startTimer(){
     var presentTime = timer.innerHTML;
     var timeArray = presentTime.split(':');
     var m = parseInt(timeArray[0]);
-    var s = parseInt(checkSecond(parseInt(timeArray[1]-1)));
-    if(s === 59){
+    var s = checkSecond(parseInt(timeArray[1]-1));
+    if(parseInt(s) === 59){
         m = m-1
     }
 
@@ -220,5 +240,22 @@ function checkSecond(sec) {
 }
 
 
+function endGameWinner(){
+    if(!alert('Congratulations!!!! You\'re a winner!')){window.location.reload();}
+}
+
+function endGameLoser(){
+    if(!alert('Sorry...You gotta try again!')){window.location.reload();}
+}
+
+
+/*var pieceShelf = document.getElementById('puzzle-pieces');
+pieceShelf.addEventListener('mouseenter', function(){
+    var pieces = pieceShelf.querySelectorAll('[id^="puzzle-piece-"]');
+    var s;
+    for(s = 0; s < pieces.length; s++){
+        pieces[s].classList.add('hidden');
+    }
+});*/
 
 

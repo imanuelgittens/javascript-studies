@@ -84,7 +84,7 @@ body{
 
 
 .puzzle-board{
-  background: url("../assets/images/_Puzzle_bg_unsolved.png") no-repeat;
+  background: url("../assets/images/_Puzzle_solved.png") no-repeat;
   width: 867px;
   height: 573px;
   display:inline-flex;
@@ -116,9 +116,11 @@ body{
 #puzzle-pieces{
   width: 400px;
   height: 573px;
-  overflow-y:scroll;
+  overflow-y:auto;
   display:flex;
   flex-wrap:wrap;
+  border: 2px dashed #eee;
+  box-sizing: border-box;
 }
 
 [id^="puzzle-piece"]{
