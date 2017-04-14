@@ -46,6 +46,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*  helpers */
+.hidden {
+  display: none; }
+
 /*#drag-position{
   width:100px;
   height:100px;
