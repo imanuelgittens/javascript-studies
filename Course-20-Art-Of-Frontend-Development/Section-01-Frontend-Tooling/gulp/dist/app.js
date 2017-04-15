@@ -1,0 +1,1 @@
+!function(){var o="Houston we have liftoff";!function(){console.log(o)}()}();
