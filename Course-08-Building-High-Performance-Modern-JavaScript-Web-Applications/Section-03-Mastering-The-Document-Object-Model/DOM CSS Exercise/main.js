@@ -1,3 +1,5 @@
+'use strict';
+
 var stylesheets = document.styleSheets;
 /* Deleting a CSS rule */
 for (var x = 0; x < stylesheets.length; x++) {
@@ -13,6 +15,5 @@ for (var x = 0; x < stylesheets.length; x++) {
 
 var style = document.createElement('style');
 var styleSheet = style.styleSheet;
-style.insertRule('.post {width: 100%}', styleSheet.cssRules.length);
-styleSheet.insertRule('.post__title) {font-size: 40px}', styleSheet.cssRules.length);
-console.log(styleSheet);
+styleSheet.insertRule('.post {width: 100%}', styleSheet.cssRules.length);
+styleSheet.insertRule('.post__title {font-size: 40px}', styleSheet.cssRules.length);
