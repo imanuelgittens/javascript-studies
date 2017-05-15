@@ -67,6 +67,8 @@ gulp.task("deploy", function(event){
   });
 });
 
+
+//if I run the bump task before the inject version task, I get an error and was not able to find an alternative module for a workaround.
 gulp.task('default', function(){
   console.log('gulp has run!');
 });
