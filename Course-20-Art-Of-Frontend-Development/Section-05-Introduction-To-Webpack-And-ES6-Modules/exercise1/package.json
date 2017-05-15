@@ -1,0 +1,15 @@
+{
+  "name": "webpackpractice",
+  "version": "1.0.0",
+  "description": "getting familiar with webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Imanuel Gittens",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.5.1"
+  }
+}
