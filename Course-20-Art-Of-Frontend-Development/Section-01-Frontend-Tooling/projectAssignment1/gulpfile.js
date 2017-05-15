@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gulpSequence = require('gulp-sequence');
 var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
@@ -60,8 +61,12 @@ gulp.task('gitpush', function(){
   });
 });
 
-gulp.task('production-deploy', ['sass', 'minify-css', 'imgmin', 'jasminetest', 'bump', 'injectversion', 'gitadd', 'gitcommit', 'gitpush']);
+gulp.task("deploy", function(event){
+  gulpSequence("sass", "minify-css", 'imgmin', 'jasminetest', 'injectversion', 'gitadd', 'gitcommit', 'gitpush') (function(err){
+    if (err) throw err;
+  });
+});
 
 gulp.task('default', function(){
-	console.log('gulp has run.');
+  console.log('gulp has run!');
 });
