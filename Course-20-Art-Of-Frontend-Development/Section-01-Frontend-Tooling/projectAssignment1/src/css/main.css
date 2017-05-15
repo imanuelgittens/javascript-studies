@@ -1,0 +1,6 @@
+.menu {
+  border: 1px solid #000; }
+  .menu .link {
+    color: #fff; }
+    .menu .link:hover {
+      color: #999; }
