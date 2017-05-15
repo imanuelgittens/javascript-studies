@@ -54,6 +54,14 @@ gulp.task('gitcommit', function(){
     .pipe(git.commit('deploy commit'));
 });
 
+gulp.task('gitpush', function(){
+  git.push('origin', 'master', function (err) {
+    if (err) throw err;
+  });
+});
+
+gulp.task('production-deploy', ['sass', 'minify-css', 'imgmin', 'jasminetest', 'bump', 'injectversion', 'gitadd', 'gitcommit', 'gitpush']);
+
 gulp.task('default', function(){
 	console.log('gulp has run.');
 });
