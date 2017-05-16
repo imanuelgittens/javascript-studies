@@ -68,9 +68,10 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 (function(){
+	let jquery = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./src/vendor/jquery-3.2.1.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	console.log('hello');
 })();
 
