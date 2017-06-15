@@ -1,0 +1,7 @@
+.user:hover{
+	cursor: pointer;
+}
+
+.user__name{
+	margin: 0;
+}
