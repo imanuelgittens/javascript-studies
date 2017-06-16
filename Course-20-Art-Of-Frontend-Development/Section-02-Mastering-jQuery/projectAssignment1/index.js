@@ -26,11 +26,17 @@
 				})
 					.done(function(data){
 						$.each(data, function(index, value){
+							var hasAddress = false;
 							var userString = '<div class="col-md-4 user-wrapper">';
-							if(value.address){
+							/*console.log(value.address )*/
+							if(value.address !== undefined){
+
 								userString += '<div class="panel panel-default user has-address">';
+								hasAddress = true;
+								
 							}else{
 								userString += '<div class="panel panel-default user">';
+								hasAddress = false;
 							}
 							userString += '<h5 class="panel-heading user__name">'+value.name+'</h5>';
 							userString += '<div class="panel-body">';
@@ -39,7 +45,10 @@
 							userString += '</div>';
 							userString += '</div>';
 
-						  usersObject.$userlist.append(userString);
+							//if hasAddress is true we insert before elements that don't have an address
+							
+						usersObject.$userlist.append(userString);
+								
 						});
 						usersObject.users = data; //after rendering store the results of ajax request
 						usersObject.sortUsersByAddress();
@@ -112,11 +121,19 @@
 				this.renderDeselected($selectedUserWrapper, selectedUserIndex);
 			},
 			sortUsersByAddress: function(){
-				var $users = this.$userlist.find('.user');
-
-				$users.sort(function(a, b){
-					return a-b;
-				})
+				console.log(this.users);
+				// var usersObject = this; //get correct version of this
+				// var $addressUsers = this.$userlist.find('.user-wrapper');
+				// var $detached = $addressUsers.detach();
+				// $detached.sort(function(a, b){
+				// 	if (a.children[0].classList.contains('has-address')){
+				// 		return 1;
+				// 	}
+				// });
+				// //console.log($detached);
+				// $.each($detached, function(index, value){
+				//   usersObject.$userlist.prepend(value);
+				// })
 			}
 		};
 
