@@ -7,10 +7,7 @@ var MDUtility = {
    *  @param {number} num
    *  @return {number}
    * */
-  reverseInteger: function(num){
-    /*if(!Number.isSafeInteger(num)){
-      return 0;
-    }*/
+  reverse: function(num){
     var sign = num > 0 ? 1 : -1;
     num = Math.abs(num);
     var reversedNumString = num.toString().split('').reverse().join('');
@@ -20,7 +17,26 @@ var MDUtility = {
     }else{
       return 0;
     }
+  },
+
+  /*
+  *
+  * @param {number[]}
+  * @return {number[]}
+  *
+  * */
+
+  plusOne: function(digits) {
+    var digitsString = digits.join('');
+    var num = Number(digitsString) + 1;
+    var numPlusOne = num.toString().split('');
+    var i;
+    for(i = 0; i < numPlusOne.length; i++){
+      numPlusOne[i] = Number(numPlusOne[i]);
+    }
+    return numPlusOne;
   }
+
 
 
 }
