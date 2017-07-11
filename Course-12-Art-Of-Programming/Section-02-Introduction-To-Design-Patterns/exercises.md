@@ -178,9 +178,9 @@ Based on this chapter, some advantages of the module pattern are -
           return instance;
         }
       };
-    })();
+      })();
     
-    util.getInstance().numOrNot('1');
+      util.getInstance().numOrNot('1');
     
     
 - module pattern provides structure and help organize your code as it grows. 
@@ -189,3 +189,17 @@ Disadvantages of the revealing module pattern include -
 
 - private functions refer to a public function so that public function can't be overidden is a patch is necessary
 - you can't use inheritance with this pattern
+
+
+#####Exercise 5
+
+Qu 1) Come up with a problem where the factory pattern is useful. Implement the solution.
+
+Answer found [here](https://repl.it/JTyK/0)
+
+Qu 2) Both the constructor pattern and the factory pattern is used for creating object. In your opinion, what are the main differences?
+
+The differences are -
+
+- Objects created by the constructor pattern are all linked to the constructor while objects created
+by the factory pattern are not dependent on anything. 
