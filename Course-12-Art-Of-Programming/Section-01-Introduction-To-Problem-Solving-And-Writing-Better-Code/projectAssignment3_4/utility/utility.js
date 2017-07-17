@@ -3,7 +3,7 @@
 
   var jHelp = {
 
-    isEmailAddress: function (input) {
+    isEmailAddress: function (input) {  //Big-O = O(1)
 
       if(input.length === 0){
         throw 'Missing parameter "input".';
@@ -33,7 +33,7 @@
       return true;
     },
 
-    isPhoneNumber: function (input) {
+    isPhoneNumber: function (input) { //Big-O = O(1)
 
       //Phone number for Trinidad and Tobago is of the form 1 868 XXX XXXX
 
@@ -84,7 +84,7 @@
       return true;
     },
 
-    withoutSymbols: function (input) {
+    withoutSymbols: function (input) { //Big-O = O(n)
       if (input.length === 0) {
         throw 'Missing Parameter in withoutSymbols function: "input".';
       }
@@ -117,7 +117,7 @@
       }
     },
 
-    isDate: function (input) {
+    isDate: function (input) { //Big-O = O(1)
 
       if (!input) {
         throw 'Missing Parameter in isDate function: "input".';
@@ -129,7 +129,7 @@
       }
     },
 
-    isBeforeDate: function (input, reference) {
+    isBeforeDate: function (input, reference) { //Big-O = o(1)
 
       if (input.length === 0) {
         throw 'Missing Parameter in isBeforeDate function: "input".';
@@ -156,7 +156,7 @@
       return false;
     },
 
-    isAfterDate: function (input, reference) {
+    isAfterDate: function (input, reference) { //Big-O = O(1)
 
       if (!input) {
         throw 'Missing Parameter in isAfterDate function: "input".';
@@ -183,7 +183,7 @@
       return false;
     },
 
-    isBeforeToday: function (input) {
+    isBeforeToday: function (input) { //Big-O = O(1)
 
       if (input.length === 0) {
         throw 'Missing Parameter in isBeforeDate function: "input".';
@@ -201,7 +201,7 @@
       return false;
     },
 
-    isAfterToday: function (input) {
+    isAfterToday: function (input) { //Big-O = O(1)
 
       if (!input) {
         throw 'Missing Parameter in isAfterDate function: "input".';
@@ -219,7 +219,7 @@
       return false;
     },
 
-    isEmpty: function (input) {
+    isEmpty: function (input) { //Big-O = O(n)
       var i;
 
       if (input === null || input === undefined) {
@@ -240,7 +240,7 @@
 
     },
 
-    contains: function (inputString, wordsArray) {
+    contains: function (inputString, wordsArray) { //Big-O = O(n)
       if(inputString === undefined && wordsArray === undefined){
         throw 'No parameters entered.'
       }
@@ -271,7 +271,7 @@
       return result;
     },
 
-    lacks: function (inputString, wordsArray) {
+    lacks: function (inputString, wordsArray) { //Big-O = O(n)
       if(inputString === undefined && wordsArray === undefined){
         throw 'No parameters entered.'
       }
@@ -302,7 +302,7 @@
       return result;
     },
 
-    isComposedof: function (input, arr) {
+    isComposedof: function (input, arr) { //Big-O = O(n)
       if(input === undefined && arr === undefined){
         throw 'No parameters entered.'
       }
@@ -339,7 +339,7 @@
 
     },
 
-    isLength: function (input, n) {
+    isLength: function (input, n) { //Big-O = O(1)
 
       if(input === undefined && n === undefined){
         throw 'No parameters entered.'
@@ -354,7 +354,7 @@
       return input.length <= n;
     },
 
-    isOfLength: function (input, n) {
+    isOfLength: function (input, n) { //Big-O = O(1)
 
       if(input === undefined && n === undefined){
         throw 'No parameters entered.'
@@ -369,7 +369,7 @@
       return input.length >= n;
     },
 
-    countWords: function (inputString) {
+    countWords: function (inputString) { //Big-O = O(1)
       if (inputString === undefined || inputString === null || inputString.length === 0) {
         throw 'Missing Parameter in countWords function: "inputString".';
       }
@@ -377,7 +377,7 @@
       return wordsArray.length;
     },
 
-    lessWordsThan: function (input, n) {
+    lessWordsThan: function (input, n) { //Big-O = O(1)
       if(input === undefined && n === undefined){
         throw 'No parameters entered.'
       }
@@ -391,7 +391,7 @@
       return this.countWords(input) <= n;
     },
 
-    moreWordsThan: function (input, n) {
+    moreWordsThan: function (input, n) { //Big-O = O(1)
       if(input === undefined && n === undefined){
         throw 'No parameters entered.'
       }
@@ -404,7 +404,7 @@
       return this.countWords(input) >= n;
     },
 
-    isBetween: function (input, floor, ceil) {
+    isBetween: function (input, floor, ceil) { //Big-O = O(1)
       if(input === undefined && floor === undefined && ceil === undefined){
         throw 'No parameters entered.'
       }
@@ -421,7 +421,7 @@
       return (input >= floor && input <= ceil);
     },
 
-    isAlphanumeric: function (input) {
+    isAlphanumeric: function (input) { //Big-O = O(n)
 
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in isAlphanumeric function: "input".';
@@ -440,7 +440,7 @@
       return result;
     },
 
-    isCreditCard: function (input) {
+    isCreditCard: function (input) { //Big-O = O(1)
 
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in isCreditCard function: "input".';
@@ -479,7 +479,7 @@
 
     },
 
-    isHex: function isHex (input) {
+    isHex: function isHex (input) { //Big-O = O(1)
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in isHex function: "input".';
       }
@@ -509,8 +509,7 @@
       return result;
     },
 
-    isRGB: function (input) {
-
+    isRGB: function (input) { //Big-O = O(1)
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in isRGB function: "input".';
       }
@@ -537,7 +536,7 @@
 
     },
 
-    isTrimmed: function (input) {
+    isTrimmed: function (input) { //Big-O = O(1)
 
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in isTrimmed function: "input".';
@@ -551,7 +550,7 @@
       }
     },
 
-    keys: function(input){
+    keys: function(input){ //Big-O = O(1)
 
       if (input === undefined || input === null || Object.keys(input).length === 0) {
         throw 'Missing Parameter in keys function: "input".';
@@ -565,7 +564,7 @@
 
     },
 
-    values: function(input){
+    values: function(input){ //Big-O = O(1)
 
       if (input === undefined || input === null || Object.keys(input).length === 0) {
         throw 'Missing Parameter in values function: "input".';
@@ -579,7 +578,7 @@
 
     },
 
-    pairs: function(input){
+    pairs: function(input){ //Big-O = O(n)
 
       if (input === undefined || input === null || Object.keys(input).length === 0) {
         throw 'Missing Parameter in pairs function: "input".';
@@ -601,7 +600,7 @@
 
     },
 
-    shuffle: function(input){
+    shuffle: function(input){ //Big-O = O(n)
 
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in pairs function: "input". or array is empty.';
@@ -625,7 +624,7 @@
       return input;
     },
 
-    toDash: function(input){
+    toDash: function(input){ //Big-O = O(n)
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in toDash function: "input".';
       }
@@ -647,7 +646,7 @@
 
     },
 
-    toCamel: function(input){
+    toCamel: function(input){ //Big-O = O(n)
       if (input === undefined || input === null || input.length === 0) {
         throw 'Missing Parameter in toCamel function: "input".';
       }
@@ -670,7 +669,7 @@
 
     },
 
-    has: function(obj, search){
+    has: function(obj, search){ //Big-O = O(n)
       if(obj === undefined && search === undefined){
         throw 'No parameters entered.'
       }
@@ -695,7 +694,7 @@
 
     },
 
-    pick: function(obj, keysArr){
+    pick: function(obj, keysArr){ //Big-O = O(n)
       if(obj === undefined && keysArr === undefined){
         throw 'No parameters entered.'
       }

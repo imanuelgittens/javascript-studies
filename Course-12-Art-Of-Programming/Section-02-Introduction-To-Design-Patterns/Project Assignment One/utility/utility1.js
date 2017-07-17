@@ -92,7 +92,6 @@ var utilityModule = (function(){
 
     for (i = 0; i < input.length; i++) {
       char = input.charAt(i);
-      console.log(char);
       if (char === " ") {	//check for space
         result += char;
       } else {
@@ -687,6 +686,92 @@ var utilityModule = (function(){
     return result;
   }
 
+  function factorial(n){
+    if(n < 1){
+      return 0;
+    }
+    if( n === 1){
+      return 1;
+    }else{
+      return factorial(n - 1) * n;
+    }
+  }
+
+  function sumUptoOdd(n){
+    if(n < 1){
+      return 0;
+    }
+    if(n === 1){
+      return 1;
+    }else{
+      if(n%2 === 0){
+        n--;
+      }
+      return sumUptoOdd(n - 2) + n;
+    }
+  }
+
+  function quickSort(arr){
+    if(arr.length <= 1){ // if arr length is one or less then it is already sorted
+      return arr;
+    }
+
+    var pivot = arr[0] // first item is pivot
+    var left = [];
+    var right = [];
+
+    // for each item, if it is less than pivot then add it to left else add it to right
+    var i;
+    for(i = 1; i < arr.length; i++){
+      if(arr[i] > pivot){
+        left.push(arr[i]);
+      }else{
+        right.push(arr[i]);
+      }
+    }
+
+    //recursively sort the left sub Array
+    left = quickSort(left);
+
+    //recursively sort the right sub Array
+
+    right = quickSort(right);
+
+    return left.concat(pivot, right);
+  }
+
+  function mergeSort(arr){
+    // if arr has one or less items then it is already sorted
+    if(arr.length <= 1){
+      return arr;
+    }
+
+    var mid = Math.floor(arr.length / 2);
+    var left = arr.slice(0, mid);
+    var right = arr.slice(mid);
+
+    //sort left
+    left = mergeSort(left);
+
+    //sort right
+    right = mergeSort(right);
+
+    return merge(left, right);
+
+  }
+
+  function merge(left, right){
+    var result = [];
+    while(left.length > 0 && right.length > 0){
+      //if the first item of the left is smaller than the first item of the right
+      //then remove the first left item and push it to the result. Otherwise, remove the first item
+      //on the right and push it to the result
+      result.push(left[0] < right[0] ? left.shift() : right.shift())
+    }
+
+    return result.concat(left.length ? left : right) //concat the remaining items (if any)
+  }
+
   //exported functions
   return {
     isEmailAddress: isEmailAddress,
@@ -719,6 +804,10 @@ var utilityModule = (function(){
     toDash: toDash,
     toCamel: toCamel,
     has: has,
-    pick: pick
+    pick: pick,
+    factorial: factorial,
+    sumUptoOdd: sumUptoOdd,
+    quickSort: quickSort,
+    mergeSort: mergeSort
   }
 })();

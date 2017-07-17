@@ -52,4 +52,113 @@ let's assume we have 100 array of ten elements to parse.
 
 #####Exercise 2
 
+Qu 1) Show that 8 = O(1).
+
+    f(n) = 8
+    g(n) = 1
+    
+    0 <= f(n) <= c * g(n)
+    
+    Let d = 0;
+    let c = 9;
+    
+    0 <= f(n) <= 9 * g(n)
+    0 <= 8 <= 9;
+    
+ Therefore 8 is O(1);
+ 
+ 
+ Qu2) Show that 20x^2-3 and 7x^2 + 8x + 4 have the same Big-O.
+ 
+TODO
+
+#####Exercise 3
+
+Qu 1) Prove the complexity of the algorithm `hasAllUniqueChars(password, ignoreCase)` is `O(n^2)` when it is implemented as checking each character with all the other characters before it.
+
+in this algorithm, we are checking each character of the password against each other character 
+of that password. This means that we must implement two loops (each being linear time loops). 
+
+    O(n) * O(n)
+    O(n^2)
+    
+Qu 2) Given an array sorted in descending order, modify the binarySearch algorithm to find an item in the array. Sample input/output: binarySearch([9, 7, 5, 3, 1], 7);-> //1.
+
+
+    function reverseBinarySearch(arr, value){
+      var low = 0;
+      var high = arr.length - 1;
+      var mid;
+      while(low <= high){
+        mid = parseInt((low + high) / 2);
+        if(arr[mid] > value){
+          low = mid + 1;
+        }else if(arr[mid] < value){
+          high = mid - 1;
+        }else{
+          return mid;
+        }
+      }
+      return -1;
+    }
+    
+    reverseBinarySearch([9, 7, 5, 3, 1], 7);
+    
+Qu 3) You have previously implemented an algorithm called getLast(items_list). Calculate the Big-O complexity for your implementation. If your algorithm is not O(1), how can you improve it to be O(1)?
+
+The big O implementation for my algorithm was O(1)
+
+    
+Qu 4) Find the Big-O for the following algorithm and explain your answer.
+
+    function function1(n)
+    {
+      var count = 0;
+      for (var i = 0; i < n; i++){
+         for (var j = 0; j < n; j++){
+            count++;
+         }
+      }
+      return count;
+    }
+    
+The Big-O for the above algorithm is O(n^2). This is because, for each value of n, it increments n times. 
+ 
+QU 4) Find the Big-O for the following function and explain your answer.
+
+    function function2(n)
+    {
+      var count = 0;
+      for (var i = 0; i < n; i++){
+         for (var j = i; j > 0; j--){
+            count++;
+         }
+      }
+      return count;
+    }
+    
+Tis algorithm's Big-O is O(n)
+
+Qu 5)  Find the Big-O for the following function and explain your answer.
+
+    function function3(n)
+    {
+      var count = 0;
+      for (var i = n; i > 0; i /= 2){
+         for (var j = 0; j < i; j++){
+            count++;
+         }
+      }
+      return count;
+    }
+    
+The Big-O for the above algorithm is O(n log(n)) because we break the for loop down by half ,
+ then do a linear count. 
+ 
+Qu 6)
+
+FOr the chessboard algorithm, the Big-O is O(n^2) because for each row we need to go through the values and sum them. 
+
+
+
 

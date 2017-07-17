@@ -760,4 +760,33 @@ QUnit.test('utilityModule.pick', function(assert){
 
 });
 
+QUnit.test('factorial', function(assert) {
+  assert.equal(utilityModule.factorial(-1), 0);
+  assert.equal(utilityModule.factorial(0), 0);
+  assert.equal(utilityModule.factorial(1), 1);
+  assert.equal(utilityModule.factorial(2), 2);
+  assert.equal(utilityModule.factorial(4), 24);
+  //more test cases
+});
+
+QUnit.test('sumUptoOdd', function(assert) {
+  assert.equal(utilityModule.sumUptoOdd(1), 1);
+  assert.equal(utilityModule.sumUptoOdd(2), 1);
+  assert.equal(utilityModule.sumUptoOdd(3), 4);
+  assert.equal(utilityModule.sumUptoOdd(15), 64);
+  //more test cases
+});
+
+QUnit.test('mergeSort', function(assert) {
+  assert.equal(utilityModule.mergeSort([]), []);
+  // assert.equal(utilityModule.quickSort([2]), [2]);
+  // assert.equal(utilityModule.quickSort([2,6,4,8]), [2,4,6,8]);
+});
+
+QUnit.test('quickSort', function(assert) {
+  assert.equal(utilityModule.mergeSort([]), []);
+  // assert.equal(utilityModule.quickSort([2]), [2]);
+  // assert.equal(utilityModule.quickSort([2,6,4,8]), [2,4,6,8]);
+});
+
 
