@@ -1,0 +1,1 @@
+see answer on github [here](https://github.com/imanuelgittens/learning-web-components/tree/gh-pages/architecting-frontend-application/section1/project1/app)

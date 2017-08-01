@@ -3,12 +3,12 @@
 var stylesheets = document.styleSheets;
 /* Deleting a CSS rule */
 for (var x = 0; x < stylesheets.length; x++) {
-    for(var y = 0; y < stylesheets[x].cssRules.length; y++){
-        if(stylesheets[x].cssRules[y].selectorText === '.menu'){
-            stylesheets[x].deleteRule(y);
-        }
-        console.log(stylesheets[x].cssRules[y]);
-    }
+	for (var y = 0; y < stylesheets[x].cssRules.length; y++) {
+		if (stylesheets[x].cssRules[y].selectorText === '.menu') {
+			stylesheets[x].deleteRule(y);
+		}
+		console.log(stylesheets[x].cssRules[y]);
+	}
 }
 
 /* Creating a new stylesheet object */
