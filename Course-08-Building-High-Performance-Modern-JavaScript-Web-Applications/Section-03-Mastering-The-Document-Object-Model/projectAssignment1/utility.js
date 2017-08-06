@@ -3,7 +3,7 @@
 window.miniDOM = {
   getAncestorBySelector: function(element, selector) {
     while ((element = element.parentElement)) {
-      var parent = element.querySelector(selector);
+      let parent = element.querySelector(selector);
       if (parent) {
         console.log(parent);
         return parent;
@@ -11,11 +11,11 @@ window.miniDOM = {
     }
   },
   getSiblingsBySelector: function(selector) {
-    var result = [];
-    var i;
-    var element = document.querySelector(selector);
+    let result = [];
+    let i;
+    let element = document.querySelector(selector);
     if (element) {
-      var children = element.parentElement.children;
+      let children = element.parentElement.children;
       for (i = 0; i < children.length; i++) {
         if (children[i] !== element) {
           result.push(children[i]);
@@ -29,8 +29,8 @@ window.miniDOM = {
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
   },
   removeAll: function(selector) {
-    var elements = document.querySelectorAll(selector);
-    var i;
+    let elements = document.querySelectorAll(selector);
+    let i;
     if (elements) {
       for (i = 0; i < elements.length; i++) {
         elements[i].remove();
@@ -38,10 +38,10 @@ window.miniDOM = {
     }
   },
   swapElements: function(element1, element2) {
-    var parentOne = element1.parentNode;
-    var parentTwo = element2.parentNode;
-    var cloneOne = element1.cloneNode(true);
-    var cloneTwo = element2.cloneNode(true);
+    let parentOne = element1.parentNode;
+    let parentTwo = element2.parentNode;
+    let cloneOne = element1.cloneNode(true);
+    let cloneTwo = element2.cloneNode(true);
     try {
       parentOne.insertBefore(cloneTwo, element1);
       parentTwo.insertBefore(cloneOne, element2);
@@ -54,13 +54,13 @@ window.miniDOM = {
   }
 };
 
-var el = document.querySelector('.intro');
-var el2 = document.querySelector('.inner-main');
-var paragraph = document.createElement('p');
+let el = document.querySelector('.intro');
+let el2 = document.querySelector('.inner-main');
+let paragraph = document.createElement('p');
 paragraph.innerHTML = 'I am an additional paragraph';
-var article1 = document.getElementById('permalink_1');
-var article2 = document.getElementById('permalink_2');
-var article3 = document.getElementById('permalink_3');
+let article1 = document.getElementById('permalink_1');
+let article2 = document.getElementById('permalink_2');
+let article3 = document.getElementById('permalink_3');
 
 miniDOM.getAncestorBySelector(el, '.inner-main');
 /* miniDOM.getSiblingsBySelector('#permalink_1'); */
