@@ -14,6 +14,11 @@ module.exports = {
 	resolve: {
       modules: [SRC, NODE_MODULES, SCSS, path.join(SRC, 'vendor')]
   },
+  devServer: {
+      contentBase: __dirname + '/dist',
+      compress: true,
+      port: 9000
+  },
   module: {
   	rules: [
   		{
