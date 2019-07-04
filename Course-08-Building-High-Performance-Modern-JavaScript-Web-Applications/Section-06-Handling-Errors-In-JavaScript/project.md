@@ -1,1 +1,0 @@
-See answer on codepen [here](https://codepen.io/imanuelgittens/pen/LyZeav)

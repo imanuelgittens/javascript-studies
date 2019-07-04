@@ -1,7 +1,0 @@
-.footer{
-  @include display-flex;
-  @include justify-content(center);
-  &__copyright{
-    @include no-whitespace;
-  }
-}

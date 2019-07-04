@@ -1,1 +1,0 @@
-See answer on codepen [here](http://codepen.io/imanuelgittens/pen/qrRqLV)

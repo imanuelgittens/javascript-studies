@@ -1,1 +1,0 @@
-See jigsaw puzzle [here](http://imanuelgittens.github.io/learning-web-components/jigSaw/index.html).

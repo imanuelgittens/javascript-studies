@@ -1,1 +1,0 @@
-Answer online [here](http://imanuelgittens.github.io/learning-web-components/architecting-frontend-application/section1/project1/app/index.html)

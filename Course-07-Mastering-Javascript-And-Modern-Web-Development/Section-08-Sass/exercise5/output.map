@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,cAAc;AASd,cAAc;AAGV,OAAQ;EAAC,UAAU,EAAE,kBAAgB;;AAArC,QAAQ;EAAC,UAAU,EAAE,mBAAgB;;AAArC,UAAQ;EAAC,UAAU,EAAE,qBAAgB;;AAArC,SAAQ;EAAC,UAAU,EAAE,oBAAgB;;AAArC,OAAQ;EAAC,UAAU,EAAE,kBAAgB;;AAArC,SAAQ;EAAC,UAAU,EAAE,oBAAgB;;AAArC,OAAQ;EAAC,UAAU,EAAE,kBAAgB;;AAIzC,cAAc",
-"sources": ["features.scss"],
-"names": [],
-"file": "output"
-}

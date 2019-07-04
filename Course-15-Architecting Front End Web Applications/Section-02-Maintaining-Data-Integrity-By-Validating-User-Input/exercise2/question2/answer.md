@@ -1,1 +1,0 @@
-See answer on github [here](https://github.com/imanuelgittens/learning-web-components/tree/movieBeforeEnumeration/architecting-frontend-application/section1/project1/app)
