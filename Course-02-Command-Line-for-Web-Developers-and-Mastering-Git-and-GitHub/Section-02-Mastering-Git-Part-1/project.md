@@ -272,7 +272,7 @@ This command shows all changes that occured between the two commit IDs listed.
 
 ---
 
-####Questions
+#### Questions
 
 **Git stores an entire copy of your repository. Explain the benefits of storing an entire copy.**
 

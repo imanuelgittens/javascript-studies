@@ -1,7 +1,7 @@
 #Questions
 
 
-####Question 1
+#### Question 1
 
 *Describe what a protocol is. Explain what the TCP/IP protocol stack is and explain its different components.*
 
@@ -30,7 +30,7 @@ The diagram above shows the 4 layers or stages through which data must pass in o
 
 Once the data being transmitted goes through all these layers or stages, it can be safely delivered over the Internet without fear of being lost and it also gives the recipient all the information necessary to know who sent the data and where it came from. The next time you load a web page, remember the TCP/IP protocol and the different stages that the page you are now viewing passed through to get to you. Cheers!
 
-####Question 2
+#### Question 2
 
 Describe the Internet Protocol and explain how its addressing system works.
 
@@ -47,7 +47,7 @@ So to does each device connected to a network have an address. This address is c
 
 These addresses are used to send and receive data over the Internet similar to how physical addresses are used to send and receive mail. 
 
-#####IPv4 and IPv6
+#### #IPv4 and IPv6
 
 IP has two versions (4 and 6) and they both look very different from each other. Let's familiarize ourselves with each version and also see why there was need for two versions in the first place. The IP that we showed above is an example of IPv4. Let's explore another example of an IPv4 address 
 
@@ -74,7 +74,7 @@ Although there are different ways are setting up this network and host address, 
 
 
 
-####Question 3
+#### Question 3
 
 Explain the difference between a MAC address and an IP address? After you explain the difference, give an analogy to demonstrate the difference.
 

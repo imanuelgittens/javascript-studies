@@ -1,6 +1,6 @@
 #Questions 
 
-####Question 1
+#### Question 1
 
 *Explain the function of the output panel and how it is typically used (include a screenshot).*
 
@@ -13,7 +13,7 @@ Check out the screenshot below to get a better idea of how the output panel in S
 
 ![Imgur](http://i.imgur.com/1ijjPuE.png)
 
-####Question 2
+#### Question 2
 
 The words "view," "buffer," and "document" have special meaning in Sublime Text jargon. Explain what each of these words mean and how these words are related.
 
@@ -34,7 +34,7 @@ Document - Documents are generally used to refer to computer files and they don'
 
 The jargon used in Sublime Text is also used in a number of other spaces related to programming. Understanding these terms here will not only help you to master your understanding of Sublime Text, but also help you to easier understand other concepts throughout your programming career. 
 
-####Question 3
+#### Question 3
 
 *Describe the function of settings files that have the name of a platform (OS) in their name.*
 
@@ -44,7 +44,7 @@ Settings files in Sublime Text that have a platform or Operating System attached
 
 Valid operating system names are "Windows", "Linux", "OSX" and these settings work by merging with the default settings of Sublime Text. Using the Linux operating system once again, in order to determine which settings will be applied, the editor will merge its default settings file [Preferences.sublime-settings] and [Preferences (Linux).sublime-settings]. The operating system settings take precedence here and will override any conflicting default settings. After this is merge is done, the resulting settings are applied to the editor. 
 
-####Question 4
+#### Question 4
 
 *Describe the function of '.sublime-project' files and their importance to project and folder settings. Give an example of one such file.*
 
@@ -58,7 +58,7 @@ Here we can add settings that will be applied to this project only. An example o
 
 Adding project specific settings gives the developer complete control of their environment on a per-project basis. This saves time and easily allows settings to be tailored to the task at hand. 
 
-####Question 5
+#### Question 5
 
 *Describe some common Sublime Text folder settings (folder_exclude_patterns, folder_include_patterns, file_exclude_patterns, file_include_patterns, binary_file_patterns) and explain what they do.*
 
@@ -101,7 +101,7 @@ Example Usage - the following example will show '.md' files in the sidebar but e
 
 And that's about it. Feel free to adapt these examples to your specific project to make your work in Sublime Text easier and more efficient. 
 
-####Question 6
+#### Question 6
 
 *Describe the purpose and function of 'folding' as related to Sublime Text.*
 

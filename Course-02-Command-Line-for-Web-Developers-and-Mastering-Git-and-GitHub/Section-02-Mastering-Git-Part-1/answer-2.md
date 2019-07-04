@@ -1,4 +1,4 @@
-####Thoroughly explain `git diff`, and it's importance. Describe `git diff` in a thoughtful way, so that a teenager could understand it and provide examples of it's usage.
+#### Thoroughly explain `git diff`, and it's importance. Describe `git diff` in a thoughtful way, so that a teenager could understand it and provide examples of it's usage.
 
 #Comparing project versions with `git diff`
 

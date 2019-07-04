@@ -1,13 +1,13 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Explain the function and purpose of HTML.
 
 Title: The Purpose of HTML
 Category: Fundamentals of HTML Structure and Core
 
-#####Function of HTML
+#### #Function of HTML
 HTML (Hypertext Markup Language) is the language used to build and display web pages. The 'hypertext' part refers to the ability to move around the web by clicking special text called hyperlinks. The 'markup' part refers to the code or *tags* used to build and display the web page and finally the 'language' part implies that HTML has a specific syntax or way of being written to make it work properly. 
 
 As mentioned above, HTML is written using markup code, otherwise known as **tags**. These tags are usually surrounded by angled brackets `<>` and most come as opening and closing pairs. Let's look at an example:
@@ -26,16 +26,16 @@ An example of a singleton tag in HTML is `<br>`. This is the line break tag and 
 There are quite a number of HTML tags available that are used to display various elements, perform various tasks and usually, a series of these tags are combined to produce a complete web page. 
 
 
-#####Purpose of HTML
+#### #Purpose of HTML
 
 Now that you know a little bit more about HTML let's discuss its purpose. HTML is a standard for describing the structure and presentation of information on the Internet. Web browsers are aware of this standard allowing them take HTML code and render the corresponding elements to the screen. 
 
-#####Conclusion
+#### #Conclusion
 HTML gives internet users the ability to navigate the web as well as view the content on these web pages in a rich format. 
 
 ---
 
-####Question 2
+#### Question 2
 
 Describe what it means for HTML tags to have 'semantic value' and the effect this should have on how HTML documents are constructed.
 
@@ -65,7 +65,7 @@ I'll close by leaving you to ponder how hard it would be to properly understand 
 
 ---
 
-####Question 3
+#### Question 3
 
 Explain the function of HTML comments and describe how to add them to an HTML document.
 
@@ -88,7 +88,7 @@ When writing HTML (or any other language) you should make use of comments. It is
 
 ---
 
-####Question 4
+#### Question 4
 
 Describe the function of the `link` tag. Fully describe the attributes of this tag, the values that each accepts, and the effects of those values.
 
@@ -118,7 +118,7 @@ Just to recap, the `<link>` tag along with its associated attributes define the 
 
 ---
 
-####Question 5
+#### Question 5
 
 Explain how unordered list items can be added to an HTML page.
 
@@ -151,7 +151,7 @@ And that's it! You now know how to add unordered lists to HTML documents.
 
 ---
 
-####Question 6
+#### Question 6
 
 Describe the function of the `code` tag and describe the formatting of its output.
 

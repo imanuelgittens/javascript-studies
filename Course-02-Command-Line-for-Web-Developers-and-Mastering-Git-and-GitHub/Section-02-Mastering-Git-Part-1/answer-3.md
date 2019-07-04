@@ -1,4 +1,4 @@
-####Explain the advantages of having a centralized repository while using a distributed version-control system?
+#### Explain the advantages of having a centralized repository while using a distributed version-control system?
 
 #Advantages of using a centralized repository in a distributed VCS
 

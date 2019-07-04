@@ -2,7 +2,7 @@
 
 
 
-####Using `git commit` without -m
+#### Using `git commit` without -m
 
 The `git commit` command allows us to save a snapshot of our project. It takes record of all our files and folders and also records all our changes up to that point. The most common usage of the `git commit` command is shown below:
 

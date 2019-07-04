@@ -1,6 +1,6 @@
 #Exercises	
 
-####Exercise 1
+#### Exercise 1
 
 1)
 
@@ -25,7 +25,7 @@ For this use case, a circuit switching network would be the best solution. This 
 The packet switching network would be best used for this application since it does not require a high level of reliability. Data is sent in small chunks and its delivery is not time sensitive which means that the data can split up, sent on the network, and reassembled without worrying about the length of time taken. 
 
 
-####Exercise 2
+#### Exercise 2
 
 1) The user interacts with the application layer the most because this layer contains high level protocols like HTTP, SMTP and POP. A good example of HTTP in use is when users visit a website. Let's say they type `google.com` into their browser search bar. What they are actually doing is using the HTTP protocol to fetch or 'GET' the contents of google's website to be loaded onto the page. Also, every time someone sends or receives an email, the SMTP or POP protocol is being used. 
 
@@ -53,7 +53,7 @@ These two layers are connected because they are both part of the process for tra
 
 ![Imgur](http://i.imgur.com/CXByhK8.jpg)
 
-####Exercise 3
+#### Exercise 3
 
 1)
 
@@ -79,7 +79,7 @@ The address 10.1.1.50 is a private IP address as specified in the RFC 1918. Any 
 
 The smallest theoretically possible IP address is 0.0.0.0 and the largest is 255.255.255.255
 
-####Exercise 4
+#### Exercise 4
 
 moderndeveloper.com A record 
 
@@ -178,7 +178,7 @@ The name servers for the top level .tt domains are
 3) We can use the browser address bar to test if a domain name is case sensitive. If we enter GOOGLE.COM and google.com, they both go to the same web page so this leads to the conclusion that domain names are case insensitive. 
 
 
-####Exercise 5
+#### Exercise 5
 
 1) DNS using UDP over TCP because of the speed associated with UDP. We expect DNS requests to be handled quickly so it uses UDP to avoid all the overhead of SYN, SYN-ACK and ACK used by the TCP protocol. 
 
@@ -189,7 +189,7 @@ The server must do the SYN-ACK to inform the client about the socket through whi
 3) Protocols such as RTP can adjust the rate at which they display received data to give them enough time to make another request for lost packets. The protocol knows when packets are lost based on packet header information so in the case of video the user may experience a lag while the protocol makes requests for lost packets.
 
 
-####Exercise 6
+#### Exercise 6
 
 1) The 403 Forbidden HTTP response code will be shown when a user is trying to access a protected resource on a server.
 
@@ -205,7 +205,7 @@ Update - We can use the PUT HTTP method to update resources on the server
 
 Delete - We can use the DELETE HTTP method to delete resources on the server
 
-####Exercise 7
+#### Exercise 7
 
 1) The tokens for this HTML code are -
 
@@ -231,7 +231,7 @@ The above code is malformed because -
 
 The chrome browser does display the HTML as expected however. 
 
-####Exercise 8
+#### Exercise 8
 
 1) The page is re-painted when we scroll and whenever we click on things. There is also some recursive painting when the page is loaded. It seems that every time an element on the page moves or is interacted with, the browser need to re-paint either the page or the element that is being acted upon.
 

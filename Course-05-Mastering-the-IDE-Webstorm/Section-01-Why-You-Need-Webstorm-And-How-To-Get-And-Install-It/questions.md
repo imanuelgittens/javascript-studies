@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 Title: WebStorm Code Completion
 
 Category: Why You Need WebStorm and How to Get and Install It
@@ -12,7 +12,7 @@ While many rival IDEs and text editors have the ability to make code suggestions
 This unique feature added to the numerous other benefits that Webstorm provides makes it arguably the best IDE for web development.
 
 
-####Question 2
+#### Question 2
 Title: Using The Console from within WebStorm
 
 Category: Why You Need WebStorm and How to Get and Install It
@@ -24,7 +24,7 @@ Webstorm plugins are bits of software that can be installed to extend/expand the
 
 This allows developers and users of the IDE to create and enjoy extra features that aren't part of the core product without affecting the product's core functionality. A win-win for everybody.
 
-####Question 3
+#### Question 3
 
 Title: Extending The Capabilities of WebStorm Using Plugins
 
@@ -39,7 +39,7 @@ developers use for web programming include:
 - Aptana Studio
 
 
-####Question 4
+#### Question 4
 
 Title: Downloading and Installing WebStorm
 

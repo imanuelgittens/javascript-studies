@@ -1,6 +1,6 @@
 #Exercises
 
-####Exercise 1
+#### Exercise 1
 
 **Question 1**
 
@@ -25,7 +25,7 @@ Since negative numbers are also integers, -1331 is divisible by 11.
 
 ---
 
-####Exercise 2
+#### Exercise 2
 
 **Question 1**
 
@@ -67,7 +67,7 @@ The common factors are 2 and 3 so the GCD is 2 * 3 = 6
 
 ---
 
-####Exercise 3
+#### Exercise 3
 
 **First Run**
 

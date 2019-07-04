@@ -1,6 +1,6 @@
 #Exercises	
 
-####Exercise 1 (Console)
+#### Exercise 1 (Console)
 
 1)
 
@@ -15,7 +15,7 @@
 	console.log("Imanuel");
 
 
-####Exercise 2 (Statements)
+#### Exercise 2 (Statements)
 
 1) A statement is a combination of any or all of the following - keywords, comments, literals, variables, operators and expressions. Multiple statements make up a program. An expression is comprised of literals, variables and operators and results in some value. 
 
@@ -43,7 +43,7 @@ Expressions:
 
 The programs has three statements. 
 
-####Exercise 3 (Data Types)
+#### Exercise 3 (Data Types)
 
 1) undefined
 
@@ -62,7 +62,7 @@ The programs has three statements.
 	console.log(arr[arr.length -1])
 
 
-####Exercise 4 (Operators)
+#### Exercise 4 (Operators)
 
 1)
 
@@ -117,7 +117,7 @@ The number one has the same value as true
 
 	signTest(-4, -3, 2);
 
-####Exercise 5 (Control Flow)
+#### Exercise 5 (Control Flow)
 
 1)
 
@@ -215,7 +215,7 @@ The number one has the same value as true
 	min(14, 76, 94, 3, 21);
 
 
-####Exercise 6 (Switch)
+#### Exercise 6 (Switch)
 
 1) 
 
@@ -283,7 +283,7 @@ The number one has the same value as true
 
 	printGradeRange("C");
 
-####Exercise 7 (For Loop)
+#### Exercise 7 (For Loop)
 
 1)
 
@@ -413,7 +413,7 @@ The number one has the same value as true
 
 	printLastTen([1,2,3,4,5,6,7,8,9,10,11,12]);
 
-####Exercise 8 (While Loop)
+#### Exercise 8 (While Loop)
 
 1)
 
@@ -546,7 +546,7 @@ The number one has the same value as true
 
 sumTen([1,2,3,4,5,6,7,8,9]);
 
-####Exercise 9 (Error Handling)
+#### Exercise 9 (Error Handling)
 
 1) 
 
@@ -584,7 +584,7 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 		console.log("End of Program.");
 	}
 
-####Exercise 10 (Functions)
+#### Exercise 10 (Functions)
 
 1)
 
@@ -620,7 +620,7 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 	});
 	console.log(sum);
 
-####Exercise 11 (Numbers in Depth)
+#### Exercise 11 (Numbers in Depth)
 
 1)
 
@@ -902,7 +902,7 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 	addMoney("444.24", "7.12");
 
 
-#### Exercise 12 (Strings in Depth)
+####  Exercise 12 (Strings in Depth)
 
 1)
 
@@ -1057,7 +1057,7 @@ sumTen([1,2,3,4,5,6,7,8,9]);
 
 	underCamel("theQuickBrownFox");
 
-####Exercise 13 (Objects in Depth)
+#### Exercise 13 (Objects in Depth)
 
 1)
 
@@ -1155,7 +1155,7 @@ For this project I would create a library object with name and address propertie
 	values({a:1, b:2, c:3});
 
 
-####Exercise 14 (Dates in Depth)
+#### Exercise 14 (Dates in Depth)
 
 1)
 
@@ -1395,7 +1395,7 @@ For this project I would create a library object with name and address propertie
 
 	age("January 08, 1990");
 
-####Exercise 15 (Arrays In-Depth)
+#### Exercise 15 (Arrays In-Depth)
 
 1)
 

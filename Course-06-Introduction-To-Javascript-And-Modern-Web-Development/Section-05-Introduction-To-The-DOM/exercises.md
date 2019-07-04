@@ -1,6 +1,6 @@
 #Exercises
 
-####Exercise 1
+#### Exercise 1
 
 Question 1)
 
@@ -32,7 +32,7 @@ The XML DOM defines a standard way for accessing and manipulating XML documents.
 
 So we can see that the differences between the two are subtle. The DOM is still a standard model for any structured document however the HTML DOM and XML DOM are just used to manipulate elements specific to HTML or XML.
 
-####Exercise 2
+#### Exercise 2
 
 Question 1)
 
@@ -63,7 +63,7 @@ Additional properties of the navigator object include:
 
 3) cookieEnabled - Determines whether cookies are enabled in the browser 
 
-####Exercise 3
+#### Exercise 3
 
 Question 1)
 
@@ -83,7 +83,7 @@ Question 3)
 
 	nodeInput.nodeValue
 
-####Exercise 4
+#### Exercise 4
 
 Question 1)
 
@@ -99,7 +99,7 @@ Question 3)
 
 	nodeNav.childNodes[0].childNodes[1].nextSibling;
 
-####Exercise 4
+#### Exercise 4
 
 Question 1)
 
@@ -119,7 +119,7 @@ Question 4)
 	var last = nodeNavList.lastChild;
 	last.setAttribute('id', 'al');
 
-####Exercise 5
+#### Exercise 5
 
 Question 1)
 
@@ -142,7 +142,7 @@ Question 3)
 	var lastValue = unorderedList.lastChild.nodeValue;
 
 
-####Exercise 6
+#### Exercise 6
 
 Question 1)
 
@@ -167,7 +167,7 @@ Question 4)
 
 	var elementSelected = document.querySelector(“.topNavigation”);//there is no element in the HTML provided with the class of "topNavigation".
 
-####Exercise 7
+#### Exercise 7
 
 Question 1)
 

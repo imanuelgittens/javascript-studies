@@ -1,6 +1,6 @@
 #Exercises
 
-####Exercise 1
+#### Exercise 1
 
 **Question 1.**
 
@@ -50,7 +50,7 @@ C = {1,5,10,15,20}
 	= 42
 
 
-####Exercise 2
+#### Exercise 2
 
 **Question 1**
 
@@ -69,7 +69,7 @@ There are 10 ways (10 choose 1) to pick a book from each category. There are 10 
 
 ways to recommend and order 10 books to a new user. 
 
-####Exercise 3
+#### Exercise 3
 
 **Question 1**
 

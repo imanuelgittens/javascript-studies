@@ -2,7 +2,7 @@
 
 ##3 Questions for Review
 
-####Question 4)
+#### Question 4)
 
 *Variable comparisons, argument passing, or variable assignment happen by value or by reference. Use 3 examples (of comparisons, function argument-passing, variable assignment) to explain the difference between values and references.*
 
@@ -75,7 +75,7 @@ This results as true because the variables a and b point to the same location in
 
 Understanding when and how variables are interacted with in JavaScript is very important to fully understanding how the language works. Make sure to go through the above examples and try some on your own as well to gain a deeper understanding of **by value** and **by reference**.  
 
-####Question 5)
+#### Question 5)
 
 *Describe the function of the `this` keyword and use at least one example to demonstrate how it works.*
 
@@ -142,7 +142,7 @@ When using the `this` keyword, it is very important to understand that it simply
 
 In conclusion, I'd like to reiterate that the `this` keyword is simply a pointer to the Object that invoked some code. It is also important that you learn the special cases where the value of `this` may not be what you expect as we saw above. 
 
-####Question 7)
+#### Question 7)
 
 *Describe what JavaScript variable hoisting is and its significance in how and where variables should be declared. Use at least one example to demonstrate variable hoisting.*
 

@@ -1,18 +1,18 @@
 #Exercises
 
-####Exercise 1
+#### Exercise 1
 
 ![Imgur](http://i.imgur.com/S6NxtqD.png)
 
 ---
 
-####Exercise 2
+#### Exercise 2
 
 ![Imgur](http://i.imgur.com/xCsC62z.jpg)
 
 ---
 
-####Exercise 3
+#### Exercise 3
 
 Question 2.
 
@@ -33,12 +33,12 @@ Three circumstances where saving is crucial are -
 
 ---
 
-####Exercise 4
+#### Exercise 4
 
 ![Imgur](http://i.imgur.com/isbbQhQ.png)
 
 ---
 
-####Exercise 5
+#### Exercise 5
 
 ![Imgur](http://i.imgur.com/BlZKuwC.png)

@@ -1,6 +1,6 @@
 #Exercises
 
-####Exercise 1 (By Value, By Reference)
+#### Exercise 1 (By Value, By Reference)
 
 Question 1)
 
@@ -252,7 +252,7 @@ Question 10)
 
 `i` is defined in the global scope so when the loop stops, `i` is 5 and that is printed to the console. 
 
-####Exercise 3
+#### Exercise 3
 
 Question 1)
 

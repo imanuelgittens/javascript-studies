@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Summarize the benefits afforded a programmer who masters the use of an editor.
 
@@ -15,7 +15,7 @@ In summary, mastering the editor makes the user a better programmer in general. 
 
 --- 
 
-####Question 2
+#### Question 2
 
 Describe the function and purpose of Package Control.
 
@@ -34,7 +34,7 @@ Package Control is fundamental to giving users of Sublime Text the ability to cu
 
 ---
 
-####Question 3
+#### Question 3
 
 Explain the function of Sublime Text's command palette and describe how to open it. Give detailed descriptions (include screenshots) of how to use the command palette.
 
@@ -58,7 +58,7 @@ This is just one example of using the command palette however there are many com
 
 ---
 
-####Question 4 
+#### Question 4 
 
 Describe the function of Sublime Text "quick lists" (include a screenshot).
 
@@ -74,7 +74,7 @@ And that's it! Quick Lists are used simply to show additional options that are r
 
 ---
 
-####Question 5
+#### Question 5
 
 Describe 'full-screen mode' and give instruction about how to enable and disable it.
 

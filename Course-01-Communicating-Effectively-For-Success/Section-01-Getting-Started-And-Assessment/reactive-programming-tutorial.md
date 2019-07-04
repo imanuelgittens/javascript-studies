@@ -11,7 +11,7 @@ We can compare reactive programming to driving a car. How fast we are moving is 
 ---
 We can demonstrate Reactive Programming using a simple coding example.
 
-#####Non Reactive Programming
+#### #Non Reactive Programming
 Let's say:
 
 	a = 1
@@ -53,7 +53,7 @@ Since we aren't using Reactive Programming, this doesn't affect the value of 'x'
 	y = 3 + 2
 	y = 5	
 
-#####Reactive Programming
+#### #Reactive Programming
 Let's see how our output changes in a Reactive Programming environment: 
 
 	a = 1
@@ -90,7 +90,7 @@ We can then go ahead with calculating the value of 'y' like so:
 We can see that the value we get for y is '7' in a Reactive Programming environment and '5' in a non Reactive environment. 
 
 
-####Real World Example
+#### Real World Example
 
 Another great example of Reactive Programming is a modern spreadsheet program like Microsoft Excel. The cells of these spreadsheets contain literal values or formulas like "=B1+C1" that are an evaluation of other cells. Whenever the value of the other cells **change**, the value of the formula is automatically updated.
 

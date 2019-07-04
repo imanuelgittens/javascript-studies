@@ -1,6 +1,6 @@
 #Questions 
 
-####Question 1
+#### Question 1
 
 Describe how the `section` element works and what it is used for.
 
@@ -43,7 +43,7 @@ To understand when to used the section element even better, let's look at some e
 
 It is my hope that this article has helped you to understand the purpose and usage of the `section` element a bit more. I encourage to review your previous HTML code and see if you were using this element correctly and fix where appropriate. Also, now you can now use this element correctly in all your future projects. Happy coding!
 
-####Question 2
+#### Question 2
 
 *Explain in detail what the CSS Box Model is.*
 
@@ -94,7 +94,7 @@ Here, the total width of the element will always be 300px. Instead the width of 
 And there you have it. You know have a better understanding of hw the CSS Box Model Works and how is can be used to layout and style HTML elements correctly. 
 
 
-####Question 3
+#### Question 3
 
 *Explain the function of the `margin` property and its variants `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`. Be sure to explain in detail the different values that this property takes and the effect of those values.*
 
@@ -142,7 +142,7 @@ This format is used to set margins on all for sides of an element in one line. S
 
 And that's it! You now know how to use the CSS margin property with different syntaxes as well as the different values that it accepts. 
 
-####Question 4
+#### Question 4
 
 *Explain how the width of an element is calculated, taking into account the element's content, padding, border, margin, etc.*
 
@@ -186,7 +186,7 @@ Which means that we can now add these values together to reproduce the original 
 When calculating the width of an element it is important to take into account the content of the element as well as its padding, margin and border properties. It is also especially important to consider the `box-sizing` property of the element as this will ultimately determine that element's width. 
 
 
-####Question 5
+#### Question 5
 
 *Explain the purpose and function of the`float` property in positioning elements. List and explain the different values this property can take. Give an example of how to use this property*
 
@@ -220,7 +220,7 @@ If these elements where not floated, they would just appear one after the other 
 
 When begin to work with floats, it is important to remember that floating an element takes it out from the normal flow of the document and places it to either side of its container. 
 
-####Question 6
+#### Question 6
 
 *Explain the purpose and function of the `clear` property in positioning elements. List and explain the different values this property can take. Give an example of how to use this property.*
 

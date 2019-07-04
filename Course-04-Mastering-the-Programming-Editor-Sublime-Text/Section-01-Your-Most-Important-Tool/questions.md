@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Title: Sublime Text Innovations
 
@@ -18,7 +18,7 @@ Happy coding!
 
 ---
 
-####Question 2
+#### Question 2
 
 Title: Text Editors in Programming
 
@@ -36,7 +36,7 @@ Even though the do-it-yourself approach that Text Editors take can make them har
 
 ---
 
-####Question 3
+#### Question 3
 
 Advantages and disadvantages of using an IDE
 
@@ -60,7 +60,7 @@ Hopefully this gives you a bit more knowledge about IDEs and what to expect when
 
 ----
 
-####Question 4
+#### Question 4
 
 Even though Sublime Text is popular, it\'s not the only text editor around. List some other text editors that programmers use.
 

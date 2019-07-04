@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 *Write an introduction to the topic, the command line. Explain the purpose of the command line and the benefits of using it. Also list careers in which a person may use the command line for common tasks. Add any details you considered important as you learned the command line.*
 
@@ -22,7 +22,7 @@ Or any other Career that requires programming.
 
 Learning the command line can seem hard at first. It is also more complex considering that the command line is different on Windows as opposed to Mac and Linux. In order to make the learning process a bit easier, I would suggest that you learn the command line on Mac or Linux. If you have a windows computer is it quite easy to install Linux using a program like [Virtual Box](https://www.virtualbox.org/wiki/Downloads). The reason for this suggestion is because it is easier to work with the command line on these operating systems and there is a lot more documentation online that can help if you have a problem. Learn and practice a few commands every day until you're comfortable with them. Keep practicing and using the command line for everything that you can. Do this and you'll be well on you way to becoming the next best programmer in your field. 
 
-####Question 2
+#### Question 2
 
 *Explain the function of the `man` command. Be certain to include at least two usage and syntax examples of the command.*
 
@@ -56,7 +56,7 @@ The output is the path to the man page for ls on my computer.
 
 Now that we've gone through the man command and a few examples of how it works, you should never have the guess what any command on your UNIX operating system does any more!
 
-####Question 3
+#### Question 3
 
 *Explain the purpose and function of an environment variable and how to view environment variables in your shell. Then, explain at least three environment variables that you think are the most important, or useful, to a developer.*
 
@@ -86,7 +86,7 @@ In essence, it is used to show what appears at the start of your prompt as seen 
 
 And that's it! You now know how to view your environment variables and have a bit more knowledge on the most popular ones in use today!
 
-####Question 4
+#### Question 4
 
 *Fully describe the function of the `grep` program. Provide an example of piping a file from cat to grep and searching the file for a simple pattern.*
 

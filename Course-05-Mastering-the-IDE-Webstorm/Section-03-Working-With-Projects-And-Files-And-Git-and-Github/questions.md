@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Outline the system requirements for operating WebStorm on a computer, then describe in detail how to download and install WebStorm on the operating system you are using (use screenshots).
 
@@ -34,7 +34,7 @@ Congratulations!
 
 ---
 
-####Question 2
+#### Question 2
 
 Open or create a project in WebStorm, take a screenshot of the WebStorm screen, and label the project panel. Describe the function of the project panel in WebStorm and demonstrate its use (use screenshots).
 
@@ -54,7 +54,7 @@ That's the project panel in a nutshell. Use it to navigate and perform actions o
 
 ---
 
-####Question 3
+#### Question 3
 
 Describe the function of the `.idea` folder and its relationship to project settings.
 
@@ -73,7 +73,7 @@ It is important to note that two of these files remain consistent across all Web
 
 ---
 
-####Question 4
+#### Question 4
 
 Outline the steps required to create a new WebStorm project, including how to create the files for that project (include screenshots).
 
@@ -103,7 +103,7 @@ And that's it! From here you can repeat this process until you've added all the 
 
 ---
 
-####Question 5
+#### Question 5
 
 Briefly describe what code style is and describe in detail how to setup WebStorm to conform to a user's particular code style (include screenshots).
 

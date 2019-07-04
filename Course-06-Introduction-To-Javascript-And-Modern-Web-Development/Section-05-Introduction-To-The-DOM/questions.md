@@ -1,6 +1,6 @@
 #Questions
 
-####Question 6
+#### Question 6
 
 
 Describe the function of the `document` object and use examples to demonstrate its usage.
@@ -26,7 +26,7 @@ We can also see that the document object has many more methods that can be used 
 
 Getting familiar with these methods and understanding that the `document` object represents any web page loaded in the browser will expand your knowledge of the document object and how to use it when building your web applications. 
 
-####Question 7
+#### Question 7
 
 *Describe the Selectors API and demonstrate the use of the two methods available in this API, `querySelector` and `querySelectorAll`.*
 
@@ -69,7 +69,7 @@ You now have a better understanding or the Selectors API and its main methods. S
 
 
 
-####Question 8
+#### Question 8
 
 *Explain the different ways of inserting or removing markup into and from the DOM (such as using the `innerHTML` property or the `appendChild` or `removeChild` methods).*
 

@@ -1,6 +1,6 @@
 #Project Assignments
 
-####Question 1
+#### Question 1
 
 The image below shows the tokens for the given HTML. 
 
@@ -9,7 +9,7 @@ The image below shows the tokens for the given HTML.
 The given HTML is not malformed. After inspecting the code, we see that each HTML element is opened and closed properly. After manually parsing the code and drawing the tokens, we also see that each element and the data inside them appears as expected. 
 
 
-####Question 2
+#### Question 2
 
 We go through 3 of each type if HTTP status code (if three exists) below and examine what they do. 
 
@@ -112,7 +112,7 @@ Sometimes a server can act as a gateway to get information hosted on other serve
 If a server is currently overloaded or undergoing some sort of maintenance and is unable to handle a request, the 503 HTTP status code can be returned. This status code is optional since the server can just opt to refuse the connection altogether. This code implies the the server will be available again after its down time and can also be used to send the amount of expected downtime back to the client. 
 
 
-####Question 3
+#### Question 3
 
 DNS Record Type - HINFO	
 
@@ -174,7 +174,7 @@ Example -
 	example.com.    		IN    	SOA   ns.example.com. 	hostmaster.example.com.
 
 
-####Question 4
+#### Question 4
 
 **Ring Topology**
 

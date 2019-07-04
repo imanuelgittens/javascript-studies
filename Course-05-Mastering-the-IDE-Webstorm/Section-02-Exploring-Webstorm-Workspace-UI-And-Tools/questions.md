@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Title: Using The Console from within WebStorm
 
@@ -26,7 +26,7 @@ Closing the terminal is also very easy and can be done in a number of ways:
 
 And that's about it! You are now ready to access and use the terminal from right within the Webstorm IDE.
 
-####Question 2
+#### Question 2
 
 When opening a project for the first time in Webstorm, you may be overwhelmed by the sheer amount of 'stuff' that you see within the its interface. This article is an introduction to the different sections of Webstorm's UI and is intended as a starting point for better familiarity with this awesome IDE. The screen below shows a typical screen while working with Webstorm and I've numbered each section of the interface to make their descriptions a bit easier. 
 
@@ -56,7 +56,7 @@ This area provides quick access to some important tools for web development such
 
 This is the last area on the screen of Webstorm's UI and it displays some technical information like line number and file encoding. Users can also click the grey box-like icon (![terminal-button](https://www.jetbrains.com/help/img/idea/show_tool_window_bars.png)) on the far left side of this area to access the features of the **Tools Window** and more.
 
-####Question 3
+#### Question 3
 
 ![](http://i66.tinypic.com/fz6ey8.jpghttp://i66.tinypic.com/fz6ey8.jpg)
 
@@ -68,7 +68,7 @@ Any of the items in this sequence can be double clicked for quick navigation. Th
 
 And that's it! You are now a bit more familiar with the navigation bar in Webstorm.
 
-####Question 4
+#### Question 4
 
 This screen below shows Webstorm's editor area. 
 

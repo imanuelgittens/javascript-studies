@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Explain in your own words how text editors compare to IDEs.
 
@@ -20,7 +20,7 @@ and the list goes on. To compensate for all this additional functionality, the I
 
 ---
 
-####Question 2
+#### Question 2
 
 On some operating systems, the 'subl' program may not work automatically. Describe in detail (use screenshots) how to get the 'subl' program working in the operating system you use.
 
@@ -49,7 +49,7 @@ On other operating systems getting the `subl` command to work will require you t
 
 ---
 
-####Question 3
+#### Question 3
 
 Describe what Sublime Text packages are, and give an example of one Sublime Text package and describe how it works.
 
@@ -64,7 +64,7 @@ This and many of the other packages developed for Sublime Text really help users
 
 ---
 
-####Question 4
+#### Question 4
 
 Give detailed instructions (include screenshots) about how to get Package Control working in a Sublime Text installation.
 

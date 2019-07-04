@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 *Explain the function of the `textarea` element and describe in detail the attributes it accepts and their effects of their different values.*
 
@@ -36,7 +36,7 @@ This element also has a number of attributes that affect its behaviour and these
 
 And that's about it for the `<textarea></textarea>` element. You now know what its used for and how different attributes affect its behaviour.
 
-####Question 2
+#### Question 2
 
 *Describe what a "sibling selector" is. Explain how it works and give an example of its usage.*
 
@@ -74,7 +74,7 @@ Here all the `p` sibling elements will be colored red.
 
 And that's how you use sibling selectors in CSS.
 
-####Question 3
+#### Question 3
 
 *List the JavaScript keywords and describe their purpose and function.*
 
@@ -114,7 +114,7 @@ And that's how you use sibling selectors in CSS.
 * yield - used to pause and resume generator functions.
 
 
-####Question 4
+#### Question 4
 
 *Describe how to make different comparisons between JavaScript values (like greater-than, less-than, etc).*
 
@@ -172,7 +172,7 @@ Since the operands are converted to the same type before comparing, all these st
 
 You now know about JavaScript's comparison operators and how they work. 
 
-####Question 5
+#### Question 5
 
 *Explain what a self-invoking function is and describe the use of such a function, including a demonstration.* 
 
@@ -206,7 +206,7 @@ With self invoking functions however, we do not need to call them. Let's see how
 
 Notice that we add the `()` to the end of the function. Written this way, the function is executed immediately without the need for calling hence we say it is a self invoking function. 
 
-####Question 6
+#### Question 6
 
 *Describe what closures are and use at least two examples to demonstrate how they work.*
 
@@ -261,7 +261,7 @@ We run the sub5 function and we see that it still had a reference to the `x` var
 
 And that's what closures do, they basically ensure that these inner functions have access to variables from their parent functions by keeping a reference to those variables.
 
-####Question 7
+#### Question 7
 
 *Whether a variable is declared with the `var` keyword or not determines the scope of that variable. Describe how this mechanism works and give at least one example of how this works.*
 
@@ -314,7 +314,7 @@ It is also important to note that in JavaScript, if you define a variable withou
 When declaring variables in JavaScript, it is important that they be put in the right scope to allows for the right levels of access an to avoid unexpected errors in your program. 
 
 
-####Question 8
+#### Question 8
 
 *Describe how the JavaScript built-in functions `apply` and `call` work. Use examples to demonstrate how each one works.*
 

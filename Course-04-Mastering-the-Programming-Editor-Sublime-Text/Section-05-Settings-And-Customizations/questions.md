@@ -1,6 +1,6 @@
 #Questions
 
-####Questions 1
+#### Questions 1
 
 *Describe how to start the Sublime Text program through the GUI interface as well as how to do it through the command line using the 'subl' command.*
 
@@ -30,7 +30,7 @@ and a user simply needs to type in this command into their terminal and Sublime 
 
 And that's it! You now know how to open Sublime Text through the Graphic User Interface as well as the Command Line.
 
-####Question 2
+#### Question 2
 
 *Goto Anything can be used to search through files implementing its fuzzy algorithm. Briefly describe how this fuzzy 
 algorithm works (without going into details about implementation) and give detailed instructions (include screenshots) about using it to search through files.*
@@ -54,7 +54,7 @@ editor much easier. The screen below shows some of the results suggested by Subl
 Hopefully this small article gives you a better idea of how Sublime Text makes finding things easy with its fuzzy search
 algorithm.
 
-####Question 3
+#### Question 3
 
 *Describe the function of keyboard shortcuts and their relationship to the \'Default.sublime-keymap\' and \'Default().sublime-keymap\' files. Include a screenshot of one of these files, highlighting one shortcut and describe how it works.*
 
@@ -73,7 +73,7 @@ As you can see, it defines the keys you must press and the commands that these k
 the first key combination on the list (Ctrl + q), we can see that when it is pressed, we exit the Sublime Text application. 
 Feel free to try this and several other key combinations to see how they work. 
 
-####Question 4
+#### Question 4
 
 *Describe how you would go about changing settings for a third-party plugin.*
 
@@ -96,7 +96,7 @@ In order to figure out which settings need changing, the default settings file c
 And that's the process for changing settings for a third party plugin. To summarize, we access the default settings file
 for that plugin as a reference then we configure our options in the user settings for that plugin. 
 
-####Question 5
+#### Question 5
 
 *Describe the function of global settings. Describe the files used to access and change these settings (use screenshots).*
 
@@ -118,7 +118,7 @@ Once we save this setting, the font size of the editor should increase. Let's ha
 
 And that's it! The process is similar to change all settings in Sublime Text. We look up the setting in the default settings file and make the appropriate updates in the user settings file. 
 
-####Question 6
+#### Question 6
 
 *Describe the order in which Sublime Text settings are consulted.*
 

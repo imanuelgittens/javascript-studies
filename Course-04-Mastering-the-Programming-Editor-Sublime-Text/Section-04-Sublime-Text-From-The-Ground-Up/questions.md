@@ -1,6 +1,6 @@
 #Questions
 
-####Question 1
+#### Question 1
 
 Briefly describe what word processors are and contrast their differences to text editors.
 
@@ -23,7 +23,7 @@ Both Word processors and Text Editors have their uses. If you are writing a book
 
 ---
 
-####Questions 2
+#### Questions 2
 
 Describe in detail how to install Sublime Text on the operating system you are using (include screenshots).
 
@@ -57,7 +57,7 @@ You now know how to install and open Sublime Text.
 
 ---
 
-####Question 3
+#### Question 3
 
 Give detailed instructions (include screenshots) on how to open a directory in Sublime Text through the user interface as well as through the command line. Provide similar instructions for how to open files.
 
@@ -89,7 +89,7 @@ You now know how to open files and folders using Sublime Text.
 
 ---
 
-####Question 4
+#### Question 4
 
 Explain the differences between scopes and scope selectors.
 
@@ -126,7 +126,7 @@ This targets all comments in JavaScript files.
 
 You now know a bit more about scopes in Sublime Text and how they differ from scope selectors. Cheers!
 
-####Question 5
+#### Question 5
 
 Describe the function of the "Installed Packages," "Packages," and "Data folders." Outline how to open these folders and describe what happens if they are deleted (use screenshots relevant to your operating system).
 
@@ -173,7 +173,7 @@ Packages can be installed as sub-folders within the Packages Folder or as .subli
 We've discussed the three important folders that Sublime Text uses to allow for its extensibility features. You now know how to navigate to these folders, view what's inside them and get a better overall idea of how Packages work in Sublime Text. 
 
 
-####Question 6
+#### Question 6
 
 Describe the function of the Python console and outline how to open and close it (include a screenshot of how this console is used).
 

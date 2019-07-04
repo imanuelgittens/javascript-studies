@@ -1,4 +1,4 @@
-####Explain the usage and purpose of the `git push` command. Include a description of the `git push` command's various flags, and provide example scenario's for each flag discussed.
+#### Explain the usage and purpose of the `git push` command. Include a description of the `git push` command's various flags, and provide example scenario's for each flag discussed.
 
 
 #Effective Collaboration with `git push`
@@ -16,7 +16,7 @@ We can understand this command a bit easier if we re-define `git push` as follow
 	git push	Upload your changes to a centralized location or remote server.  
 
 
-####Flags
+#### Flags
 
 The `git push` command also comes with a host of flags to change its behaviour. Let's look at some of these flags in detail:
 

@@ -2,10 +2,10 @@
 gittensimanuel@gmail.com	
 1 868 123-4567
 
-####Profile:
+#### Profile:
 IT professional with a broad and expanding knowledge of programming and query languages. Self-motivated and hard-working with a willingness to share knowledge with others. Good communicator and team member possessing leadership and training skills.  Innovative, cooperative and results-oriented.
 
-####Skills Set: Ability to work with/ program in the following environments
+#### Skills Set: Ability to work with/ program in the following environments
 
 * MySQL
 * HTML, CSS, Javascript (Basic)
@@ -15,7 +15,7 @@ IT professional with a broad and expanding knowledge of programming and query la
 * Wordpress
 * Microsoft Office
 
-####Professional Experience
+#### Professional Experience
 **2013 - 2014 Systems Developer**
 Responsible for the development of a Patient Management System for a doctor using Microsoft Access 2013
 
@@ -38,14 +38,14 @@ Responsible for improvements to an interactive database for regional disease and
 3. Developed process for import of data from previous system. 
 4. User documentation.
 
-####Academic Experience
+#### Academic Experience
 **2009-2012	Information Technology B.Sc.**
 
 * Developed an Access/Visual Basic system for asset management.
 * Developed an ecommerce website using HTML, CSS, JavaScript and PHP.
 * Java Projects.
 
-####Education
+#### Education
 **2013 Ongoing - Self Study**
 Online training in a wide scope of programming languages and operating 			systems.
 
